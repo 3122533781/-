@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef68eec409a69234c8ba5c27fab2ebae, type: 3}
+  m_Name: CollectionConfig
+  m_EditorClassIdentifier: 
+  All:
+  - id: 1
+    name: caipin_1
+    kind: 3
+    quality: 0
+  - id: 2
+    name: caipin_2
+    kind: 3
+    quality: 0
+  - id: 3
+    name: caipin_3
+    kind: 3
+    quality: 0
+  - id: 4
+    name: caipin_4
+    kind: 3
+    quality: 0
+  - id: 5
+    name: caipin_5
+    kind: 3
+    quality: 0
+  - id: 6
+    name: caipin_6
+    kind: 3
+    quality: 0
+  - id: 7
+    name: caipin_7
+    kind: 3
+    quality: 0
+  - id: 8
+    name: caipin_8
+    kind: 3
+    quality: 0
+  - id: 9
+    name: chuju_1
+    kind: 0
+    quality: 0
+  - id: 10
+    name: chuju_2
+    kind: 0
+    quality: 0
+  - id: 11
+    name: chuju_3
+    kind: 0
+    quality: 0
+  - id: 12
+    name: chuju_4
+    kind: 0
+    quality: 0
+  - id: 13
+    name: chuju_5
+    kind: 0
+    quality: 0
+  - id: 14
+    name: chuju_6
+    kind: 0
+    quality: 0
+  - id: 15
+    name: chuju_7
+    kind: 0
+    quality: 0
+  - id: 16
+    name: chuju_8
+    kind: 0
+    quality: 0
+  - id: 17
+    name: sicai_1
+    kind: 2
+    quality: 0
+  - id: 18
+    name: sicai_2
+    kind: 2
+    quality: 0
+  - id: 19
+    name: sicai_3
+    kind: 2
+    quality: 0
+  - id: 20
+    name: sicai_4
+    kind: 2
+    quality: 0
+  - id: 21
+    name: sicai_5
+    kind: 2
+    quality: 0
+  - id: 22
+    name: sicai_6
+    kind: 2
+    quality: 0
+  - id: 23
+    name: sicai_7
+    kind: 2
+    quality: 0
+  - id: 24
+    name: sicai_8
+    kind: 2
+    quality: 0
+  - id: 25
+    name: tiaowei_1
+    kind: 1
+    quality: 0
+  - id: 26
+    name: tiaowei_2
+    kind: 1
+    quality: 0
+  - id: 27
+    name: tiaowei_3
+    kind: 1
+    quality: 0
+  - id: 28
+    name: tiaowei_4
+    kind: 1
+    quality: 0
+  - id: 29
+    name: tiaowei_5
+    kind: 1
+    quality: 0
+  - id: 30
+    name: tiaowei_6
+    kind: 1
+    quality: 0
+  - id: 31
+    name: tiaowei_7
+    kind: 1
+    quality: 0
+  - id: 32
+    name: tiaowei_8
+    kind: 1
+    quality: 0
+  - id: 33
+    name: yinliao_1
+    kind: 4
+    quality: 0
+  - id: 34
+    name: yinliao_2
+    kind: 4
+    quality: 0
+  - id: 35
+    name: yinliao_3
+    kind: 4
+    quality: 0
+  - id: 36
+    name: yinliao_4
+    kind: 4
+    quality: 0
+  - id: 37
+    name: yinliao_5
+    kind: 4
+    quality: 0
+  - id: 38
+    name: yinliao_6
+    kind: 4
+    quality: 0
+  - id: 39
+    name: yinliao_7
+    kind: 4
+    quality: 0
+  - id: 40
+    name: yinliao_8
+    kind: 4
+    quality: 0

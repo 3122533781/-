@@ -1,0 +1,1005 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2874532d3646c4393a878424a2a638, type: 3}
+  m_Name: MoneyRedeemConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - id: 1
+    money: 10
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 20
+    remark: 
+  - id: 2
+    money: 10
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 60
+    remark: 
+  - id: 3
+    money: 10
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 150
+    remark: 
+  - id: 101
+    money: 20
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 40
+    remark: 
+  - id: 102
+    money: 20
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 120
+    remark: 
+  - id: 103
+    money: 20
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+  - id: 201
+    money: 50
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 100
+    remark: 
+  - id: 202
+    money: 50
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+  - id: 203
+    money: 50
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 800
+    remark: 
+  - id: 301
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 302
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 303
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 3
+      id: -1
+      value: 10
+    - type: 0
+      id: -1
+      value: 30
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 50
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 4
+    - type: 3
+      id: -1
+      value: 30
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+  - id: 4
+    money: 10
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 0
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 20
+    remark: 
+  - id: 5
+    money: 10
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 0
+      id: -1
+      value: 40
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 60
+    remark: 
+  - id: 6
+    money: 10
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 1
+    - type: 0
+      id: -1
+      value: 60
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 150
+    remark: 
+  - id: 104
+    money: 20
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 3
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 40
+    remark: 
+  - id: 105
+    money: 20
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 3
+    - type: 0
+      id: -1
+      value: 80
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 120
+    remark: 
+  - id: 106
+    money: 20
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 3
+    - type: 0
+      id: -1
+      value: 80
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+  - id: 204
+    money: 50
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 7
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 100
+    remark: 
+  - id: 205
+    money: 50
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 7
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+  - id: 206
+    money: 50
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 7
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 800
+    remark: 
+  - id: 304
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 15
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 40
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 305
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 15
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 40
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 306
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 15
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 40
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+  - id: 1001
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 1002
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 1003
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+  - id: 1101
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 1102
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 1103
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+  - id: 1201
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 1202
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 1203
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+  - id: 1301
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+  - id: 1302
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+  - id: 1303
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 20
+    - type: 3
+      id: -1
+      value: 20
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 40
+    - type: 0
+      id: -1
+      value: 75
+    - type: 3
+      id: -1
+      value: 75
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 

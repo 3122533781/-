@@ -1,0 +1,122 @@
+ManifestFileVersion: 0
+CRC: 632482219
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6f877409f68a90d08e85e6f23e759c38
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0896d1589d678f74650e7cb0a4addbb9
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3059312b5b303c14aba8457ab3f497bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 670f4e8783b04144ebe4d0d512e522e0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: be10995b0a2525e4a98898258d16b11f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 37c6877d35512044f96f0c307fe6d1a3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 12edbde7911713e47b168e4083d86bdf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 58ab3ac7b37eab44bbb45e1dd75c9f75, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 078752b84542dd8458478c4ab137b989, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ab2874532d3646c4393a878424a2a638, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c34e91cea579da3428fdc11d64c3486a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2ee4e38095f588e42bfcec67d5ded2c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 42fa224050b49db488ed97fc37adcfc2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 405d8b1add1966a47a1db8202be64d99, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 05b1426f13af065408e253a00f945128, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6155fa3e3d3766b4b8c08e834c1dce0f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3aa09ac8ac300c842adc32b52eacc44c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9b75c4cc1f203164bacdf614d317da9f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3d053064335fe344789403b36a0f9826, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3007f889cf0217948b7ebac4e53d93e1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: BuyType
+- AssemblyName: Assembly-CSharp
+  ClassName: DollarClearData
+- AssemblyName: Assembly-CSharp
+  ClassName: GoodType
+- AssemblyName: Assembly-CSharp
+  ClassName: GoodsData
+- AssemblyName: Assembly-CSharp
+  ClassName: GuideUIData
+- AssemblyName: Assembly-CSharp
+  ClassName: PriceListData
+- AssemblyName: Assembly-CSharp
+  ClassName: Redeem.GiftCardInfoData
+- AssemblyName: Assembly-CSharp
+  ClassName: Redeem.GiftCardRedeemData
+- AssemblyName: Assembly-CSharp
+  ClassName: Redeem.MoneyRedeemData
+- AssemblyName: Assembly-CSharp
+  ClassName: Redeem.RedeemConditionData
+- AssemblyName: Assembly-CSharp
+  ClassName: Redeem.RedeemCountryData
+- AssemblyName: Assembly-CSharp
+  ClassName: SlotMciData
+- AssemblyName: Assembly-CSharp
+  ClassName: SoyBean.IAP.IAPItemData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.Common.Stack`1[_02.Scripts.LevelEdit.BallData]
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.Config.ConstantData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.Config.InGameRewardData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.Config.PipeAndBallData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.BallData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.BallType
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.LevelData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.PipeCapacity
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.PipeData
+- AssemblyName: Assembly-CSharp
+  ClassName: _02.Scripts.LevelEdit.PipeNumber
+Assets:
+- Assets/Configs/DollarClearDataConfig.asset
+- Assets/Configs/MoneyRedeemConfig.asset
+- Assets/Configs/LevelConfig.asset
+- Assets/Configs/SpecialLevelConfig.asset
+- Assets/Configs/GoodsConfig.asset
+- Assets/Configs/InGameRewardConfig.asset
+- Assets/Configs/SlotMciDataConfig.asset
+- Assets/Configs/RolePlotConfig.asset
+- Assets/Configs/RedeemCountryConfig.asset
+- Assets/Configs/GiftCardRedeemConfig.asset
+- Assets/Configs/PriceListConfig.asset
+- Assets/Configs/PipeAndBallConfig.asset
+- Assets/Configs/IAPConfig.asset
+- Assets/Configs/ConstantConfig.asset
+- Assets/Configs/GiftCardInfoConfig.asset
+- Assets/Configs/RedeemCountryBConfig.asset
+- Assets/Configs/GuideUIConfig.asset
+- Assets/Configs/RedeemCountryCConfig.asset
+Dependencies: []

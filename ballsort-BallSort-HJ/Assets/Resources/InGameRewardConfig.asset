@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b1426f13af065408e253a00f945128, type: 3}
+  m_Name: InGameRewardConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - intID: 0
+    ItemId: 0
+    Category: 1
+    Number: 1
+    Probability: 3333
+  - intID: 1
+    ItemId: 1
+    Category: 1
+    Number: 1
+    Probability: 6666
+  - intID: 2
+    ItemId: 2
+    Category: 1
+    Number: 1
+    Probability: 9999
+  - intID: 3
+    ItemId: 3
+    Category: 1
+    Number: 1
+    Probability: 13332
+  - intID: 4
+    ItemId: 4
+    Category: 1
+    Number: 1
+    Probability: 16665
+  - intID: 5
+    ItemId: 5
+    Category: 1
+    Number: 1
+    Probability: 20000
+  - intID: 6
+    ItemId: 0
+    Category: 3
+    Number: 1
+    Probability: 23750
+  - intID: 7
+    ItemId: 1
+    Category: 3
+    Number: 1
+    Probability: 27500
+  - intID: 8
+    ItemId: 2
+    Category: 3
+    Number: 1
+    Probability: 31250
+  - intID: 9
+    ItemId: 3
+    Category: 3
+    Number: 1
+    Probability: 35000
+  - intID: 10
+    ItemId: 4
+    Category: 3
+    Number: 1
+    Probability: 38750
+  - intID: 11
+    ItemId: 5
+    Category: 3
+    Number: 1
+    Probability: 42500
+  - intID: 12
+    ItemId: 6
+    Category: 3
+    Number: 1
+    Probability: 46250
+  - intID: 13
+    ItemId: 7
+    Category: 3
+    Number: 1
+    Probability: 50000
+  - intID: 14
+    ItemId: 0
+    Category: 4
+    Number: 10
+    Probability: 70000
+  - intID: 15
+    ItemId: 0
+    Category: 4
+    Number: 20
+    Probability: 75000
+  - intID: 16
+    ItemId: 0
+    Category: 4
+    Number: 30
+    Probability: 79000
+  - intID: 17
+    ItemId: 0
+    Category: 4
+    Number: 50
+    Probability: 80000
+  - intID: 18
+    ItemId: 1
+    Category: 4
+    Number: 1
+    Probability: 90000
+  - intID: 19
+    ItemId: 1
+    Category: 4
+    Number: 2
+    Probability: 93000
+  - intID: 20
+    ItemId: 1
+    Category: 4
+    Number: 3
+    Probability: 94500
+  - intID: 21
+    ItemId: 1
+    Category: 4
+    Number: 4
+    Probability: 94800
+  - intID: 22
+    ItemId: 1
+    Category: 4
+    Number: 5
+    Probability: 95000
+  - intID: 23
+    ItemId: 2
+    Category: 4
+    Number: 1
+    Probability: 99000
+  - intID: 24
+    ItemId: 2
+    Category: 4
+    Number: 2
+    Probability: 100000

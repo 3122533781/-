@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34e91cea579da3428fdc11d64c3486a, type: 3}
+  m_Name: ConstantConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - IntID: 1
+    Value: 300
+    Desc: "\u62BD\u7403\u9700\u8981\u7684\u91D1\u5E01"
+    ValueList: 
+  - IntID: 2
+    Value: 300
+    Desc: "\u62BD\u8BD5\u7BA1\u9700\u8981\u7684\u91D1\u5E01"
+    ValueList: 
+  - IntID: 3
+    Value: 1000
+    Desc: "\u62BD\u80CC\u666F\u9700\u8981\u7684\u91D1\u5E01"
+    ValueList: 
+  - IntID: 4
+    Value: 200
+    Desc: "\u5546\u5E97\u770B\u5E7F\u544A\u83B7\u5F97\u7684\u91D1\u5E01"
+    ValueList: 
+  - IntID: 5
+    Value: 120
+    Desc: "\u80DC\u5229\u5B9D\u7BB1\u9700\u8981\u7684\u91D1\u5E01"
+    ValueList: 
+  - IntID: 6
+    Value: 0
+    Desc: "\u6BCF\u5173\u6389\u843D\u7684\u91D1\u5E01"
+    ValueList: 0f00000019000000
+  - IntID: 7
+    Value: 20
+    Desc: "\u76F8\u540C\u5956\u52B1\u91D1\u5E01"
+    ValueList: 
+  - IntID: 8
+    Value: 0
+    Desc: "\u7ED3\u7B97\u65F6\uFF0C\u7F8E\u5143\u7B97\u6CD5X\u503C\uFF0C\u6240\u5F97\u91D1\u989D=\uFF08X-\u5F53\u524D\u666E\u901A\u7F8E\u5143\u503C\uFF09\xD7Y)"
+    ValueList: 640000006400000064000000
+  - IntID: 9
+    Value: 10
+    Desc: "\u8001\u864E\u673A\u51E0\u9897\u661F\u62BD\u5956\u4E00\u6B21"
+    ValueList: 
+  - IntID: 10
+    Value: 500
+    Desc: "\u53BB\u5E7F\u544A\u91D1\u5E01"
+    ValueList: 
+  - IntID: 11
+    Value: 3
+    Desc: "\u63D2\u5C4F\u5E7F\u544A\u51FA\u73B0\u5173\u5361"
+    ValueList: 
+  - IntID: 12
+    Value: 5
+    Desc: "\u7279\u6B8A\u5173\u5361\u9700\u8981\u901A\u5173\u6570"
+    ValueList: 
+  - IntID: 13
+    Value: 2
+    Desc: "\u5927\u8F6C\u76D8\u6B21\u6570"
+    ValueList: 
+  - IntID: 14
+    Value: 40
+    Desc: "\u5173\u5361\u6389\u843D\u5F00\u59CB\u53D8\u6210\u5B9D\u7BB1\u7684\u7F8E\u5143\u6570"
+    ValueList: 

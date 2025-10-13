@@ -1,0 +1,20 @@
+
+light_ren.png
+size: 1860,1292
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ren_20
+  rotate: true
+  xy: 1292, 525
+  size: 765, 566
+  orig: 765, 566
+  offset: 0, 0
+  index: -1
+ren_21
+  rotate: false
+  xy: 2, 2
+  size: 1288, 1288
+  orig: 1288, 1288
+  offset: 0, 0
+  index: -1

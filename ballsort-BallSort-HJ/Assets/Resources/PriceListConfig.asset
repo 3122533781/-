@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405d8b1add1966a47a1db8202be64d99, type: 3}
+  m_Name: PriceListConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - rewardId: 1
+    currency: 1
+    price: 5.99
+    originalPrice: 11.99
+    limit: 1
+    storeId: soybean.ballsort.101

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+  <string name="iap_success" text="Erfolgreicher Kauf" />
+  <string name="yes_no_lose_data" text="Vergewissern Sie sich, dass Ihr Netzwerk eingeschaltet ist, da sonst Datenverlust droht." />
+  <string name="got_it" text="Ich hab's" />
+  <string name="load_bonus" text="Die Belohnung kommt gleich" />
+  <string name="video_not_ready" text="Das Video ist noch nicht fertig" />
+  <string name="rate_title" text="Viel Spaß mit Animal Ark Puzzle" />
+  <string name="rate_content" text="Die 5-Sterne-Bewertung ist das beste Geschenk für uns und spornt uns an, dieses Spiel noch besser zu machen!" />
+  <string name="loading" text="Laden" />
+  <string name="coin_notenough" text="Es gibt nicht genug Goldmünzen" />
+  <string name="gem_notenough" text="" />
+  <string name="manual_notenough" text="Es fehlt an Energie" />
+  <string name="received_success" text="Anspruch erfolgreich" />
+  <string name="coming_soon" text="Komme bald" />
+  <string name="restorate_success" text="Wiederherstellung erfolgreich" />
+  <string name="restorate_fail" text="Wiederherstellung fehlgeschlagen" />
+  <string name="approved_payment" text="Genehmigt, Zahlung in Bearbeitung" />
+  <string name="tag_confirm" text="Bestätigen Sie" />
+  <string name="copy_link" text="Link kopieren" />
+  <string name="tag_share" text="Teilen" />
+  <string name="already_paid" text="Bereits bezahlt" />
+  <string name="tag_again" text="Erneut" />
+  <string name="review_des" text="Wird geprüft, bitte warten Sie geduldig" />
+  <string name="tag_redeem" text="Einlösen" />
+  <string name="condition_watch_ad" text="Bitte beobachten Sie {0} AD, um die Bestellung zu genehmigen" />
+  <string name="condition_invite_player" text="Laden Sie {0} neue Benutzer ein, um die Bestellung zu genehmigen" />
+  <string name="condition_active_player" text="Letzter Schritt: Aktivieren Sie {0} neue Benutzer, um die Bestellung zu genehmigen" />
+  <string name="condition_play_game" text="Bestehen Sie {0} Mal beliebige Stufen, um die Bestellung zu genehmigen" />
+  <string name="tag_days" text="Tag(e)" />
+  <string name="tag_invited" text="Eingeladen:" />
+  <string name="tag_actived" text="Aktiviert:" />
+  <string name="be_rejected" text="Abgelehnt werden" />
+  <string name="just_cashed_out" text="gerade ausgezahlt" />
+  <string name="confirm_paypal" text="Bitte bestätigen Sie Ihr PayPal-Konto" />
+  <string name="tag_sure" text="Bestätigen Sie" />
+  <string name="tag_change" text="Ändern Sie" />
+  <string name="current_reward" text="Ihre aktuelle Prämie" />
+  <string name="input_paypal" text="Bitte geben Sie Ihr PayPal-Konto ein" />
+  <string name="tag_cancel" text="Abbrechen" />
+  <string name="tag_submit" text="einreichen" />
+  <string name="restorate" text="wiederherstellen" />
+  <string name="TM10000" text="Keine Spielinformationen" />
+  <string name="TM10001" text="Benutzer kann nur ein Team erstellen" />
+  <string name="TM10002" text="Der Teamname wurde bereits verwendet." />
+  <string name="TM10020" text="Team ist nicht vorhanden" />
+  <string name="TM10021" text="Benutzer ist nicht Admin" />
+  <string name="TM10022" text="Benutzer ist nicht Mitglied des Teams" />
+  <string name="TM10025" text="Benutzer ist bereits Mitglied dieses Teams" />
+  <string name="TM10026" text="Benutzer ist einem anderen Team beigetreten" />
+  <string name="TM10027" text="Benutzer hat sich in weniger als 24 Stunden für dieses Team beworben" />
+  <string name="TM10038" text="Bewerbungsinfo ist nicht vorhanden oder bearbeitet" />
+  <string name="TM10039" text="Teammitglieder sind voll" />
+  <string name="TM10033" text="isAgree ist falsch, kann nur 1 oder 2 sein" />
+  <string name="TM10041" text="Benutzer kann nur einmal eine Ressource um Hilfe bitten" />
+  <string name="TM10042" text="Bitte Nachricht ist nicht vorhanden" />
+  <string name="TM10043" text="Benutzer kann sich nicht selbst helfen" />
+  <string name="TM10044" text="Maximale Hilfeanzahl erreicht" />
+  <string name="TM10045" text="Sie können nur einmal helfen." />
+  <string name="TM10046" text="Dies ist nicht Ihre Anfrage" />
+  <string name="TM10050" text="Taskkonfiguration ist nicht vorhanden" />
+  <string name="TM10051" text="Aufgabe ist nicht vorhanden" />
+  <string name="TM10052" text="Aufgabe ist noch nicht beendet" />
+  <string name="TM10054" text="Aufgabe wurde beansprucht" />
+  <string name="TM10055" text="Aufladungsinfo ist nicht in der Konfiguration gefunden" />
+  <string name="TM100056" text="Geschenk nicht gefunden" />
+  <string name="TM100057" text="Du kannst dieses Geschenk nicht beanspruchen oder du hast es beansprucht" />
+  <string name="TM100060" text="keine Chef-Konfiguration" />
+  <string name="TM100062" text="Boss ist nicht vorhanden" />
+  <string name="TM100063" text="Boss wurde getötet" />
+  <string name="TM100064" text="Boss-Parameter ist falsch" />
+  <string name="TM100066" text="Du kannst diese Boss-Belohnung nicht beanspruchen" />
+  <string name="TM100067" text="Du hast diese Boss-Belohnung beansprucht" />
+  <string name="TM100160" text="Bonus nicht vorhanden" />
+  <string name="TM100161" text="Bonus ist verfallen" />
+  <string name="TM100162" text="Bonus kann jetzt nicht beansprucht werden" />
+  <string name="TM100163" text="Du hast diesen Bonus beansprucht" />
+  <string name="TM200000" text="Ausnahme anfordern" />
+  <string name="Txt101" text="KUGEL" />
+  <string name="Txt102" text="RÖHREN" />
+  <string name="Txt103" text="THEMA" />
+  <string name="Txt104" text="Du hast ALLE Bälle freigeschaltet" />
+  <string name="Txt105" text="Du hast ALLE Röhren freigeschaltet" />
+  <string name="Txt106" text="Sie haben ALLE Themen freigeschaltet" />
+  <string name="Txt107" text="GESAMT" />
+  <string name="Txt108" text="STUFE" />
+  <string name="Txt109" text="GRATIS GESCHENK" />
+  <string name="Txt110" text="NÄCHSTES" />
+  <string name="Txt111" text="VERWENDEN" />
+  <string name="Txt201" text="Zum Auswählen des Balls klicken" />
+  <string name="Txt202" text="Klicken Sie, um den Ball zu verschieben" />
+  <string name="Txt203" text="Es können nur gleichfarbige Bälle übereinander gelegt werden." />
+  <string name="Txt301" text="Start" />
+  <string name="Txt302" text="20% Aus" />
+  <string name="Txt303" text="Einrichten" />
+  <string name="Txt304" text="Vibrieren" />
+  <string name="Txt305" text="Ton" />
+  <string name="Txt306" text="Sprache" />
+  <string name="Txt307" text="Beenden" />
+  <string name="Txt308" text="Sind Sie sicher, dass Sie aufhören wollen?" />
+  <string name="Txt309" text="Sie werden verlieren" />
+  <string name="Txt310" text="Weiter" />
+  <string name="Txt311" text="Sieg" />
+  <string name="Txt312" text="Scheitern" />
+  <string name="Txt313" text="Glückwunsch" />
+  <string name="Txt314" text="Startbildschirm" />
+  <string name="Txt315" text="Nächstes Level" />
+  <string name="Txt316" text="Die Zeit ist um" />
+  <string name="Txt317" text="Aufgeben" />
+  <string name="Txt318" text="Bestätigen" />
+  <string name="Txt319" text="Speichern" />
+  <string name="Txt320" text="Frei" />
+  <string name="Txt321" text="Ausverkauft" />
+  <string name="Txt322" text="Energie kaufen" />
+  <string name="Txt323" text="gesperrt" />
+  <string name="Txt324" text="Kopiert, weiter und einfügen" />
+  <string name="Txt325" text="Bitte später anklicken" />
+  <string name="Txt326" text="Hintergrund" />
+  <string name="Txt327" text="Design-Bedürfnisse" />
+  <string name="Txt328" text="Hart" />
+  <string name="Txt329" text="Mehr Leben bekommen" />
+  <string name="Txt330" text="Pause" />
+  <string name="Txt331" text="Zurück" />
+  <string name="Txt332" text="Verstärkung wählen" />
+  <string name="Txt333" text="Erneut versuchen" />
+  <string name="Txt334" text="Kein Platz mehr" />
+  <string name="Txt335" text="+1 Minute" />
+  <string name="Txt336" text="Leiste löschen" />
+  <string name="Txt337" text="verlassen" />
+  <string name="Txt338" text="Willkommen zum Interview" />
+  <string name="Txt339" text="Klicken Sie auf die drei Punkte, um sie zu eliminieren!" />
+  <string name="Txt340" text="Gut gemacht!" />
+  <string name="Txt341" text="Das ist dein Ziel: Eliminiere sie, um zu gewinnen!" />
+  <string name="Txt342" text="Sie werden nichts nehmen, was sie nicht bestellt haben!" />
+  <string name="Txt343" text="Gute Arbeit! Du siehst aus, als würdest du gut darin werden." />
+  <string name="Txt344" text="Hier kannst du die Anzahl der Kunden in der Schlange sehen, sie wollen nicht lange warten!" />
+  <string name="Txt345" text="So viele Sterne bekommst du, je schneller du fertig bist, desto mehr Sterne sammelst du!" />
+  <string name="Txt346" text="Der Blitz hilft dir, bis zu 3 Ziellebensmittel zu sammeln." />
+  <string name="Txt347" text="Rückgängig hilft dir, das letzte Lebensmittel von der Theke zu entfernen" />
+  <string name="Txt348" text="Die Fächerdose mischt alle Lebensmittel" />
+  <string name="Txt349" text="Mach es dir leichter! Beginne das Spiel mit einer zusätzlichen Leiste" />
+  <string name="Txt350" text="Der Wecker erhöht die Spielzeit um eine Minute" />
+  <string name="Txt351" text="Möbel reparieren" />
+  <string name="Txt352" text="Sterne erforderlich:" />
+  <string name="Txt353" text="Nicht genug Sterne" />
+  <string name="Txt354" text="Reparieren" />
+  <string name="Txt355" text="VIP-KARTE" />
+  <string name="Txt356" text="Monatliche Karte" />
+  <string name="Txt357" text="Dauerhafte Karte" />
+  <string name="Txt358" text="Kauf-Belohnungen" />
+  <string name="Txt359" text="Tägliche Belohnungen" />
+  <string name="Txt360" text="Gültig für 30 Tage" />
+  <string name="Txt361" text="Einmaliger Kauf gültig für das ganze Leben" />
+  <string name="Txt362" text="Aktiviert" />
+  <string name="Txt363" text="Nicht aktiviert" />
+  <string name="Txt364" text="{0} Tage" />
+  <string name="Txt365" text="Level-Truhe" />
+  <string name="Txt366" text="Stern-Truhe" />
+  <string name="Txt367" text="Erreiche &lt;color=#1CB7FF&gt;Level {0}&lt;/color&gt; zum Öffnen！" />
+  <string name="Txt368" text="Erreiche mehr &lt;color=#FFDF10&gt;Sterne&lt;/color&gt; zum Öffnen！" />
+  <string name="Txt369" text="öffnen." />
+  <string name="Txt370" text="Erste Aufstockung" />
+  <string name="Txt371" text="Erhalten Sie die Prämien für &lt;color=#F3B700&gt;drei Tage&lt;/color&gt; nach dem ersten Aufladevorgang" />
+  <string name="Txt372" text="Anspruch{0}" />
+  <string name="Txt373" text="Beansprucht" />
+  <string name="Txt374" text="Auschecken" />
+  <string name="Txt375" text="Einchecken" />
+  <string name="Txt376" text="{0}/{1}" />
+  <string name="Txt377" text="Begrenztes Geschenk" />
+  <string name="Txt378" text="Herzlichen Glückwunsch zum Bestehen von Level {0}, wir haben ein Value Pack für dich vorbereitet. Kaufe es jetzt, um alle oben genannten Belohnungen zu erhalten!" />
+  <string name="Txt379" text="Abgeschlossen" />
+  <string name="Txt380" text="Oh mein Gott! Wer ist sie? Was macht Ihr da?" />
+  <string name="Txt381" text="Jetzt, wo du es herausgefunden hast. Du bist so langweilig, das ist meine neue Freundin, verschwinde sofort aus meinem Haus！" />
+  <string name="Txt382" text="Tu mir das nicht an! Wir haben immer noch Kinder！" />
+  <string name="Txt383" text="Wenn ich dich nicht bemitleiden würde, hätte er dich längst abserviert." />
+  <string name="Txt384" text="Wohin soll ich gehen?" />
+  <string name="Txt385" text="Oh, mir ist so kalt und ich habe Hunger!" />
+  <string name="Txt386" text="Ich kann hier eine Weile bleiben, wer kann mir helfen?" />
+  <string name="Txt387" text="Komm und hilf ihr!" />
+  <string name="Txt388" text="Ich habe endlich einen Zufluchtsort gefunden" />
+  <string name="Txt389" text="Ich sollte zuerst das Bett reparieren" />
+  <string name="Txt390" text="Klicke auf die drei Gegenstände, um sie zu beseitigen!" />
+  <string name="Txt391" text="Das ist toll, lass uns weiter andere Dinge reparieren!" />
+  <string name="Txt392" text="Es gibt insgesamt 7 Balken, wenn alle 7 gefüllt sind, wird das Level scheitern, bitte sei vorsichtig!" />
+  <string name="Txt393" text="Um anderen zu helfen, brauchst du Sterne, die du durch die positiven Kommentare der Restaurantbesucher bekommst." />
+  <string name="Txt394" text="Los geht's! Es sind noch 2 Möbelstücke zu vervollständigen!" />
+  <string name="Txt395" text="Du musst das Level {0} bestehen." />
+  <string name="Txt501" text="TEAMS" />
+  <string name="Txt502" text="GRÜNDEN" />
+  <string name="Txt503" text="STECKBRIEF" />
+  <string name="Txt504" text="CHAT" />
+  <string name="Txt505" text="MEIN TEAM" />
+  <string name="Txt506" text="Mitglied werden" />
+  <string name="Txt507" text="Mitglieder" />
+  <string name="Txt508" text="Suche" />
+  <string name="Txt509" text="TEAM-INFO" />
+  <string name="Txt510" text="id: {0}" />
+  <string name="Txt511" text="Team-Rang" />
+  <string name="Txt512" text="Hilft" />
+  <string name="Txt513" text="Erforderliches Level" />
+  <string name="Txt514" text="Stufe" />
+  <string name="Txt515" text="Es wurden keine Teams gefunden" />
+  <string name="Txt516" text="{0} fragte nach Leben" />
+  <string name="Txt517" text="Hilfe" />
+  <string name="Txt518" text="Fragen Sie" />
+  <string name="Txt519" text="Chat" />
+  <string name="Txt520" text="Erstellen und leiten Sie Ihr Team!" />
+  <string name="Txt521" text="Team-Name" />
+  <string name="Txt522" text="Team-Abzeichen" />
+  <string name="Txt523" text="Wählen Sie" />
+  <string name="Txt524" text="Beschreibung" />
+  <string name="Txt525" text="erstellen" />
+  <string name="Txt526" text="Abzeichen auswählen" />
+  <string name="Txt527" text="Fortschritt der Teamtruhe:{0}/{1}" />
+  <string name="Txt528" text="Verbleibende Zeit:{0}" />
+  <string name="Txt529" text="Info ändern" />
+  <string name="Txt530" text="Speichern" />
+  <string name="Txt531" text="Seid ihr sicher?" />
+  <string name="Txt532" text="Bist du sicher, dass du das Team verlassen willst?" />
+  <string name="Txt533" text="Avatare" />
+  <string name="Txt534" text="Avatar-Rahmen" />
+  <string name="Txt535" text="Nickname ändern" />
+  <string name="Txt536" text="Bitte geben Sie den Nickname ein, den Sie ändern möchten" />
+  <string name="Txt537" text="Einladungen" />
+  <string name="Txt538" text="Du hast Einladungen zu einigen Teams erhalten, sieh sie dir an!" />
+  <string name="Txt539" text="Teamname oder Id..." />
+  <string name="Txt540" text="Level 10 bestehen" />
+  <string name="Txt541" text="Pass Stufe 100" />
+  <string name="Txt542" text="Pass Stufe 300" />
+  <string name="Txt543" text="Pass Level 600" />
+  <string name="Txt544" text="Pass-Level 14" />
+  <string name="Txt545" text="Anmeldung für 7 Tage" />
+  <string name="Txt546" text="Einloggen für 30 Tage" />
+  <string name="Txt547" text="Einloggen für 90 Tage" />
+  <string name="Txt548" text="Erstmaliges Aufladen" />
+  <string name="Txt549" text="Aufladen $5" />
+  <string name="Txt550" text="Aufladen $20" />
+  <string name="Txt551" text="Aufladen $50" />
+  <string name="Txt552" text="Genießen Sie unser Spiel" />
+  <string name="Txt553" text="Danke, dass Sie unser Spiel spielen! Eine 5-Sterne-Bewertung ist das beste Geschenk für uns, es ermutigt uns, dieses Spiel besser zu machen!" />
+  <string name="Txt554" text="Online-Belohnungen" />
+  <string name="Txt555" text="Kumulierte Online-Zeit" />
+  <string name="Txt556" text="Sophia" />
+  <string name="Txt557" text="Lukas" />
+  <string name="Txt558" text="Top Spieler" />
+  <string name="Txt559" text="Top-Teams" />
+  <string name="Txt560" text="Diese Saison endet in" />
+  <string name="Txt561" text="Begrenztes Angebot" />
+  <string name="Txt562" text="Entfernen Sie aufdringliche ADs &amp; verdienen Sie 200 Münzen！" />
+  <string name="Txt563" text="Weiter mit ADs" />
+  <string name="Txt564" text="AD-frei" />
+  <string name="Txt565" text="Doppelt" />
+  <string name="Txt566" text="Tippen Sie zum Beantragen" />
+  <string name="Txt567" text="Lassen Sie uns helfen!" />
+  <string name="Txt568" text="Erhalten Sie eine zusätzliche Minute in diesem Level." />
+  <string name="Txt569" text="Erhalte ein zusätzliches Feld in diesem Level." />
+  <string name="Txt570" text="Anzeige ansehen" />
+  <string name="Txt571" text="Geschichten" />
+  <string name="Txt572" text="Ich brauche Ihre Hilfe！" />
+  <string name="Txt573" text="Vielen Dank für deine Hilfe！" />
+  <string name="Txt574" text="Schließe die Vorgeschichte ab, um die aktuelle Szene freizuschalten." />
+  <string name="Txt575" text="Daten herunterladen" />
+  <string name="Txt576" text="Herunterladen von Daten" />
+  <string name="Txt577" text="Neue Daten werden heruntergeladen" />
+  <string name="Txt578" text="Wir empfehlen Ihnen, die Daten in einer Wi-Fi Umgebung herunterzuladen, je nach Internetgeschwindigkeit kann es länger dauern." />
+  <string name="Txt579" text="Einloggen" />
+  <string name="Txt580" text="ANMELDUNG MIT FACEBOOK" />
+  <string name="Txt581" text="MIT GOOGLE ANMELDEN" />
+  <string name="Txt582" text="SPIELEN OHNE ANMELDUNG" />
+  <string name="Txt583" text="Download fehlgeschlagen, möchten Sie fortfahren？" />
+  <string name="Txt584" text="Sterne holen" />
+  <string name="Txt585" text="FACEBOOK" />
+  <string name="Txt586" text="GOOGLE" />
+  <string name="Txt587" text="Konto wechseln" />
+  <string name="Txt588" text="Sind Sie sicher, dass Sie sich von Ihrem aktuellen Konto abmelden und zum Anmeldebildschirm zurückkehren möchten?" />
+  <string name="Txt589" text="Boost kaufen" />
+  <string name="Txt590" text="APPLE" />
+  <string name="Txt591" text="MIT APPLE ANMELDEN" />
+  <string name="Txt592" text="Bindung fehlgeschlagen" />
+  <string name="Txt593" text="Sparschwein" />
+  <string name="Txt594" text="Sammle 1000 Münzen, um die Bank zu einem guten Preis zu bekommen" />
+  <string name="Txt595" text="Renoviere" />
+  <string name="Txt601" text="Herunterladen?" />
+  <string name="Txt602" text="Ich bin heute früh nach der Arbeit zum Markt geeilt, um ein paar frische Zutaten für zu Hause zu kaufen." />
+  <string name="Txt603" text="Es ist eine seltene Gelegenheit, dass ich Zeit habe, ihn mit einem schönen Abendessen zu überraschen" />
+  <string name="Txt604" text="Ich trug einen schweren Korb mit Gemüse bis zur Türschwelle meines Hauses" />
+  <string name="Txt605" text="Dort schienen zwei Gestalten zu sein" />
+  <string name="Txt606" text="Mit Verwirrung ging ich ins Haus." />
+  <string name="Txt607" text="Liebling, ich bin zu Hause." />
+  <string name="Txt608" text="Mein Haus ist repariert, das macht es ein bisschen einfacher." />
+  <string name="Txt609" text="Ich habe ein Dach über dem Kopf, aber ich muss immer noch einen Weg finden, um über die Runden zu kommen." />
+  <string name="Txt610" text="Ich musste immer noch einen Job finden, um meinen Lebensunterhalt zu verdienen, was sollte ich sonst mit dem Baby machen?" />
+  <string name="Txt611" text="Ein Job... Verdammt, ich bin schon so lange geschieden und habe nicht mal einen Job." />
+  <string name="Txt612" text="Lass mich eine Weile darüber nachdenken, was ich tun kann." />
+  <string name="Txt613" text="Die Sonne brennt durch das Fenster." />
+  <string name="Txt614" text="Ich blättere in der Morgenzeitung, als mir eine auffällige Stellenausschreibung ins Auge sticht" />
+  <string name="Txt615" text="Das Restaurant sucht einen Restaurantleiter, gute Bezahlung, bewerben Sie sich!" />
+  <string name="Txt616" text="Das könnte meine Chance sein." />
+  <string name="Txt617" text="Das Restaurant" />
+  <string name="Txt618" text="Hallo, ich möchte mich für die Stelle des Restaurantleiters bewerben." />
+  <string name="Txt619" text="Willkommen, ich bin der Chefkoch des Restaurants, zeig mir, was du drauf hast." />
+  <string name="Txt620" text="Das ist großartig! Sie haben mich beeindruckt und ich würde Sie gerne als Restaurantleiter einstellen." />
+  <string name="Txt621" text="Danke für dein Vertrauen, ich nehme die Stelle gerne an." />
+  <string name="Txt622" text="Das ist großartig, wir werden zusammenarbeiten und das Restaurant besser und besser machen!" />
+  <string name="Txt623" text="Ich arbeite seit ein paar Monaten im Restaurant und habe den Chefkoch als sehr netten Menschen kennengelernt." />
+  <string name="Txt624" text="Ich würde gerne meine Erfahrungen und Gedanken mit ihm teilen." />
+  <string name="Txt625" text="Eines Tages nach der Arbeit" />
+  <string name="Txt626" text="Weißt du, als ich hierher kam, hatte ich niemanden, an den ich mich wenden konnte, und das Leben mit einem Kind war hart." />
+  <string name="Txt627" text="Ja, es ist gut, dass es dir jetzt endlich besser geht." />
+  <string name="Txt628" text="Ja, unser Restaurantgeschäft hat sich in den letzten Monaten verbessert." />
+  <string name="Txt629" text="Ich habe endlich ein neues Haus und kann ein neues Leben beginnen." />
+  <string name="Txt630" text="Das ist großartig. Kann ich dir bei irgendetwas helfen?" />
+  <string name="Txt631" text="Es wäre toll, wenn du mir bei den Renovierungsarbeiten helfen könntest." />
+  <string name="Txt632" text="Ich bin bereit, in jeder Hinsicht zu helfen, also lass es uns gemeinsam tun." />
+  <string name="Txt633" text="Danke, du bist ein sehr netter Mensch." />
+  <string name="Txt634" text="Gern geschehen, wir haben alle etwas zu schätzen." />
+  <string name="Txt635" text="Lucas und ich lächelten uns an und ein neuer Plan begann zu entstehen" />
+  <string name="Txt636" text="{0}Münzen" />
+  <string name="Txt637" text="Nicht genug Sterne" />
+  <string name="Txt638" text="Überspringen Sie" />
+  <string name="Txt639" text="Rweards" />
+  <string name="Txt640" text="Sie können es auszahlen lassen, sobald es erreicht ist" />
+  <string name="Txt641" text="Alle Auszeichnungen und Geschenkkarten stammen von mehr als 1000 Werbesponsoren aus aller Welt." />
+  <string name="Txt642" text="FREUNDEN ERZÄHLEN" />
+  <string name="Txt643" text="SPIELE FÜR MEHR" />
+  <string name="Txt644" text="Melden Sie sich jeden Tag an, um zu empfangen, können Sie 9 Tage erhalten" />
+  <string name="Txt645" text="Nachdem Sie das gesamte Geld erhalten haben, können Sie es am nächsten Tag abheben." />
+  <string name="Txt646" text="Aktuell" />
+  <string name="Txt647" text="Sie haben sich für &lt;color=#FF580A&gt;{0}&lt;/color&gt; Tage in Folge angemeldet." />
+  <string name="Txt648" text="Morgen verfügbar" />
+  <string name="Txt649" text="Alles abheben" />
+  <string name="Txt650" text="Morgen weiter sammeln, bei Unterbrechung wird der Fortschritt gelöscht" />
+  <string name="Txt651" text="TAG1" />
+  <string name="Txt652" text="TAG2" />
+  <string name="Txt653" text="TAG3" />
+  <string name="Txt654" text="TAG4" />
+  <string name="Txt655" text="TAG5" />
+  <string name="Txt656" text="TAG6" />
+  <string name="Txt657" text="TAG7" />
+  <string name="Txt658" text="TAG8" />
+  <string name="Txt659" text="TAG9" />
+  <string name="Txt660" text="TAG10" />
+</Resources>

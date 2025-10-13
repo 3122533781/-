@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ab3ac7b37eab44bbb45e1dd75c9f75, type: 3}
+  m_Name: GiftCardInfoConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - id: 1
+    name: Amazon
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}
+  - id: 2
+    name: StarBucks
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}
+  - id: 3
+    name: Walmart
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}
+  - id: 4
+    name: iTunes
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}
+  - id: 5
+    name: Target
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}
+  - id: 6
+    name: Victoria
+    sprite: {fileID: 21300000, guid: 58bc50fab30a5c24489ad9ca1de8adcb, type: 3}

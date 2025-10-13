@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c6877d35512044f96f0c307fe6d1a3, type: 3}
+  m_Name: DollarClearDataConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - id: 1
+    range: {x: 99.99, y: 200}
+    number: 0.01
+    probability: 1
+    gemRange: {x: 9999, y: 40000}
+    gemNumber: 1
+  - id: 2
+    range: {x: 99.97, y: 99.99}
+    number: 0.01
+    probability: 10
+    gemRange: {x: 9997, y: 9999}
+    gemNumber: 1
+  - id: 3
+    range: {x: 99.85, y: 99.97}
+    number: 0.01
+    probability: 100
+    gemRange: {x: 9985, y: 9997}
+    gemNumber: 1
+  - id: 4
+    range: {x: 99.68, y: 99.85}
+    number: 0.01
+    probability: 200
+    gemRange: {x: 9968, y: 9985}
+    gemNumber: 1
+  - id: 5
+    range: {x: 99.48, y: 99.68}
+    number: 0.01
+    probability: 300
+    gemRange: {x: 9948, y: 9968}
+    gemNumber: 1
+  - id: 6
+    range: {x: 99.15, y: 99.48}
+    number: 0.02
+    probability: 400
+    gemRange: {x: 9915, y: 9948}
+    gemNumber: 2
+  - id: 7
+    range: {x: 98.46, y: 99.15}
+    number: 0.06
+    probability: 500
+    gemRange: {x: 9846, y: 9915}
+    gemNumber: 6
+  - id: 8
+    range: {x: 96.66, y: 98.46}
+    number: 0.2
+    probability: 600
+    gemRange: {x: 9666, y: 9846}
+    gemNumber: 20
+  - id: 9
+    range: {x: 93.66, y: 96.66}
+    number: 0.6
+    probability: 600
+    gemRange: {x: 9366, y: 9666}
+    gemNumber: 60
+  - id: 10
+    range: {x: 79.46, y: 93.66}
+    number: 1.15
+    probability: 750
+    gemRange: {x: 7946, y: 9366}
+    gemNumber: 115
+  - id: 11
+    range: {x: 57, y: 79.46}
+    number: 2.42
+    probability: 900
+    gemRange: {x: 5700, y: 7946}
+    gemNumber: 242
+  - id: 12
+    range: {x: 40, y: 57}
+    number: 4.2
+    probability: 900
+    gemRange: {x: 4000, y: 5700}
+    gemNumber: 420
+  - id: 13
+    range: {x: 15, y: 40}
+    number: 7
+    probability: 1000
+    gemRange: {x: 1500, y: 4000}
+    gemNumber: 700
+  - id: 14
+    range: {x: 10, y: 15}
+    number: 5
+    probability: 1000
+    gemRange: {x: 1000, y: 1500}
+    gemNumber: 500
+  - id: 15
+    range: {x: 0, y: 10}
+    number: 10
+    probability: 1000
+    gemRange: {x: 0, y: 1000}
+    gemNumber: 1000

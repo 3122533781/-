@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab945650ce2c7743b1467f01cb0a7f9, type: 3}
+  m_Name: SpriteManager
+  m_EditorClassIdentifier: 
+  pipeIcon: {fileID: 21300000, guid: b3bdcf88b9f4bff4b848472ff3e08d76, type: 3}
+  headIcon:
+  - {fileID: 21300000, guid: 1813ad531511d1d4987f055a83a0f957, type: 3}
+  - {fileID: 21300000, guid: 2f4bc83c7ead4a0438593be378a0b210, type: 3}
+  - {fileID: 21300000, guid: 0fb101f5a8b2d9e4bac23ffc8a60fb8f, type: 3}
+  - {fileID: 21300000, guid: e947fd7a7a1ff8843a4f659cf7e1d764, type: 3}
+  - {fileID: 21300000, guid: 06be55122b166f94eb9dba43ca7a904c, type: 3}
+  - {fileID: 21300000, guid: fb6f871c3952dd5449c1038b12678456, type: 3}
+  - {fileID: 21300000, guid: daebc845a1943aa4baa02bab368e058b, type: 3}
+  - {fileID: 21300000, guid: ef9e44ce3600fa5488eb0542724bba93, type: 3}
+  - {fileID: 21300000, guid: 9cba56d9de6438149810774ae493e4ad, type: 3}
+  ballIcon:
+  - {fileID: 21300000, guid: 1813ad531511d1d4987f055a83a0f957, type: 3}
+  - {fileID: 21300000, guid: 2f4bc83c7ead4a0438593be378a0b210, type: 3}
+  - {fileID: 21300000, guid: 0fb101f5a8b2d9e4bac23ffc8a60fb8f, type: 3}
+  - {fileID: 21300000, guid: e947fd7a7a1ff8843a4f659cf7e1d764, type: 3}
+  - {fileID: 21300000, guid: 06be55122b166f94eb9dba43ca7a904c, type: 3}
+  - {fileID: 21300000, guid: fb6f871c3952dd5449c1038b12678456, type: 3}
+  - {fileID: 21300000, guid: daebc845a1943aa4baa02bab368e058b, type: 3}
+  - {fileID: 21300000, guid: ef9e44ce3600fa5488eb0542724bba93, type: 3}
+  - {fileID: 21300000, guid: 9cba56d9de6438149810774ae493e4ad, type: 3}
+  - {fileID: 21300000, guid: 4a36fad486d3dbd4daa5a47b6c46d55e, type: 3}
+  - {fileID: 21300000, guid: 9a7382a7d9ea373428d507be94df6f2f, type: 3}
+  grayBallIcon: {fileID: 21300000, guid: 2be9db1581597ce48a1bab2fb5cb145f, type: 3}
+  skinData: {fileID: 11400000, guid: f442b0d8d41974342ad4e8cb3d26705f, type: 2}
+  toolIcon:
+  - {fileID: 21300000, guid: 81128940362c88e4fb2aa66bd72192c5, type: 3}
+  - {fileID: 21300000, guid: 80a634fc614a68d4da4e7027cd0f8e58, type: 3}
+  - {fileID: 21300000, guid: 3180f6d16a1a09a4ca08a682165789f9, type: 3}
+  pipeHeadIcon:
+  - {fileID: 21300000, guid: 0e23f8e391402884d8f5686fdeb9e3b4, type: 3}
+  - {fileID: 21300000, guid: ea3ae309c05aba346bdb545d2a8b81a7, type: 3}
+  - {fileID: 21300000, guid: 31d84dd67e9275848bf699dfcf41656f, type: 3}
+  - {fileID: 21300000, guid: 4d0a7428c6a86fd47892e3a005a5ebd7, type: 3}
+  - {fileID: 21300000, guid: faa779428a3b7734187bf791dcac23d9, type: 3}
+  - {fileID: 21300000, guid: 64286fb8d72e4a040a427d096f022d98, type: 3}
+  - {fileID: 21300000, guid: 395da7053cdbea24990e4fc14f418c6f, type: 3}
+  - {fileID: 21300000, guid: 23fd46a11fb36df4b9798d655e08963a, type: 3}
+  pipeBodyIcon:
+  - {fileID: 21300000, guid: 5fb4a0e878ed29149b37aae567fe6d4a, type: 3}
+  - {fileID: 21300000, guid: b73efc9b282064a469da9d5c070e61a4, type: 3}
+  - {fileID: 21300000, guid: 2f705b673dce1644593a8a2e974a6d68, type: 3}
+  - {fileID: 21300000, guid: 22dfe92389f85b54eba2f4e21e33b03c, type: 3}
+  - {fileID: 21300000, guid: aade01215114dbb4782c3f8da097ac34, type: 3}
+  - {fileID: 21300000, guid: eb15d71d5ca9a7f45a251de98b4caf26, type: 3}
+  - {fileID: 21300000, guid: f8768d2c7361e664ebb659ef2cbd64f5, type: 3}
+  - {fileID: 21300000, guid: 16fd093a8ff55254e91f5bfb72585e8a, type: 3}
+  specialBall:
+  - {fileID: 21300000, guid: 4a36fad486d3dbd4daa5a47b6c46d55e, type: 3}
+  - {fileID: 21300000, guid: 9a7382a7d9ea373428d507be94df6f2f, type: 3}
+  goodTypeIcon:
+  - goodType: 14
+    subType: 0
+    sprite: {fileID: 21300000, guid: 1389aa965907a2a4aa61c5acc5ff9ee1, type: 3}
+  - goodType: 4
+    subType: 1
+    sprite: {fileID: 21300000, guid: 80a634fc614a68d4da4e7027cd0f8e58, type: 3}
+  - goodType: 4
+    subType: 2
+    sprite: {fileID: 21300000, guid: 3180f6d16a1a09a4ca08a682165789f9, type: 3}
+  - goodType: 0
+    subType: 0
+    sprite: {fileID: 21300000, guid: 81128940362c88e4fb2aa66bd72192c5, type: 3}
+  - goodType: 13
+    subType: 0
+    sprite: {fileID: 21300000, guid: d3d4ded46adf0b045b201c1141b6487f, type: 3}

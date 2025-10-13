@@ -1,0 +1,260 @@
+{
+    "Summary": {
+        "YooVersion": "1.4.17",
+        "UnityVersion": "2021.3.15f1c1",
+        "BuildDate": "2023/12/4 11:53:45",
+        "BuildSeconds": 5,
+        "BuildTarget": 13,
+        "BuildPipeline": 0,
+        "BuildMode": 0,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "2023-12-04-713",
+        "EnableAddressable": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "UniqueBundleName": false,
+        "SharedPackRuleClassName": "YooAsset.Editor.ZeroRedundancySharedPackRule",
+        "EncryptionServicesClassName": "YooAsset.Editor.EncryptionNone",
+        "OutputNameStyle": 1,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "AssetFileTotalCount": 24,
+        "MainAssetTotalCount": 18,
+        "AllBundleTotalCount": 1,
+        "AllBundleTotalSize": 318637,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0,
+        "RawBundleTotalCount": 0,
+        "RawBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "ConstantConfig",
+            "AssetPath": "Assets/Configs/ConstantConfig.asset",
+            "AssetGUID": "c7a446c356f6f66469ddc905a24c8d76",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "DollarClearDataConfig",
+            "AssetPath": "Assets/Configs/DollarClearDataConfig.asset",
+            "AssetGUID": "b6507a718c8aff04bb67f2ce5ccdb893",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "GiftCardInfoConfig",
+            "AssetPath": "Assets/Configs/GiftCardInfoConfig.asset",
+            "AssetGUID": "df2a7cfcaa6a6fe4d82fd1cbb18b790b",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": [
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka4.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka6.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka1.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka5.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka3.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka2.png"
+            ]
+        },
+        {
+            "Address": "GiftCardRedeemConfig",
+            "AssetPath": "Assets/Configs/GiftCardRedeemConfig.asset",
+            "AssetGUID": "8d4e9d22d45bb87439f5c48fd2e1ffc5",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "GoodsConfig",
+            "AssetPath": "Assets/Configs/GoodsConfig.asset",
+            "AssetGUID": "3ad4473ed7b8f284784d0f1e70917b75",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "GuideUIConfig",
+            "AssetPath": "Assets/Configs/GuideUIConfig.asset",
+            "AssetGUID": "82684ab98ddcd1142b76aa0eb058f1ae",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "IAPConfig",
+            "AssetPath": "Assets/Configs/IAPConfig.asset",
+            "AssetGUID": "0fe75731dae80dd448fe1fefdef42ed1",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "InGameRewardConfig",
+            "AssetPath": "Assets/Configs/InGameRewardConfig.asset",
+            "AssetGUID": "ee35dc25ef014aa49be6d5160a28d94f",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "LevelConfig",
+            "AssetPath": "Assets/Configs/LevelConfig.asset",
+            "AssetGUID": "3ffc09523cdc9ea4fac25d97a2ece971",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "MoneyRedeemConfig",
+            "AssetPath": "Assets/Configs/MoneyRedeemConfig.asset",
+            "AssetGUID": "f8022d238174a26439ad65252d9a0089",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "PipeAndBallConfig",
+            "AssetPath": "Assets/Configs/PipeAndBallConfig.asset",
+            "AssetGUID": "abf9bf8fccc764d48aacc4d631170aff",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "PriceListConfig",
+            "AssetPath": "Assets/Configs/PriceListConfig.asset",
+            "AssetGUID": "09227b69a4296e74eb79802c221b12f4",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "RedeemCountryBConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryBConfig.asset",
+            "AssetGUID": "b99ce13815d3b59449aab3917bf6ac07",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "RedeemCountryCConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryCConfig.asset",
+            "AssetGUID": "ad8c322b296b4e3479537049ff1b9d3d",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "RedeemCountryConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryConfig.asset",
+            "AssetGUID": "03fbb79b3c1abb048bc3e06d68554734",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "RolePlotConfig",
+            "AssetPath": "Assets/Configs/RolePlotConfig.asset",
+            "AssetGUID": "63ff8504127dc9644852b44ead10b56c",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "SlotMciDataConfig",
+            "AssetPath": "Assets/Configs/SlotMciDataConfig.asset",
+            "AssetGUID": "d8cc8f0be54912142bba4ad3ce8fb16f",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        },
+        {
+            "Address": "SpecialLevelConfig",
+            "AssetPath": "Assets/Configs/SpecialLevelConfig.asset",
+            "AssetGUID": "4204812472183e34e900f508372b5d14",
+            "AssetTags": [],
+            "MainBundleName": "default group.bundle",
+            "MainBundleSize": 318637,
+            "DependBundles": [],
+            "DependAssets": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "default group.bundle",
+            "FileName": "b5bc1726e829b1d3dc1a4c3a7830a3e6.bundle",
+            "FileHash": "b5bc1726e829b1d3dc1a4c3a7830a3e6",
+            "FileCRC": "15ac611d",
+            "FileSize": 318637,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": [],
+            "AllBuiltinAssets": [
+                "Assets/Configs/ConstantConfig.asset",
+                "Assets/Configs/DollarClearDataConfig.asset",
+                "Assets/Configs/GiftCardInfoConfig.asset",
+                "Assets/Configs/GiftCardRedeemConfig.asset",
+                "Assets/Configs/GoodsConfig.asset",
+                "Assets/Configs/GuideUIConfig.asset",
+                "Assets/Configs/IAPConfig.asset",
+                "Assets/Configs/InGameRewardConfig.asset",
+                "Assets/Configs/LevelConfig.asset",
+                "Assets/Configs/MoneyRedeemConfig.asset",
+                "Assets/Configs/PipeAndBallConfig.asset",
+                "Assets/Configs/PriceListConfig.asset",
+                "Assets/Configs/RedeemCountryBConfig.asset",
+                "Assets/Configs/RedeemCountryCConfig.asset",
+                "Assets/Configs/RedeemCountryConfig.asset",
+                "Assets/Configs/RolePlotConfig.asset",
+                "Assets/Configs/SlotMciDataConfig.asset",
+                "Assets/Configs/SpecialLevelConfig.asset",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka4.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka6.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka1.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka5.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka3.png",
+                "Assets/03.Sprites/Redeem/Cards/Bg_tx_lipinka2.png"
+            ]
+        }
+    ],
+    "RedundancyInfos": []
+}

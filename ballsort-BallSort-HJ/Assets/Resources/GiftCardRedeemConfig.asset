@@ -1,0 +1,402 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078752b84542dd8458478c4ab137b989, type: 3}
+  m_Name: GiftCardRedeemConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - id: 1
+    money: 10
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 0.5
+    - type: 0
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 20
+    remark: 
+    diamond: 10000
+    cardID: 1
+  - id: 2
+    money: 10
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 0.5
+    - type: 0
+      id: -1
+      value: 40
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 60
+    remark: 
+    diamond: 10000
+    cardID: 1
+  - id: 3
+    money: 10
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 0.5
+    - type: 0
+      id: -1
+      value: 60
+    - type: 1
+      id: -1
+      value: 4
+    - type: 2
+      id: -1
+      value: 150
+    remark: 
+    diamond: 10000
+    cardID: 1
+  - id: 101
+    money: 50
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 2
+    - type: 0
+      id: -1
+      value: 40
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 40
+    remark: 
+    diamond: 50000
+    cardID: 1
+  - id: 102
+    money: 50
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 2
+    - type: 0
+      id: -1
+      value: 80
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 120
+    remark: 
+    diamond: 50000
+    cardID: 1
+  - id: 103
+    money: 50
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 2
+    - type: 0
+      id: -1
+      value: 80
+    - type: 3
+      id: -1
+      value: 20
+    - type: 1
+      id: -1
+      value: 8
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+    diamond: 50000
+    cardID: 1
+  - id: 201
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 5
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 100
+    remark: 
+    diamond: 100000
+    cardID: 1
+  - id: 202
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 5
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 300
+    remark: 
+    diamond: 100000
+    cardID: 1
+  - id: 203
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 4
+      id: -1
+      value: 5
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 30
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 800
+    remark: 
+    diamond: 100000
+    cardID: 1
+  - id: 1001
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1002
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1003
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1101
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1102
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1103
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1201
+    money: 100
+    configType: T1
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 200
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1202
+    money: 100
+    configType: T2
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 600
+    remark: 
+    diamond: 40000
+    cardID: 1
+  - id: 1203
+    money: 100
+    configType: T3
+    conditionDatas:
+    - type: 0
+      id: -1
+      value: 100
+    - type: 3
+      id: -1
+      value: 50
+    - type: 4
+      id: -1
+      value: 7
+    - type: 1
+      id: -1
+      value: 10
+    - type: 2
+      id: -1
+      value: 1500
+    remark: 
+    diamond: 40000
+    cardID: 1

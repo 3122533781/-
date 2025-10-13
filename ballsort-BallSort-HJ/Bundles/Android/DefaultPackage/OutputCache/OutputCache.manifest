@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2676997617
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: default group.bundle
+      Dependencies: {}

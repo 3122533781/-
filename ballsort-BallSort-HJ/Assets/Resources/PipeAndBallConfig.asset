@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa09ac8ac300c842adc32b52eacc44c, type: 3}
+  m_Name: PipeAndBallConfig
+  m_EditorClassIdentifier: 
+  _configs:
+  - intID: 1
+    subType: 102
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 422
+  - intID: 2
+    subType: 103
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 292
+  - intID: 3
+    subType: 105
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 4
+    subType: 107
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 230
+  - intID: 5
+    subType: 109
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 6
+    subType: 111
+    ball: 120
+    pipeW: 154
+    pipeH: 142
+    pipeHSpace: 80
+    pipeWSpace: 182
+  - intID: 7
+    subType: 202
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 422
+  - intID: 8
+    subType: 203
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 292
+  - intID: 9
+    subType: 205
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 10
+    subType: 207
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 230
+  - intID: 11
+    subType: 209
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 12
+    subType: 211
+    ball: 120
+    pipeW: 154
+    pipeH: 283
+    pipeHSpace: 80
+    pipeWSpace: 182
+  - intID: 13
+    subType: 302
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 422
+  - intID: 14
+    subType: 303
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 292
+  - intID: 15
+    subType: 305
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 16
+    subType: 307
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 230
+  - intID: 17
+    subType: 309
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 18
+    subType: 311
+    ball: 120
+    pipeW: 154
+    pipeH: 424
+    pipeHSpace: 80
+    pipeWSpace: 182
+  - intID: 19
+    subType: 402
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 422
+  - intID: 20
+    subType: 403
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 292
+  - intID: 21
+    subType: 405
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 22
+    subType: 407
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 230
+  - intID: 23
+    subType: 409
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 24
+    subType: 411
+    ball: 120
+    pipeW: 154
+    pipeH: 536
+    pipeHSpace: 80
+    pipeWSpace: 182
+  - intID: 25
+    subType: 502
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 422
+  - intID: 26
+    subType: 503
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 292
+  - intID: 27
+    subType: 505
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 28
+    subType: 507
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 230
+  - intID: 29
+    subType: 509
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 210
+  - intID: 30
+    subType: 511
+    ball: 106
+    pipeW: 138
+    pipeH: 570
+    pipeHSpace: 80
+    pipeWSpace: 182

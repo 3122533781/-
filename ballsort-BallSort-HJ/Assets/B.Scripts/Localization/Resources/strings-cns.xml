@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+  <string name="iap_success" text="購買成功" />
+  <string name="yes_no_lose_data" text="確保您的網路是打開狀態，否則您有可能丟失資料" />
+  <string name="got_it" text="好的" />
+  <string name="load_bonus" text="獎勵即將到來" />
+  <string name="video_not_ready" text="視頻未準備好" />
+  <string name="rate_title" text="享受 PackPets" />
+  <string name="rate_content" text="5星評級是對我們最好的禮物，它鼓勵我們將這款遊戲做得更好！" />
+  <string name="loading" text="載入中" />
+  <string name="coin_notenough" text="金幣不足" />
+  <string name="gem_notenough" text="" />
+  <string name="manual_notenough" text="體力不足" />
+  <string name="received_success" text="領取成功" />
+  <string name="coming_soon" text="敬請期待" />
+  <string name="restorate_success" text="恢復成功" />
+  <string name="restorate_fail" text="恢復失敗" />
+  <string name="approved_payment" text="Approved,payment in progress" />
+  <string name="tag_confirm" text="Confirm" />
+  <string name="copy_link" text="Copy Link" />
+  <string name="tag_share" text="Share" />
+  <string name="already_paid" text="Already paid" />
+  <string name="tag_again" text="Again" />
+  <string name="review_des" text="Under review,please wait patiently" />
+  <string name="tag_redeem" text="Redeem" />
+  <string name="condition_watch_ad" text="Please Watch {0} AD to approve order" />
+  <string name="condition_invite_player" text="Invite {0} new users to approve the order" />
+  <string name="condition_active_player" text="Last Step: Activate {0} new users to approve the order" />
+  <string name="condition_play_game" text="Pass {0} times any levels to approve the order" />
+  <string name="tag_days" text="Day(s)" />
+  <string name="tag_invited" text="Invited:" />
+  <string name="tag_actived" text="Actived:" />
+  <string name="be_rejected" text="Be Rejected" />
+  <string name="just_cashed_out" text="just cashed out" />
+  <string name="confirm_paypal" text="Please confirm PayPal account" />
+  <string name="tag_sure" text="Confirm" />
+  <string name="tag_change" text="Modify" />
+  <string name="current_reward" text="Your current reward" />
+  <string name="input_paypal" text="Please enter your PayPal account" />
+  <string name="tag_cancel" text="Cancel" />
+  <string name="tag_submit" text="Submit" />
+  <string name="restorate" text="恢復購買" />
+  <string name="TM10000" text="沒有遊戲資訊" />
+  <string name="TM10001" text="使用者只能創建一個團隊" />
+  <string name="TM10002" text="隊伍名稱已被使用" />
+  <string name="TM10020" text="隊伍不存在" />
+  <string name="TM10021" text="使用者不是管理員" />
+  <string name="TM10022" text="使用者不是隊伍的成員" />
+  <string name="TM10025" text="用戶已經加入了這個團隊" />
+  <string name="TM10026" text="使用者已加入其他團隊" />
+  <string name="TM10027" text="使用者在不到24小時內申請了這個團隊" />
+  <string name="TM10038" text="申請資訊不存在或被處理" />
+  <string name="TM10039" text="團隊成員已滿" />
+  <string name="TM10033" text="isAgree是錯誤的，只能是1或2。" />
+  <string name="TM10041" text="用戶可以在同一時間向一個資源尋求説明" />
+  <string name="TM10042" text="詢問資訊不存在" />
+  <string name="TM10043" text="使用者不能説明自己" />
+  <string name="TM10044" text="達到最大幫助數" />
+  <string name="TM10045" text="你只能説明一次" />
+  <string name="TM10046" text="這不是你的請求" />
+  <string name="TM10050" text="任務配置不存在" />
+  <string name="TM10051" text="任務不存在" />
+  <string name="TM10052" text="任務還沒有完成" />
+  <string name="TM10054" text="任務已被認領" />
+  <string name="TM10055" text="配置中沒有找到充值資訊" />
+  <string name="TM100056" text="沒有找到禮物" />
+  <string name="TM100057" text="你不能申請這個禮物或者你已經申請了這個禮物" />
+  <string name="TM100060" text="沒有老闆配置" />
+  <string name="TM100062" text="老闆不存在" />
+  <string name="TM100063" text="老闆已被殺死" />
+  <string name="TM100064" text="老闆的參數是錯誤的" />
+  <string name="TM100066" text="你不能要求這個老闆的獎勵" />
+  <string name="TM100067" text="你已經領取了這個老闆的獎勵" />
+  <string name="TM100160" text="獎勵不存在" />
+  <string name="TM100161" text="獎勵已經過期" />
+  <string name="TM100162" text="獎勵現在不能被索取" />
+  <string name="TM100163" text="你已經獲得了這個獎勵" />
+  <string name="TM200000" text="請求異常" />
+  <string name="Txt101" text="" />
+  <string name="Txt102" text="" />
+  <string name="Txt103" text="" />
+  <string name="Txt104" text="" />
+  <string name="Txt105" text="" />
+  <string name="Txt106" text="" />
+  <string name="Txt107" text="" />
+  <string name="Txt108" text="" />
+  <string name="Txt109" text="" />
+  <string name="Txt110" text="" />
+  <string name="Txt111" text="" />
+  <string name="Txt201" text="" />
+  <string name="Txt202" text="" />
+  <string name="Txt203" text="" />
+  <string name="Txt301" text="開始" />
+  <string name="Txt302" text="20% Off" />
+  <string name="Txt303" text="設置" />
+  <string name="Txt304" text="" />
+  <string name="Txt305" text="音效" />
+  <string name="Txt306" text="語言" />
+  <string name="Txt307" text="退出" />
+  <string name="Txt308" text="確定退出嗎" />
+  <string name="Txt309" text="你將失去" />
+  <string name="Txt310" text="繼續" />
+  <string name="Txt311" text="勝利" />
+  <string name="Txt312" text="失敗" />
+  <string name="Txt313" text="恭喜獲得" />
+  <string name="Txt314" text="主螢幕" />
+  <string name="Txt315" text="下一關" />
+  <string name="Txt316" text="時間到了" />
+  <string name="Txt317" text="放棄" />
+  <string name="Txt318" text="好" />
+  <string name="Txt319" text="商店" />
+  <string name="Txt320" text="免費" />
+  <string name="Txt321" text="售盡" />
+  <string name="Txt322" text="購買體力" />
+  <string name="Txt323" text="未解鎖" />
+  <string name="Txt324" text="已複製，快去粘貼吧" />
+  <string name="Txt325" text="請稍後點擊" />
+  <string name="Txt326" text="背景" />
+  <string name="Txt327" text="設計需要" />
+  <string name="Txt328" text="困難" />
+  <string name="Txt329" text="獲得更多生命" />
+  <string name="Txt330" text="暫停" />
+  <string name="Txt331" text="返回" />
+  <string name="Txt332" text="選擇道具" />
+  <string name="Txt333" text="再試一次" />
+  <string name="Txt334" text="沒有空間了" />
+  <string name="Txt335" text="+1分鐘" />
+  <string name="Txt336" text="清理格子" />
+  <string name="Txt337" text="留下" />
+  <string name="Txt338" text="歡迎參加面試" />
+  <string name="Txt339" text="請點擊三個物品來把他們消除吧" />
+  <string name="Txt340" text="幹得好！" />
+  <string name="Txt341" text="這是你的目標，消除完目標就能獲勝" />
+  <string name="Txt342" text="給他們沒點的菜，他們可是不會收下的哦" />
+  <string name="Txt343" text="做得真棒！ 看來你已經很熟練了" />
+  <string name="Txt344" text="這裡可以看到正在排隊的顧客數量，他們可不想等很久哦" />
+  <string name="Txt345" text="这是你得到的星星，你完成的越快，收集的星星就越多" />
+  <string name="Txt346" text="閃電能幫你收集三個目標食物" />
+  <string name="Txt347" text="撤回能幫你移除格子裡最新一個食物" />
+  <string name="Txt348" text="風扇能打亂一次食物" />
+  <string name="Txt349" text="讓這關變簡單點吧！ 開始遊戲的時候多一個格子" />
+  <string name="Txt350" text="鬧鐘能增加一分鐘時間" />
+  <string name="Txt351" text="修理傢俱" />
+  <string name="Txt352" text="需要星星數：" />
+  <string name="Txt353" text="星星數不足" />
+  <string name="Txt354" text="修理" />
+  <string name="Txt355" text="會員" />
+  <string name="Txt356" text="月卡" />
+  <string name="Txt357" text="永久卡" />
+  <string name="Txt358" text="立即獲得" />
+  <string name="Txt359" text="每天領取" />
+  <string name="Txt360" text="有效期30天" />
+  <string name="Txt361" text="一次性購買 終生有效" />
+  <string name="Txt362" text="已啟動" />
+  <string name="Txt363" text="未啟動" />
+  <string name="Txt364" text="{0}天" />
+  <string name="Txt365" text="關卡寶箱" />
+  <string name="Txt366" text="星星寶箱" />
+  <string name="Txt367" text="到達&lt;color=#FFDF10&gt;{0}&lt;/color&gt;關以開啟！" />
+  <string name="Txt368" text="獲得更多&lt;color=#FFDF10&gt;星星&lt;/color&gt;以開啟！" />
+  <string name="Txt369" text="打開" />
+  <string name="Txt370" text="首充" />
+  <string name="Txt371" text="首次充值購買后 &lt;color=#F3B700&gt;連續三天&lt;/color&gt; 獲得獎勵" />
+  <string name="Txt372" text="領取{0}" />
+  <string name="Txt373" text="已領取" />
+  <string name="Txt374" text="去看看" />
+  <string name="Txt375" text="簽到" />
+  <string name="Txt376" text="{0}/{1}" />
+  <string name="Txt377" text="限時禮包" />
+  <string name="Txt378" text="恭喜你通過了{0}關，我們為您準備了超值禮包，立即購買即可獲得以上全部獎勵！" />
+  <string name="Txt379" text="已完成" />
+  <string name="Txt380" text="天哪！ 她是誰？ 你們在幹什麼？" />
+  <string name="Txt381" text="你太無聊了，這是我新女朋友，你現在從我家裡滾出去吧" />
+  <string name="Txt382" text="不要這樣對我！ 我們還有孩子" />
+  <string name="Txt383" text="要不是我可憐你，他早就甩了你" />
+  <string name="Txt384" text="我該去哪裡" />
+  <string name="Txt385" text="救命啊，我現在好冷，好餓" />
+  <string name="Txt386" text="這裡可以住一會，誰能幫幫我" />
+  <string name="Txt387" text="快來幫幫她" />
+  <string name="Txt388" text="終於找到一個避難所了" />
+  <string name="Txt389" text="我應該先把床修好" />
+  <string name="Txt390" text="請點擊三個物品來把他們消除吧" />
+  <string name="Txt391" text="真棒，加把勁繼續修理別的東西吧" />
+  <string name="Txt392" text="一共有7個格子，當7個都裝滿以後，這次裝修就失敗了，請小心" />
+  <string name="Txt393" text="説明他人裝修需要用到星星，星星可以通過餐廳顧客的好評獲得" />
+  <string name="Txt394" text="加油！ 還剩下2個傢俱就完成了！" />
+  <string name="Txt395" text="Need to pass level {0}" />
+  <string name="Txt501" text="隊伍" />
+  <string name="Txt502" text="創建" />
+  <string name="Txt503" text="個人資訊" />
+  <string name="Txt504" text="聊天" />
+  <string name="Txt505" text="我的隊伍" />
+  <string name="Txt506" text="加入" />
+  <string name="Txt507" text="成員" />
+  <string name="Txt508" text="搜索" />
+  <string name="Txt509" text="隊伍資訊" />
+  <string name="Txt510" text="id：{0}" />
+  <string name="Txt511" text="隊伍等級" />
+  <string name="Txt512" text="幫助次數" />
+  <string name="Txt513" text="等級限制" />
+  <string name="Txt514" text="等級" />
+  <string name="Txt515" text="沒有找到隊伍" />
+  <string name="Txt516" text="{0} 求助體力" />
+  <string name="Txt517" text="説明" />
+  <string name="Txt518" text="求助" />
+  <string name="Txt519" text="聊天" />
+  <string name="Txt520" text="創建和領導你的隊伍！" />
+  <string name="Txt521" text="隊伍名字" />
+  <string name="Txt522" text="隊伍徽章" />
+  <string name="Txt523" text="選擇" />
+  <string name="Txt524" text="隊伍簡介" />
+  <string name="Txt525" text="創建" />
+  <string name="Txt526" text="選擇徽章" />
+  <string name="Txt527" text="隊伍寶箱進度：{0}/{1}" />
+  <string name="Txt528" text="剩餘時間：{0}" />
+  <string name="Txt529" text="修改資訊" />
+  <string name="Txt530" text="保存" />
+  <string name="Txt531" text="你確定嗎？" />
+  <string name="Txt532" text="你確定要離開隊伍嗎？" />
+  <string name="Txt533" text="頭像" />
+  <string name="Txt534" text="頭像框" />
+  <string name="Txt535" text="修改暱稱" />
+  <string name="Txt536" text="請輸入你想修改的昵稱" />
+  <string name="Txt537" text="邀請" />
+  <string name="Txt538" text="你收到了隊伍的邀請，快來看看吧！" />
+  <string name="Txt539" text="隊伍名字或id..." />
+  <string name="Txt540" text="通過10關" />
+  <string name="Txt541" text="通過100關" />
+  <string name="Txt542" text="通過300關" />
+  <string name="Txt543" text="通過600關" />
+  <string name="Txt544" text="通過1000關" />
+  <string name="Txt545" text="累計簽到7天" />
+  <string name="Txt546" text="累計簽到30天" />
+  <string name="Txt547" text="累計簽到90天" />
+  <string name="Txt548" text="首次充值" />
+  <string name="Txt549" text="累計充值5美元" />
+  <string name="Txt550" text="累計充值20美元" />
+  <string name="Txt551" text="累計充值50美元" />
+  <string name="Txt552" text="喜歡我們遊戲？" />
+  <string name="Txt553" text="謝謝你玩我們遊戲！一個五星好評是給我們最好的禮物，能鼓勵我們把這遊戲做得更好" />
+  <string name="Txt554" text="在線獎勵" />
+  <string name="Txt555" text="在線時長" />
+  <string name="Txt556" text="Sophia" />
+  <string name="Txt557" text="Lucas" />
+  <string name="Txt558" text="個人排行榜" />
+  <string name="Txt559" text="團隊排行榜" />
+  <string name="Txt560" text="賽季結束於" />
+  <string name="Txt561" text="限量優惠" />
+  <string name="Txt562" text="去除廣告並獲得200金幣" />
+  <string name="Txt563" text="繼續廣告" />
+  <string name="Txt564" text="去廣告" />
+  <string name="Txt565" text="雙倍領取" />
+  <string name="Txt566" text="點擊領取" />
+  <string name="Txt567" text="Let us help!" />
+  <string name="Txt568" text="在本級獲得額外一分鐘。" />
+  <string name="Txt569" text="在本關獲得額外空間。" />
+  <string name="Txt570" text="看廣告" />
+  <string name="Txt571" text="劇情故事" />
+  <string name="Txt572" text="我需要你的説明" />
+  <string name="Txt573" text="謝謝你的説明" />
+  <string name="Txt574" text="完成前置故事解鎖當前場景" />
+  <string name="Txt575" text="數據下載" />
+  <string name="Txt576" text="數據下載中" />
+  <string name="Txt577" text="即將下載新增數據" />
+  <string name="Txt578" text="建議您在Wi-Fi環境中下載，根據網速情況，可能會花費較多時間。" />
+  <string name="Txt579" text="登錄遊戲" />
+  <string name="Txt580" text="SIGN IN WITH FACEBOOK" />
+  <string name="Txt581" text="SIGN IN WITH GOOGLE" />
+  <string name="Txt582" text="直接遊玩" />
+  <string name="Txt583" text="下載失敗，是否繼續下載？" />
+  <string name="Txt584" text="獲得星星" />
+  <string name="Txt585" text="FACEBOOK" />
+  <string name="Txt586" text="GOOGLE" />
+  <string name="Txt587" text="切換帳號" />
+  <string name="Txt588" text="確定要退出當前帳號並返回登錄介面嗎？" />
+  <string name="Txt589" text="購買道具" />
+  <string name="Txt590" text="APPLE" />
+  <string name="Txt591" text="SIGN IN WITH APPLE" />
+  <string name="Txt592" text="綁定失敗" />
+  <string name="Txt593" text="存錢罐" />
+  <string name="Txt594" text="收集1000金幣，以優惠價格獲得存錢罐" />
+  <string name="Txt595" text="Renovate" />
+  <string name="Txt601" text="最近工作越來越忙，很少有時間在家一起吃飯了" />
+  <string name="Txt602" text="今天下班早，我匆匆趕去市場，買些新鮮食材回家" />
+  <string name="Txt603" text="好不容易有空，做一頓豐盛的晚餐給他一個驚喜吧" />
+  <string name="Txt604" text="我拎著沉重的菜籃子，來到家門口" />
+  <string name="Txt605" text="似乎有兩個人影" />
+  <string name="Txt606" text="帶著疑惑，我走進家裡" />
+  <string name="Txt607" text="親愛的，我回來了" />
+  <string name="Txt608" text="我的小家修好了，總算可以鬆口氣了" />
+  <string name="Txt609" text="有了屋簷遮風擋雨，生活開銷還得想辦法解決" />
+  <string name="Txt610" text="我還得找工作謀生，不然我和寶寶以後該怎麼辦？" />
+  <string name="Txt611" text="工作... 該死，離婚這麼久了我都沒有工作" />
+  <string name="Txt612" text="讓我先想想，我能做什麼工作" />
+  <string name="Txt613" text="陽光透過窗戶灑滿了房間" />
+  <string name="Txt614" text="我翻閱早報，一個顯眼的招聘啟事吸引了我的目光" />
+  <string name="Txt615" text="“本餐廳正在招聘餐廳經理，報酬豐厚，歡迎應聘！”" />
+  <string name="Txt616" text="這也許就是我的機會" />
+  <string name="Txt617" text="餐廳" />
+  <string name="Txt618" text="您好，我是來應聘餐廳經理的" />
+  <string name="Txt619" text="歡迎，我是這家餐廳的廚師長，讓我看看你的實力吧" />
+  <string name="Txt620" text="真棒，你給我留下了深刻的印象，我很願意聘請你擔任餐廳經理" />
+  <string name="Txt621" text="謝謝你的信任，我很樂意接受這個工作" />
+  <string name="Txt622" text="太好了，我們一起合作，一定能把餐廳經營的越老越好！" />
+  <string name="Txt623" text="轉眼已經在餐廳工作了幾個月，我發現廚師長是一個很好的人" />
+  <string name="Txt624" text="我很想和他分享自己的經歷和想法" />
+  <string name="Txt625" text="某天下班后" />
+  <string name="Txt626" text="你知道，我剛來時，無依無靠，帶著孩子生活很辛苦" />
+  <string name="Txt627" text="是的，好在你現在終於好起來了" />
+  <string name="Txt628" text="是的，這幾個月我們餐廳生意變好了" />
+  <string name="Txt629" text="我總算買到了一套新的房子，可以開始新的生活了" />
+  <string name="Txt630" text="這太棒了，有什麼需要我説明的嗎" />
+  <string name="Txt631" text="如果你能在裝修時幫我那就太棒了" />
+  <string name="Txt632" text="我願意提供一切説明，讓我們一起行動吧" />
+  <string name="Txt633" text="謝謝你，你真是個很好的人" />
+  <string name="Txt634" text="不客氣，我們都有值得欣賞的一面" />
+  <string name="Txt635" text="我和Lucas相視一笑，新的計劃開始萌生" />
+  <string name="Txt636" text="{0}金幣" />
+  <string name="Txt637" text="星星數不足" />
+  <string name="Txt638" text="Waive" />
+  <string name="Txt639" text="Rweards" />
+</Resources>

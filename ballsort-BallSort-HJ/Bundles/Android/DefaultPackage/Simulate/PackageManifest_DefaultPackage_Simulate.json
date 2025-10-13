@@ -1,0 +1,167 @@
+{
+    "FileVersion": "1.4.17",
+    "EnableAddressable": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 1,
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "Simulate",
+    "AssetList": [
+        {
+            "Address": "ConstantConfig",
+            "AssetPath": "Assets/Configs/ConstantConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "DollarClearDataConfig",
+            "AssetPath": "Assets/Configs/DollarClearDataConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "GiftCardInfoConfig",
+            "AssetPath": "Assets/Configs/GiftCardInfoConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "GiftCardRedeemConfig",
+            "AssetPath": "Assets/Configs/GiftCardRedeemConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "GoodsConfig",
+            "AssetPath": "Assets/Configs/GoodsConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "GuideUIConfig",
+            "AssetPath": "Assets/Configs/GuideUIConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "IAPConfig",
+            "AssetPath": "Assets/Configs/IAPConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "InGameRewardConfig",
+            "AssetPath": "Assets/Configs/InGameRewardConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "LevelConfig",
+            "AssetPath": "Assets/Configs/LevelConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "MoneyRedeemConfig",
+            "AssetPath": "Assets/Configs/MoneyRedeemConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "PipeAndBallConfig",
+            "AssetPath": "Assets/Configs/PipeAndBallConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "PriceListConfig",
+            "AssetPath": "Assets/Configs/PriceListConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "RedeemCountryBConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryBConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "RedeemCountryCConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryCConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "RedeemCountryConfig",
+            "AssetPath": "Assets/Configs/RedeemCountryConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "RolePlotConfig",
+            "AssetPath": "Assets/Configs/RolePlotConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "SlotMciDataConfig",
+            "AssetPath": "Assets/Configs/SlotMciDataConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        },
+        {
+            "Address": "SpecialLevelConfig",
+            "AssetPath": "Assets/Configs/SpecialLevelConfig.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "default group.bundle",
+            "FileHash": "00000000000000000000000000000000",
+            "FileCRC": "00000000",
+            "FileSize": 0,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": [],
+            "ReferenceIDs": []
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &158360203490248626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158360203490248627}
+  - component: {fileID: 158360203490248636}
+  - component: {fileID: 3978417146531916808}
+  m_Layer: 0
+  m_Name: PoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &158360203490248627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158360203490248626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158360203490248636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158360203490248626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ec7d5a544914273a393fb81790af62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _poolInfos:
+  - ID: SoundPoint
+    Prefab: {fileID: 5980528997436158918, guid: 1450ff054cf010d44bd64110e0272cf2, type: 3}
+    InitialCapacity: 5
+  - ID: CoinFlyObject
+    Prefab: {fileID: 9078347144484626099, guid: c4054b397f6c881418186572c4787d39, type: 3}
+    InitialCapacity: 20
+  - ID: MergeEffect
+    Prefab: {fileID: 1204997178063415929, guid: c83b1ce59f90c0a4c967ca446ec3b505, type: 3}
+    InitialCapacity: 7
+  - ID: GoldenBlock_UI
+    Prefab: {fileID: 7311559328015394567, guid: 25b010ba376513b4cbe5bbee44bff430, type: 3}
+    InitialCapacity: 5
+  - ID: UIUpingText
+    Prefab: {fileID: 1081135377993338354, guid: be48c6982c7b3894695b8f5da860968d, type: 3}
+    InitialCapacity: 5
+  - ID: Gold_Point
+    Prefab: {fileID: 9153825487623330517, guid: b957d5c6b59b6b4428006f57a97f7738, type: 3}
+    InitialCapacity: 2
+  - ID: Gold_Button
+    Prefab: {fileID: 5045310109144797077, guid: dc71ff46479e25547ac14690e24d50c0, type: 3}
+    InitialCapacity: 2
+  - ID: TipClick_in
+    Prefab: {fileID: 3828323109647703384, guid: 96fccb0d048f49d4a95d92942b32b8da, type: 3}
+    InitialCapacity: 1
+  - ID: MoneyFlyObject
+    Prefab: {fileID: 6265459675836545397, guid: 55991a96e664c574a81ce8c2bdcdfd35, type: 3}
+    InitialCapacity: 1
+  - ID: StarFlyObject
+    Prefab: {fileID: 6265459675836545397, guid: c9ebef17f0194754d8fd76beab7de29b, type: 3}
+    InitialCapacity: 1
+  - ID: BigTurnFlyObject
+    Prefab: {fileID: 6265459675836545397, guid: daed682b6f08e484d875eabf2d43861e, type: 3}
+    InitialCapacity: 1
+  - ID: BigTurnMoneyFlyObject
+    Prefab: {fileID: 6265459675836545397, guid: 82e0b097ede126e4a9b79d9d24c3e791, type: 3}
+    InitialCapacity: 1
+  - ID: GemFlyObject
+    Prefab: {fileID: 6265459675836545397, guid: a4452427dd5a09749bad2f551548076c, type: 3}
+    InitialCapacity: 20
+--- !u!114 &3978417146531916808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158360203490248626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79c1694f805d9b4c8a28e3e710cd8b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae1a0a22e9fa8347bb55bbd4aa01a49, type: 3}
+  m_Name: LocalizationConfig
+  m_EditorClassIdentifier: 
+  LanguageList:
+  - LanguageName: "\u7B80\u4F53\u4E2D\u6587"
+    LangaugeCode: cn
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 1
+      FontTextUnitHeight: 1.3
+  - LanguageName: English
+    LangaugeCode: en
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
+  - LanguageName: "Fran\xE7ais"
+    LangaugeCode: fr
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
+  - LanguageName: Deutsch
+    LangaugeCode: de
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
+  - LanguageName: "Espa\xF1ol"
+    LangaugeCode: es
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
+  - LanguageName: "Portugu\xEAs"
+    LangaugeCode: pt
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
+  - LanguageName: "\u65E5\u672C\u8A9E"
+    LangaugeCode: jp
+    FontData:
+      Font: {fileID: 12800000, guid: b0e97d38200179749878036b8e95e2d3, type: 3}
+      FontTextUnitWidth: 0.5
+      FontTextUnitHeight: 1.3
