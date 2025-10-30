@@ -1,0 +1,20 @@
+
+DaoLuan_01.png
+size: 199,165
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DaoLuan_01_1
+  rotate: true
+  xy: 122, 2
+  size: 161, 75
+  orig: 161, 75
+  offset: 0, 0
+  index: -1
+DaoLuan_01_2
+  rotate: false
+  xy: 2, 43
+  size: 118, 120
+  orig: 171, 121
+  offset: 15, 1
+  index: -1

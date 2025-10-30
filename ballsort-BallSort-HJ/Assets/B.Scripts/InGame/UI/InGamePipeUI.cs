@@ -34,14 +34,15 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] public RectTransform pipeControllerPanel;
 
         [SerializeField] private ParticleSystem fullPipeEff;
-        [SerializeField] private SkeletonGraphic skeletonGraphic;
-        [SerializeField] private SkeletonGraphic skeletonGraphic2;
-        [SerializeField] private SkeletonGraphic FreezeskeletonGraphic;
+        [SerializeField] private SkeletonAnimation skeletonGraphic;
+        [SerializeField] private SkeletonAnimation skeletonGraphic2;
+        [SerializeField] private SkeletonAnimation FreezeskeletonGraphic;
         [SerializeField] private GameObject SpinegameObject;
-        [SerializeField] private Image image;
+        [SerializeField] private Image Typeimage;
         [SerializeField] private Image BottomImage;
         [SerializeField] private Image FreezeImage;
-        [SerializeField] private SkeletonGraphic BottomskeletonGraphic;
+        [SerializeField] private Image BodyImage;
+        [SerializeField] private SkeletonAnimation BottomskeletonGraphic;
         [SerializeField] private Text NumberTxt;
         [SerializeField] private RectTransform FenJieXian;
         public readonly Common.Stack<InGameBallUI> BallLevelEdits = new Common.Stack<InGameBallUI>();
@@ -54,7 +55,8 @@ namespace _02.Scripts.InGame.UI
         public bool CanClick;
         [SerializeField] private GameObject AdObject;
         [SerializeField] private GameObject ClickObject;
-
+        [SerializeField] private GameObject PanelObjs;
+        [SerializeField] private Sprite Sprite1;
         private void OnEnable()
         {
             pipeButton.onClick.AddListener(ClickPipe);
@@ -69,7 +71,39 @@ namespace _02.Scripts.InGame.UI
             SpriteManager.Instance.RemovePipeData(this);
             EventDispatcher.instance.UnRegist(AppEventType.PlayerPipeSkinChange, RefreshSKin);
         }
+        private void DisAppearObjs()
+        {
+            // 1. 将BottomImage的透明度设为0（保留RGB颜色，仅修改alpha通道）
+            if (BodyImage != null) // 空引用防护：避免组件未赋值导致报错
+            {
+                Color bottomImageColor = BodyImage.color;
+                bottomImageColor.a = 0f; // alpha设为0，完全透明
+                BodyImage.color = bottomImageColor;
 
+                // 原有逻辑：设置点击检测最小透明度阈值（0表示透明时不响应点击，可保留）
+                BodyImage.alphaHitTestMinimumThreshold = 0;
+            }
+
+            // 2. 将PanelObjs下所有子物体（含自身）的Image透明度设为0
+            if (PanelObjs != null) // 空引用防护：避免PanelObjs未赋值导致报错
+            {
+                // 获取PanelObjs及其所有子物体上的Image组件（includeInactive=true：包含未激活的子物体）
+                Image[] panelImages = PanelObjs.GetComponentsInChildren<Image>(includeInactive: true);
+
+                foreach (Image img in panelImages)
+                {
+                    if (img != null) // 二次防护：避免个别子物体无Image组件导致报错
+                    {
+                        Color imgColor = img.color;
+                        imgColor.a = 0f; // alpha设为0，完全透明
+                        img.color = imgColor;
+
+                        // 可选：如果子物体也需要禁用点击检测，可添加这行（按需选择）
+                        // img.alphaHitTestMinimumThreshold = 0;
+                    }
+                }
+            }
+        }
         private void InitVerticalLayoutSettings()
         {
             void SetLayoutCommon(VerticalLayoutGroup layout, ContentSizeFitter fitter)
@@ -124,7 +158,11 @@ namespace _02.Scripts.InGame.UI
             if (_pipeData.exclusiveType == Typeexclusive.None || pipeExclusiveValue == ballTypeValue)
                 return true;
             else
+            {
+               
                 return false;
+            }
+             
         }
 
         public void UndoInit()
@@ -143,6 +181,7 @@ namespace _02.Scripts.InGame.UI
                 FreezeskeletonGraphic.gameObject.SetActive(true);
                 isFreezePipe = true;
                 FreezeImage.sprite = SpriteManager.Instance.FreezeIcon(initPipeData.freezetype);
+                FreezeImage.SetNativeSize();
             }
             else
             {
@@ -160,16 +199,19 @@ namespace _02.Scripts.InGame.UI
 
             if (initPipeData.exclusiveType != Typeexclusive.None)
             {
-                image.sprite = SpriteManager.Instance.HeadIcon(initPipeData.exclusiveType);
-                image.SetNativeSize();
+                Typeimage.sprite = SpriteManager.Instance.HeadIcon(initPipeData.exclusiveType);
+                Debug.Log("类型" + initPipeData.exclusiveType);
+                Typeimage.SetNativeSize();
             }
-            else image.gameObject.SetActive(false);
+            else Typeimage.transform.parent.gameObject.SetActive(false);
 
             AdObject.SetActive(initPipeData.isneedad == IsNeedAD.NeedAd);
 
             if (initPipeData.pipeCapacity != PipeCapacity.Capacity4)
             {
-                NumberTxt.text = $"{(int)initPipeData.pipeCapacity}";
+                BodyImage.sprite = Sprite1;
+                BodyImage.SetNativeSize();
+              //  NumberTxt.text = $"{(int)initPipeData.pipeCapacity}";
             }
             else
             {
@@ -199,7 +241,7 @@ namespace _02.Scripts.InGame.UI
         {
             BottomImage.gameObject.SetActive(false);
             BottomskeletonGraphic.gameObject.SetActive(true);
-            BottomskeletonGraphic.AnimationState.SetAnimation(0, "star", false);
+            BottomskeletonGraphic.AnimationState.SetAnimation(0, "animation", false);
         }
 
         public void UnFreeze()
@@ -207,7 +249,7 @@ namespace _02.Scripts.InGame.UI
             if (!_isPlayedFreeze)
             {
                 FreezeImage.gameObject.SetActive(false);
-                FreezeskeletonGraphic.AnimationState.SetAnimation(0, "2", false);
+                FreezeskeletonGraphic.AnimationState.SetAnimation(0, "animation", false);
                 _isPlayedFreeze = true;
                 isFreezePipe = false;
             }
@@ -387,7 +429,10 @@ namespace _02.Scripts.InGame.UI
         {
             _context.GetController<InGameMatchController>().ClickPipe(this);
         }
-
+        private void DeleteStepData()
+        {
+            _context.GetController<InGameMatchController>().ClearAllRevocationData();
+        }
         public bool PipeFullOrEmpty()
         {
             if (BallLevelEdits.Count == 0)
@@ -436,10 +481,14 @@ namespace _02.Scripts.InGame.UI
             }
             if (IsFullAndOneType())
             {
-                fullPipeEff.Play();
+                //  fullPipeEff.Play();
+               
                 SpinegameObject.SetActive(true);
-                skeletonGraphic.AnimationState.SetAnimation(0, "penshui", false);
+                skeletonGraphic.AnimationState.SetAnimation(0, "animation", false);
+                Context.GetModel<InGameModel>().EndFinishNumber += 1;
+                Context.GetView<InGamePlayingUI>().SetBar();
                 CanClick = false;
+                DeleteStepData();
                 if (BallLevelEdits.Count > 0)
                 {
                     InGameBallUI topBall = BallLevelEdits.Peek();
@@ -483,9 +532,9 @@ namespace _02.Scripts.InGame.UI
                             break;
                     }
                 }
-
+                DisAppearObjs();
                 skeletonGraphic.AnimationState.Complete += OnAnimationComplete;
-                skeletonGraphic2.AnimationState.Complete += OnAnimationComplete2;
+               // skeletonGraphic2.AnimationState.Complete += OnAnimationComplete2;
                 _isPlayed = true;
 
                 foreach (var ball in BallLevelEdits)
@@ -507,7 +556,7 @@ namespace _02.Scripts.InGame.UI
         {
             SpinegameObject.SetActive(false);
             skeletonGraphic2.gameObject.SetActive(true);
-            skeletonGraphic2.AnimationState.SetAnimation(0, "one", false);
+            skeletonGraphic2.AnimationState.SetAnimation(0, "animation", false);
         }
 
         void OnAnimationComplete2(Spine.TrackEntry trackEntry)
@@ -562,7 +611,7 @@ namespace _02.Scripts.InGame.UI
             var h = InGameManager.Instance.pipeSizeConfig.GetTotalHigh(_pipeData.pipeCapacity);
             var w = InGameManager.Instance.pipeSizeConfig.GetWidth();
             var currentAlreadySpawn = pipeControllerEmpty.Count;
-            rootRectTransform.sizeDelta = new Vector2(w, h);
+          //  rootRectTransform.sizeDelta = new Vector2(w, h);
 
          
 

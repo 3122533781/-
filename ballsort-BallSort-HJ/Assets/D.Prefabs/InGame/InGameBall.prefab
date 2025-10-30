@@ -139,7 +139,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -540, y: -1920}
-  m_SizeDelta: {x: 101, y: 57}
+  m_SizeDelta: {x: 152, y: 152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3221246599590765388
 CanvasRenderer:
@@ -166,6 +166,7 @@ MonoBehaviour:
   grayIcon: {fileID: 433385325106597906}
   obj1: {fileID: 7101664633178064823}
   obj2: {fileID: 7848825545923365385}
+  _isBlackBall: 0
 --- !u!114 &2160682128443643412
 MonoBehaviour:
   m_ObjectHideFlags: 0

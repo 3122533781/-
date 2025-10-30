@@ -24,8 +24,6 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private Button revocationTool;
         [SerializeField] private Button addNewPipeTool;
         [SerializeField] private Button RemoveTool;
-
-        // [SerializeField] private DialogButtonItem removeAdActive;
         [SerializeField] private SmartLocalizedText levelTxt;
         [SerializeField] private SmartLocalizedText ProgressTxt;
         [SerializeField] private SmartLocalizedText TimeTxt;
@@ -34,15 +32,20 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private SmartLocalizedText RebackTxt;
         [SerializeField] private Image revocationToolAdIcon;
         [SerializeField] private Image addPipeToolAdIcon;
+        [SerializeField] private GameObject PlusAd;
+        [SerializeField] private GameObject RemoveAd;
+        [SerializeField] private GameObject RebackAd;
         [SerializeField] private List<GameObject> redeemBtn;
         [SerializeField] private ProgressBar _bar = null;
+        [SerializeField] private ProgressBarMarkerGenerator _barNumber;
+        public float _barBegin = 0f;
+      
         private void OnEnable()
         {
             if (Game.Instance.Model.IsWangZhuan())
             {
                 btnback.SetActive(false);
                 btnSetting.gameObject.SetActive(true);
-                //  skinEntryBtn.gameObject.SetActive(true);
             }
             btnSetting.onClick.AddListener(ClickSetting);
             btnback.onClick.AddListener(ClickBack);
@@ -66,7 +69,6 @@ namespace _02.Scripts.InGame.UI
             revocationTool.onClick.RemoveListener(RevocationTool);
             addNewPipeTool.onClick.RemoveListener(AddNewPipe);
             RemoveTool.onClick.RemoveListener(RemoveBall);
-            // removeAdDialog.onClick.RemoveListener(ShowRemoveAdDialog);
 
             Game.Instance.Model.CanRedeem.OnValueChange -= HandleCanRedeemChange;
             EventDispatcher.instance.UnRegist(AppEventType.PlayerStepCountChange, RefreshUI);
@@ -74,19 +76,55 @@ namespace _02.Scripts.InGame.UI
             Game.Instance.CurrencyModel.UnregisterToolChangeAction(GoodType.Tool, GoodSubType.RevocationTool, RefreshUI);
             Game.Instance.CurrencyModel.UnregisterToolChangeAction(GoodType.Tool, GoodSubType.RemoveTool, RefreshUI);
         }
+
         public void SetBar()
         {
-            float temp = Context.GetCompletionRate();
-            _bar.UpdateProgressSmooth(temp / 100f);
-
-            ProgressTxt.text = $"进度{temp}%";
+            float temp = Context.GetCompletionRate(Game.Instance.LevelModel.TypeNumber);
+            Debug.Log($"真正进度条222：{_barBegin}%" + "  " + temp);
+            _barBegin += temp;
+            Debug.Log($"真正进度条：{_barBegin}%");
+            _bar.UpdateProgressSmooth(_barBegin / 100f);
         }
+
+        public void ShowGUide(int temp)
+        {
+            switch (temp)
+            {
+                case 5:
+                    if(Game.Instance.LevelModel.GuideGroup.Value<1)
+                    DialogManager.Instance.GetDialog<GuideDialog>().InitDialog(1);
+                    break;
+                case 10:
+                    if (Game.Instance.LevelModel.GuideGroup.Value<2)
+                        DialogManager.Instance.GetDialog<GuideDialog>().InitDialog(2);
+                    break;
+                case 20:
+                    if (Game.Instance.LevelModel.GuideGroup.Value <3)
+                        DialogManager.Instance.GetDialog<GuideDialog>().InitDialog(3);
+                    break;
+                case 30:
+                    if (Game.Instance.LevelModel.GuideGroup.Value <4)
+                        DialogManager.Instance.GetDialog<GuideDialog>().InitDialog(4);
+                    break;
+                case 40:
+                    if (Game.Instance.LevelModel.GuideGroup.Value <5)
+                        DialogManager.Instance.GetDialog<GuideDialog>().InitDialog(5);
+                    break;
+            }
+        }
+
+        public void SetBarNumberTo(int temp)
+        {
+            _barNumber.GenerateEqualMarkers(temp, 10f);
+        }
+
         public void SetBarToZero()
         {
             _bar.UpdateProgress(0);
-
-            ProgressTxt.text = $"进度{0}%";
+         //   TypeNumber = Context.GetBallsType();
+          //  Debug.Log("数量为"+TypeNumber);
         }
+
         private void RefreshUI(int arg1, int arg2)
         {
             RefreshUI();
@@ -101,15 +139,18 @@ namespace _02.Scripts.InGame.UI
         {
             DialogManager.Instance.GetDialog<OptionDialog>().ShowDialog();
         }
+
         public void SetTimeText(string text)
         {
             TimeTxt.text = text;
         }
+
         private void ClickBack()
         {
             TransitionManager.Instance.Transition(0.5f, () => { SceneManager.LoadScene("InGame"); },
                    0.5f);
         }
+
         public void SetTimeActive(bool b)
         {
         }
@@ -126,6 +167,40 @@ namespace _02.Scripts.InGame.UI
         public override void Deactivate()
         {
             base.Deactivate();
+        }
+
+        private void RefreshAdImage()
+        {
+            var addPipeToolCount = Game.Instance.CurrencyModel.GetGoodNumber(GoodType.Tool, GoodSubType.AddPipe);
+            var revocationToolCount = Game.Instance.CurrencyModel.GetGoodNumber(GoodType.Tool, GoodSubType.RevocationTool);
+            var removeToolCount = Game.Instance.CurrencyModel.removeTool.Value;
+
+            if (addPipeToolCount < 1)
+            {
+                PlusAd.SetActive(true);
+            }
+            else
+            {
+                PlusAd.SetActive(false);
+            }
+
+            if (revocationToolCount < 1)
+            {
+                RebackAd.SetActive(true);
+            }
+            else
+            {
+                RebackAd.SetActive(false);
+            }
+
+            if (removeToolCount < 1)
+            {
+                RemoveAd.SetActive(true);
+            }
+            else
+            {
+                RemoveAd.SetActive(false);
+            }
         }
 
         public void Restart()
@@ -148,25 +223,10 @@ namespace _02.Scripts.InGame.UI
             }
         }
 
-        #region ADS
-
-        /// <summary>
-        /// 插屏广告
-        /// </summary>
-        // private void ShowIntersistal()
-        // {
-        //     if (ADMudule.IsInterstitialReady())
-        //     {
-        //         ADMudule.ShowInterstitialAds("Win",
-        //             _ => { App.Instance.RestartGame(App.Instance.LevelModel.EnterLevelID); });
-        //     }
-        // }
-
-        #endregion ADS
         private void RemoveColor()
         {
-
         }
+
         private void RevocationTool()
         {
             if (Game.Instance.CurrencyModel.CanUseTool(GoodType.Tool, GoodSubType.RevocationTool))
@@ -194,7 +254,6 @@ namespace _02.Scripts.InGame.UI
                 Context.GetController<InGameMapController>().AddNewPipe(() =>
                 {
                     Game.Instance.CurrencyModel.ConsumeGoodNumber(GoodType.Tool, (int)GoodSubType.AddPipe, 1);
-
                 });
             }
             else
@@ -210,11 +269,9 @@ namespace _02.Scripts.InGame.UI
             }
         }
 
-
-
         private void RemoveBall()
         {
-            if (Game.Instance.CurrencyModel.CanUseTool(GoodType.Tool, GoodSubType.RemoveTool))
+            if (true)
             {
                 Context.GetController<InGameMatchController>().ClearRandomColorTool(() =>
                 {
@@ -237,9 +294,6 @@ namespace _02.Scripts.InGame.UI
             }
         }
 
-
-
-
         public void RefreshUI()
         {
             levelTxt.text = Game.Instance.LevelModel.CopiesType == CopiesType.Thread
@@ -247,45 +301,35 @@ namespace _02.Scripts.InGame.UI
                 : "SPECIAL LEVEL";
 
             var addPipeToolCount = Game.Instance.CurrencyModel.GetGoodNumber(GoodType.Tool, GoodSubType.AddPipe);
-            var revocationToolCount =
-                Game.Instance.CurrencyModel.GetGoodNumber(GoodType.Tool, GoodSubType.RevocationTool);
+            var revocationToolCount = Game.Instance.CurrencyModel.GetGoodNumber(GoodType.Tool, GoodSubType.RevocationTool);
             var removeToolCount = Game.Instance.CurrencyModel.removeTool.Value;
+
             addPipeTxt.text = $"{addPipeToolCount}";
             RebackTxt.text = $"{revocationToolCount}";
             removeToolTxt.text = $"{removeToolCount}";
-            //if (addPipeToolCount < 1)
-            //    revocationToolTxt.SetActive(false);
-            //else revocationToolTxt.SetActive(true);
+
             addPipeToolAdIcon.SetActiveVirtual(addPipeToolCount <= 0);
             revocationToolAdIcon.SetActiveVirtual(revocationToolCount <= 0);
-
-            //revocationToolAdIcon.color = UtilClass.HexToColor(!RevocationToolOtherJug() ? "#4F4F4F" : "#FFFFFF");
-            //addPipeToolAdIcon.color = UtilClass.HexToColor(!AddPipeOtherJug() ? "#4F4F4F" : "#FFFFFF");
 
             addNewPipeTool.enabled = AddPipeOtherJug();
             addNewPipeTool.interactable = AddPipeOtherJug();
             revocationTool.enabled = RevocationToolOtherJug();
             revocationTool.interactable = RevocationToolOtherJug();
-            RemoveTool.enabled = Context.GetCompletionRate() < 0.99;
-            RemoveTool.interactable = Context.GetCompletionRate() < 0.99;
+           // RemoveTool.enabled = Context.GetCompletionRate() < 0.99;
+           // RemoveTool.interactable = Context.GetCompletionRate() < 0.99;
+
+            RefreshAdImage();
         }
 
-        //大于5管并且数量足够
         private bool AddPipeOtherJug()
         {
             return Context.GetModel<InGameModel>().CanAddPipe();
-
-
-
         }
 
-        //数量足够并且有步数
         private bool RevocationToolOtherJug()
         {
             return Context.GetController<InGameMatchController>().GetPlayerStep().Count > 0 ||
                    !Game.Instance.CurrencyModel.CanUseTool(GoodType.Tool, GoodSubType.RevocationTool);
-            // &&
-            // Game.Instance.CurrencyModel.CanUseTool(GoodType.Tool, GoodSubType.AddPipe);
         }
 
         private void HandleCanRedeemChange(bool oldValue, bool newValue)
@@ -294,16 +338,10 @@ namespace _02.Scripts.InGame.UI
             {
                 item.SetActiveVirtual(false);
             }
-
-            //  _context.GetView<FristInGameReward>().CheckIsShow();
         }
 
         public void ShowSlotItemHideBigTurn(bool showSlot)
         {
-            //老虎机按钮
-            redeemBtn[0].SetActiveVirtual(showSlot);
-            //大转盘图标
-            redeemBtn[2].SetActiveVirtual(!showSlot);
         }
     }
 }

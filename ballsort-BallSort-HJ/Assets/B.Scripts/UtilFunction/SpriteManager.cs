@@ -20,6 +20,8 @@ namespace ProjectSpace.BubbleMatch.Scripts.Util
         [Header("球")][SerializeField] private List<Sprite> ballIcon;
         [Header("？球")][SerializeField] private Sprite grayBallIcon;
         [Header("道具")][SerializeField] private List<Sprite> toolIcon;
+        [Header("背景")][SerializeField] private List<Sprite> bgIcon;
+
         [Header("管头")][SerializeField] private List<Sprite> pipeHeadIcon;
         [Header("管身")][SerializeField] private List<Sprite> pipeBodyIcon;
         [Header("特殊球")][SerializeField] private List<Sprite> specialBall;
@@ -30,11 +32,13 @@ namespace ProjectSpace.BubbleMatch.Scripts.Util
 
         private List<InGamePipeUI> inGamePipeUIs = new List<InGamePipeUI>();
 
+
+       // private static readonly Random _random = new Random();
         protected override void HandleOnEnable()
         {
             base.HandleOnEnable();
         }
-
+        //public 
         public Sprite GetGoodTypeIconByType(GoodType goodType, int subType)
         {
             var res = toolIcon[0];
@@ -64,8 +68,14 @@ namespace ProjectSpace.BubbleMatch.Scripts.Util
             //else
             //    SetThemeSkin(0);
         }
-
-  
+        
+     
+        public Sprite GetBgIcon()
+        {
+            int temp = UnityEngine.Random.Range(0, 4);
+            Debug.Log("随机到的背景是" + temp);
+            return bgIcon[temp];
+        }
 
         public Sprite GetGoodTypeIcon(GoodType type, int subType)
         {

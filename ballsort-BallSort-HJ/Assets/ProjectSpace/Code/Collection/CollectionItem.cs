@@ -1,11 +1,12 @@
 
+using ProjectSpace.Lei31Utils.Scripts.Utils2.Dialog;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CollectionItem : MonoBehaviour
 {
     [SerializeField] private Image Icon;
-
+    private CollectionGoodsData collectiondataBase;
     public void Initialize(CollectionGoodsData collectiondata)
     {
         Sprite sprite = Resources.Load<Sprite>($"Kinds/{collectiondata.name}");
@@ -15,6 +16,12 @@ public class CollectionItem : MonoBehaviour
             Debug.Log("√ª”–’“µΩÕº∆¨");
         }
         Icon.sprite = sprite;
+        collectiondataBase= collectiondata;
         //Icon.sprite=
+    }
+    public void ShowItem()
+    {
+        DialogManager.Instance.GetDialog<CollectionItemDialog>().InitDialog(collectiondataBase);
+
     }
 }

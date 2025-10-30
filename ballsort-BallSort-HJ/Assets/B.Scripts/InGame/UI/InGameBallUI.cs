@@ -37,7 +37,9 @@ namespace _02.Scripts.InGame.UI
         private BallData _ballData;
         public bool _isBlackBall;
         private Sequence _pushSequence;
-
+        private const float ScaleUpValue = 1.2f; // 放大到1.2倍
+        private const float ScaleNormalValue = 1f; // 恢复到1倍
+        private const float AnimDuration = 0.3f; // 动画时长（秒）
         private void OnEnable()
         {
             SpriteManager.Instance.AddBallData(this);
@@ -94,14 +96,50 @@ namespace _02.Scripts.InGame.UI
         public void SGLight()
         {
             obj1.gameObject.SetActive(true);
-            obj2.gameObject.SetActive(true);
-        }
-        public void CloseSG()
-        {
-            if (obj1 != null) obj1.gameObject.SetActive(false);
-            if (obj2 != null) obj2.gameObject.SetActive(false);
+            // 激活obj2
+            if (obj2 != null)
+                obj2.gameObject.SetActive(true);
+
+            // 对icon执行放大动画（带渐变效果）
+            if (icon != null)
+            {
+                // 先清除icon上的现有动画，避免冲突
+                icon.DOKill();
+
+                // 放大动画：从当前缩放过渡到ScaleUpValue，使用缓动函数让效果更自然
+                icon.transform.DOScale(ScaleUpValue, AnimDuration)
+                    .SetEase(Ease.OutQuad); // 缓出效果，开始快结束慢
+
+            
+            }
         }
 
+        public void CloseSG()
+        {
+            obj1.gameObject.SetActive(false);
+            // 对icon执行缩小动画（带渐变效果）
+            if (icon != null)
+            {
+                // 先清除icon上的现有动画，避免冲突
+                icon.DOKill();
+
+                // 缩小动画：从当前缩放过渡到ScaleNormalValue
+                icon.transform.DOScale(ScaleNormalValue, AnimDuration)
+                    .SetEase(Ease.InQuad); // 缓入效果，开始慢结束快
+
+             
+            }
+
+            // 缩小动画完成后隐藏obj2（确保动画播放完再隐藏）
+            if (obj2 != null)
+            {
+                // 延迟等于动画时长，确保缩放完成后再隐藏
+                DOVirtual.DelayedCall(AnimDuration, () =>
+                {
+                    obj2.gameObject.SetActive(false);
+                });
+            }
+        }
 
         public void StopPushAnime()
         {

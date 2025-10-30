@@ -19,7 +19,7 @@ public class CollectionGoodsData : IConfig
 
     public void InitIsHave()
     {
-        IsHave = new PersistenceData<bool>(name, false);
+        IsHave = new PersistenceData<bool>(name, true);
     }
    
 
@@ -38,9 +38,10 @@ public enum Kings
 }
 public enum Quality
 {
-    Normal,
-    Rare,
-    Limited,
-    Hidden
+    _N,
+    _R,
+    _SR,
+    _SSR,
+    _UR
 
 }

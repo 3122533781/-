@@ -1,0 +1,234 @@
+
+skeleton.png
+size: 1769,1733
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ShengLi_1
+  rotate: false
+  xy: 1174, 1156
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_2
+  rotate: false
+  xy: 2, 584
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_23
+  rotate: false
+  xy: 2, 1161
+  size: 584, 570
+  orig: 1920, 1080
+  offset: 666, 494
+  index: -1
+ShengLi_24
+  rotate: false
+  xy: 588, 1161
+  size: 584, 570
+  orig: 1920, 1080
+  offset: 666, 494
+  index: -1
+ShengLi_3
+  rotate: false
+  xy: 591, 579
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_4
+  rotate: false
+  xy: 1180, 579
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_5
+  rotate: false
+  xy: 2, 7
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_7
+  rotate: false
+  xy: 591, 2
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_8
+  rotate: false
+  xy: 1180, 2
+  size: 587, 575
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+
+skeleton2.png
+size: 1765,1742
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ShengLi_0
+  rotate: false
+  xy: 1174, 1162
+  size: 587, 578
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_20
+  rotate: false
+  xy: 2, 3
+  size: 583, 579
+  orig: 1920, 1080
+  offset: 666, 485
+  index: -1
+ShengLi_21
+  rotate: false
+  xy: 2, 1164
+  size: 584, 576
+  orig: 1920, 1080
+  offset: 666, 488
+  index: -1
+ShengLi_22
+  rotate: false
+  xy: 2, 584
+  size: 584, 578
+  orig: 1920, 1080
+  offset: 666, 486
+  index: -1
+ShengLi_25
+  rotate: false
+  xy: 588, 583
+  size: 584, 578
+  orig: 1920, 1080
+  offset: 666, 487
+  index: -1
+ShengLi_26
+  rotate: false
+  xy: 588, 1163
+  size: 584, 577
+  orig: 1920, 1080
+  offset: 666, 487
+  index: -1
+ShengLi_27
+  rotate: false
+  xy: 1174, 582
+  size: 587, 578
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_28
+  rotate: false
+  xy: 587, 2
+  size: 587, 578
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+ShengLi_29
+  rotate: false
+  xy: 1176, 2
+  size: 587, 578
+  orig: 1920, 1080
+  offset: 663, 486
+  index: -1
+
+skeleton3.png
+size: 1768,1762
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ShengLi_10
+  rotate: true
+  xy: 1179, 589
+  size: 585, 586
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1
+ShengLi_11
+  rotate: true
+  xy: 2, 3
+  size: 585, 587
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1
+ShengLi_12
+  rotate: true
+  xy: 1179, 2
+  size: 585, 587
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1
+ShengLi_16
+  rotate: true
+  xy: 1177, 1176
+  size: 584, 588
+  orig: 1920, 1080
+  offset: 666, 476
+  index: -1
+ShengLi_17
+  rotate: true
+  xy: 591, 3
+  size: 585, 586
+  orig: 1920, 1080
+  offset: 665, 478
+  index: -1
+ShengLi_18
+  rotate: true
+  xy: 2, 590
+  size: 584, 586
+  orig: 1920, 1080
+  offset: 666, 478
+  index: -1
+ShengLi_19
+  rotate: true
+  xy: 2, 1177
+  size: 583, 584
+  orig: 1920, 1080
+  offset: 666, 480
+  index: -1
+ShengLi_6
+  rotate: false
+  xy: 588, 1176
+  size: 587, 584
+  orig: 1920, 1080
+  offset: 663, 477
+  index: -1
+ShengLi_9
+  rotate: false
+  xy: 590, 590
+  size: 587, 584
+  orig: 1920, 1080
+  offset: 663, 477
+  index: -1
+
+skeleton4.png
+size: 1770,589
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ShengLi_13
+  rotate: true
+  xy: 2, 2
+  size: 585, 587
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1
+ShengLi_14
+  rotate: true
+  xy: 591, 2
+  size: 585, 587
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1
+ShengLi_15
+  rotate: true
+  xy: 1180, 2
+  size: 585, 588
+  orig: 1920, 1080
+  offset: 665, 476
+  index: -1

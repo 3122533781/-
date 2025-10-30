@@ -11,6 +11,7 @@ namespace _02.Scripts.InGame
         public HorizontalLayoutGroup spawnRectTransform;
         public HorizontalLayoutGroup spawnRectTransform2;
         public HorizontalLayoutGroup spawnRectTransform3;
+        public HorizontalLayoutGroup spawnRectTransform4;
         public RectTransform gameCanvas;
     }
 }

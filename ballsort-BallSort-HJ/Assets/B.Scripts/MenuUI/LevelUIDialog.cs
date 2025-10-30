@@ -43,8 +43,10 @@ public class LevelUIDialog : Dialog
     public void Init()
     {
         base.Activate(false);
-        levelLoopList.datas = new TestData[LevelConfig.Instance.All.Count];
+        levelLoopList.datas = new TestData[50];
         levelLoopList.Init();
+
+        Debug.Log("数据初始化");
         //CheckLevelData();
         base.Deactivate(false);
     }
@@ -70,7 +72,7 @@ public class LevelUIDialog : Dialog
     // Start is called before the first frame update
     public void CheckLevelData()
     {
-        passLevel = Game.Instance.LevelModel.MaxUnlockLevel.Value;
+        passLevel = Game.Instance.LevelModel.PassLevelNumber.Value;
         if (levelContent.childCount <= 0)
         {
             for (int i = 0; i < LevelConfig.Instance.All.Count; i++)

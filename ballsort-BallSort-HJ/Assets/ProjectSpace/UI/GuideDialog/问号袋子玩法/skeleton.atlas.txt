@@ -1,0 +1,479 @@
+
+skeleton.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WenHaoDaiAni00
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni01
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni02
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni03
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni04
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni05
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni06
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni07
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni08
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni09
+  rotate: false
+  xy: 625, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni10
+  rotate: false
+  xy: 1248, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni11
+  rotate: false
+  xy: 2, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni12
+  rotate: false
+  xy: 625, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni13
+  rotate: false
+  xy: 1248, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni14
+  rotate: false
+  xy: 2, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni15
+  rotate: false
+  xy: 625, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni17
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni18
+  rotate: false
+  xy: 2, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni19
+  rotate: false
+  xy: 625, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni20
+  rotate: false
+  xy: 1248, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni21
+  rotate: false
+  xy: 2, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni22
+  rotate: false
+  xy: 625, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni23
+  rotate: false
+  xy: 1248, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+
+skeleton2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WenHaoDaiAni24
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni25
+  rotate: false
+  xy: 625, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni26
+  rotate: false
+  xy: 1248, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni27
+  rotate: false
+  xy: 2, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni28
+  rotate: false
+  xy: 625, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni29
+  rotate: false
+  xy: 1248, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni30
+  rotate: false
+  xy: 2, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni31
+  rotate: false
+  xy: 625, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni32
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni33
+  rotate: false
+  xy: 2, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni34
+  rotate: false
+  xy: 625, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni35
+  rotate: false
+  xy: 1248, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni36
+  rotate: false
+  xy: 2, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni37
+  rotate: false
+  xy: 625, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni38
+  rotate: false
+  xy: 1248, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+
+skeleton3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WenHaoDaiAni39
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni40
+  rotate: false
+  xy: 625, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni41
+  rotate: false
+  xy: 1248, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni42
+  rotate: false
+  xy: 2, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni43
+  rotate: false
+  xy: 625, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni44
+  rotate: false
+  xy: 1248, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni45
+  rotate: false
+  xy: 2, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni46
+  rotate: false
+  xy: 625, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni47
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni48
+  rotate: false
+  xy: 2, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni49
+  rotate: false
+  xy: 625, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni50
+  rotate: false
+  xy: 1248, 383
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni51
+  rotate: false
+  xy: 2, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni52
+  rotate: false
+  xy: 625, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni53
+  rotate: false
+  xy: 1248, 11
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+
+skeleton4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WenHaoDaiAni16
+  rotate: false
+  xy: 2, 367
+  size: 621, 386
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni54
+  rotate: false
+  xy: 2, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni55
+  rotate: false
+  xy: 625, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni56
+  rotate: false
+  xy: 1248, 1499
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni57
+  rotate: false
+  xy: 2, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni58
+  rotate: false
+  xy: 625, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni59
+  rotate: false
+  xy: 1248, 1127
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni60
+  rotate: false
+  xy: 2, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni61
+  rotate: false
+  xy: 625, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni62
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni63
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1
+WenHaoDaiAni64
+  rotate: false
+  xy: 1248, 755
+  size: 621, 370
+  orig: 1320, 2868
+  offset: 352, 1243
+  index: -1

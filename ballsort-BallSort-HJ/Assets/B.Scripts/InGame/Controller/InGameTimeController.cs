@@ -44,7 +44,7 @@ public class InGameTimeController : ElementBehavior<InGame>
         // 格式化字符串为两位数显示
         string timeString = $"{minutes:D2}:{remainingSeconds:D2}";
         // 调用UI的SetTime方法传递格式化后的字符串
-      //  Context.GetView<InGamePlayingUI>().SetTimeText(timeString);
+        Context.GetView<InGamePlayingUI>().SetTimeText(timeString);
     }
 
     public void AddSecound()

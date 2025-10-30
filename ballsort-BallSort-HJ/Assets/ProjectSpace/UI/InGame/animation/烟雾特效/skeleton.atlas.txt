@@ -1,0 +1,283 @@
+
+skeleton.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DaoDanGui_02
+  rotate: true
+  xy: 2, 1879
+  size: 152, 726
+  orig: 1320, 2868
+  offset: 572, 1073
+  index: -1
+DaoDanGui_03
+  rotate: true
+  xy: 730, 1793
+  size: 238, 837
+  orig: 1320, 2868
+  offset: 541, 1004
+  index: -1
+DaoDanGui_07
+  rotate: true
+  xy: 876, 205
+  size: 375, 822
+  orig: 1320, 2868
+  offset: 478, 1004
+  index: -1
+DaoDanGui_08
+  rotate: true
+  xy: 2, 587
+  size: 315, 846
+  orig: 1320, 2868
+  offset: 517, 999
+  index: -1
+DaoDanGui_09
+  rotate: true
+  xy: 876, 1506
+  size: 285, 845
+  orig: 1320, 2868
+  offset: 524, 999
+  index: -1
+DaoDanGui_10
+  rotate: true
+  xy: 2, 1219
+  size: 289, 830
+  orig: 1320, 2868
+  offset: 520, 1003
+  index: -1
+DaoDanGui_11
+  rotate: false
+  xy: 1723, 1197
+  size: 304, 834
+  orig: 1320, 2868
+  offset: 519, 1005
+  index: -1
+DaoDanGui_13
+  rotate: false
+  xy: 1712, 343
+  size: 319, 852
+  orig: 1320, 2868
+  offset: 508, 999
+  index: -1
+DaoDanGui_31
+  rotate: true
+  xy: 2, 904
+  size: 305, 868
+  orig: 1320, 2868
+  offset: 477, 999
+  index: -1
+DaoDanGui_32
+  rotate: true
+  xy: 2, 1510
+  size: 281, 872
+  orig: 1320, 2868
+  offset: 520, 999
+  index: -1
+DaoDanGui_33
+  rotate: true
+  xy: 834, 1211
+  size: 293, 872
+  orig: 1320, 2868
+  offset: 518, 999
+  index: -1
+DaoDanGui_34
+  rotate: true
+  xy: 2, 255
+  size: 325, 872
+  orig: 1320, 2868
+  offset: 504, 999
+  index: -1
+DaoDanGui_36
+  rotate: true
+  xy: 850, 582
+  size: 317, 840
+  orig: 1320, 2868
+  offset: 524, 999
+  index: -1
+DaoDanGui_37
+  rotate: true
+  xy: 850, 582
+  size: 317, 840
+  orig: 1320, 2868
+  offset: 524, 999
+  index: -1
+DaoDanGui_38
+  rotate: true
+  xy: 872, 901
+  size: 308, 838
+  orig: 1320, 2868
+  offset: 519, 999
+  index: -1
+
+skeleton2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DaoDanGui_12
+  rotate: true
+  xy: 2, 437
+  size: 353, 852
+  orig: 1320, 2868
+  offset: 508, 999
+  index: -1
+DaoDanGui_14
+  rotate: true
+  xy: 2, 1482
+  size: 329, 859
+  orig: 1320, 2868
+  offset: 502, 999
+  index: -1
+DaoDanGui_15
+  rotate: true
+  xy: 863, 1472
+  size: 339, 853
+  orig: 1320, 2868
+  offset: 494, 1018
+  index: -1
+DaoDanGui_16
+  rotate: true
+  xy: 859, 782
+  size: 344, 864
+  orig: 1320, 2868
+  offset: 490, 1007
+  index: -1
+DaoDanGui_17
+  rotate: true
+  xy: 856, 436
+  size: 344, 872
+  orig: 1320, 2868
+  offset: 481, 999
+  index: -1
+DaoDanGui_18
+  rotate: true
+  xy: 2, 1137
+  size: 343, 855
+  orig: 1320, 2868
+  offset: 475, 1016
+  index: -1
+DaoDanGui_19
+  rotate: true
+  xy: 2, 792
+  size: 343, 855
+  orig: 1320, 2868
+  offset: 475, 1016
+  index: -1
+DaoDanGui_20
+  rotate: true
+  xy: 2, 17
+  size: 417, 856
+  orig: 1320, 2868
+  offset: 452, 1015
+  index: -1
+DaoDanGui_21
+  rotate: true
+  xy: 860, 2
+  size: 432, 862
+  orig: 1320, 2868
+  offset: 445, 1009
+  index: -1
+DaoDanGui_35
+  rotate: true
+  xy: 859, 1128
+  size: 342, 872
+  orig: 1320, 2868
+  offset: 495, 999
+  index: -1
+
+skeleton3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DaoDanGui_06
+  rotate: true
+  xy: 2, 1427
+  size: 434, 822
+  orig: 1320, 2868
+  offset: 441, 1004
+  index: -1
+DaoDanGui_22
+  rotate: true
+  xy: 826, 1423
+  size: 438, 872
+  orig: 1320, 2868
+  offset: 438, 999
+  index: -1
+DaoDanGui_23
+  rotate: true
+  xy: 2, 973
+  size: 448, 872
+  orig: 1320, 2868
+  offset: 431, 999
+  index: -1
+DaoDanGui_24
+  rotate: true
+  xy: 876, 962
+  size: 459, 852
+  orig: 1320, 2868
+  offset: 424, 1005
+  index: -1
+DaoDanGui_25
+  rotate: true
+  xy: 2, 503
+  size: 468, 852
+  orig: 1320, 2868
+  offset: 418, 1005
+  index: -1
+DaoDanGui_27
+  rotate: true
+  xy: 856, 482
+  size: 478, 836
+  orig: 1320, 2868
+  offset: 412, 1012
+  index: -1
+DaoDanGui_28
+  rotate: true
+  xy: 2, 23
+  size: 478, 834
+  orig: 1320, 2868
+  offset: 412, 1011
+  index: -1
+DaoDanGui_29
+  rotate: true
+  xy: 838, 2
+  size: 478, 858
+  orig: 1320, 2868
+  offset: 412, 1000
+  index: -1
+
+skeleton4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DaoDanGui_04
+  rotate: true
+  xy: 824, 619
+  size: 612, 844
+  orig: 1320, 2868
+  offset: 367, 999
+  index: -1
+DaoDanGui_05
+  rotate: true
+  xy: 2, 709
+  size: 523, 820
+  orig: 1320, 2868
+  offset: 404, 1006
+  index: -1
+DaoDanGui_26
+  rotate: true
+  xy: 872, 1233
+  size: 479, 840
+  orig: 1320, 2868
+  offset: 411, 1015
+  index: -1
+DaoDanGui_30
+  rotate: true
+  xy: 2, 1234
+  size: 478, 868
+  orig: 1320, 2868
+  offset: 411, 999
+  index: -1

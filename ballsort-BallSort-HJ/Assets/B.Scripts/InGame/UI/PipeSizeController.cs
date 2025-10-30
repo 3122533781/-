@@ -32,28 +32,28 @@ namespace _02.Scripts.InGame.UI
 
         public void RefreshSKin()
         {
-            var id = PlayerPrefs.GetInt("ClickThemeSkin");
-            //   Debug.Log("大小" + id);
-            var spriteList = SpriteManager.Instance.GetPipeSkin(id);
-            pipeHead.sprite = spriteList[0];
-            var headRect = (RectTransform)pipeHead.transform;
-            //headRect.sizeDelta = InGameManager.Instance.pipeSizeConfig.GetPipeHeadSize();
-            //  pipeHead.SetNativeSize();
-            pipeBody.sprite = spriteList[1];
-            //  pipeBody.SetNativeSize();
-            var newHigh = InGameManager.Instance.pipeSizeConfig.GetPipeBodyHigh(_currentData.pipeCapacity);
-            //  pipeBodyRectTransform.SetSizeDeltaY(newHigh);
+            // var id = PlayerPrefs.GetInt("ClickThemeSkin");
+            // //   Debug.Log("大小" + id);
+            // var spriteList = SpriteManager.Instance.GetPipeSkin(id);
+            // pipeHead.sprite = spriteList[0];
+            // var headRect = (RectTransform)pipeHead.transform;
+            // //headRect.sizeDelta = InGameManager.Instance.pipeSizeConfig.GetPipeHeadSize();
+            // //  pipeHead.SetNativeSize();
+            // pipeBody.sprite = spriteList[1];
+            // //  pipeBody.SetNativeSize();
+            //// var newHigh = InGameManager.Instance.pipeSizeConfig.GetPipeBodyHigh(_currentData.pipeCapacity);
+            // //  pipeBodyRectTransform.SetSizeDeltaY(newHigh);
 
-            var getData = InGameManager.Instance.pipeSizeConfig.GetPipeSizeData(_currentData.pipeCapacity);
-            if (getData.isUseTile)
-            {
-                pipeBody.type = Image.Type.Sliced;
-            }
-            else
-            {
-                pipeBody.type = Image.Type.Sliced;
-            }
-            contentSizeFitter.enabled = true;
+            // var getData = InGameManager.Instance.pipeSizeConfig.GetPipeSizeData(_currentData.pipeCapacity);
+            // if (getData.isUseTile)
+            // {
+            //     pipeBody.type = Image.Type.Sliced;
+            // }
+            // else
+            // {
+            //     pipeBody.type = Image.Type.Sliced;
+            // }
+            // contentSizeFitter.enabled = true;
             //  contentSizeFitter.enabled = !getData.isNotUseContentSizeFitter;
         }
     }

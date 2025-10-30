@@ -9,7 +9,11 @@ using _02.Scripts.InGame;
 public class OptionDialog : Dialog
 {
     [SerializeField] private SwitchToggle toggleSounds;
-    [SerializeField] private ToggleButton toggleShake;
+    [SerializeField] private SwitchToggle toggleBgm;
+    [SerializeField] private SwitchToggle toggleShake;
+
+
+    //[SerializeField] private ToggleButton toggleShake;
 
     [SerializeField] protected Button closeBtn;
     [SerializeField] protected Button closeBtn2;
@@ -28,7 +32,11 @@ public class OptionDialog : Dialog
     {
         showText.text = LocalizationManager.Instance.Model.CurrentLanguage.LanguageName;
         toggleSounds.IsOn = AudioManager.Instance.Model.IsSoundOpen;
+        toggleBgm.IsOn = AudioManager.Instance.Model.IsBgmOpen;
         toggleShake.IsOn = VibrationManager.Instance.IsOpen;
+        toggleSounds.Init();
+        toggleBgm.Init();
+        toggleShake.Init();
         isInit = true;
      
 
@@ -50,7 +58,9 @@ public class OptionDialog : Dialog
     {
         //maskBG.sprite = InGameManager.Instance.bg.sprite;
         toggleSounds.OnValueChange += ToggleSoundChange;
-        toggleShake.OnChange += ToggleShakeChange;
+        toggleBgm.OnValueChange += ToggleBgmChange;
+        toggleShake.OnValueChange += ToggleShakeChange;
+        //toggleShake.OnChange += ToggleShakeChange;
         termOfUseBtn.onClick.AddListener(ClickTermsButton);
         privacyPolicyBtn.onClick.AddListener(ClickPrivacyButton);
         closeBtn.onClick.AddListener(CloseMenuBtn);
@@ -63,7 +73,9 @@ public class OptionDialog : Dialog
     private void OnDisable()
     {
         toggleSounds.OnValueChange -= ToggleSoundChange;
-        toggleShake.OnChange -= ToggleShakeChange;
+        toggleBgm.OnValueChange -= ToggleBgmChange;
+        toggleShake.OnValueChange -= ToggleShakeChange;
+        //  toggleShake.OnChange -= ToggleShakeChange;
         GiveButton.onClick.RemoveListener(GiveUp);
         closeBtn.onClick.RemoveListener(CloseMenuBtn);
         closeBtn2.onClick.RemoveListener(CloseMenuBtn);
@@ -133,16 +145,23 @@ public class OptionDialog : Dialog
     private void ToggleSoundChange(bool isOn)
     {
         AudioManager.Instance.Model.IsSoundOpen = isOn;
-        AudioManager.Instance.Model.IsBgmOpen = isOn;
+        Debug.Log("是否" + isOn);
+      
 
         AudioClipHelper.Instance.PlayButtonTap();
         VibrationManager.Instance.SelectedBlockImpact();
     }
-
-    private void ToggleShakeChange(bool isOn, ToggleButton arg2)
+    private void ToggleBgmChange(bool isOn)
     {
+        AudioManager.Instance.Model.IsBgmOpen = isOn;
         AudioClipHelper.Instance.PlayButtonTap();
+        VibrationManager.Instance.SelectedBlockImpact();
+    }
+
+    private void ToggleShakeChange(bool isOn)
+    {
         VibrationManager.Instance.SetIsOpen(isOn);
+        AudioClipHelper.Instance.PlayButtonTap();      
         VibrationManager.Instance.SelectedBlockImpact();
     }
 

@@ -8,9 +8,10 @@ using Text = UnityEngine.UI.Text;
 
 public class LevelSelectUI : MonoBehaviour
 {
-    [SerializeField] private Image effImage;
+    [SerializeField] private Image image;
     public Sprite passbtnIcon;
     public Sprite unPassbtnIcon;
+    [SerializeField] private GameObject Shadow;
 
     GameObject passIcon => transform.Find("Pass").gameObject;
     GameObject lockIcon => transform.Find("Lock").gameObject;
@@ -53,7 +54,8 @@ public class LevelSelectUI : MonoBehaviour
         nubtext.text = string.Format("{0}", levelValue);
         passIcon.SetActive(false);
         lockIcon.SetActive(false);
-        effImage.SetActiveVirtual(true);
+        //  effImage.SetActiveVirtual(true);
+        //Shadow.SetActive(true);
         transform.GetComponent<Image>().sprite = unPassbtnIcon;
     }
 
@@ -97,8 +99,8 @@ public class LevelSelectUI : MonoBehaviour
     {
         if (!lockIcon.gameObject.activeInHierarchy)
         {
-            Game.Instance.RestartGame("LevelSelect",int.Parse(nubtext.text), forceShowAd: true);
-
+            Game.Instance.RestartGame("LevelSelect", int.Parse(nubtext.text), forceShowAd: true);
+            Game.Instance.LevelModel.PassLevelTemp = int.Parse(nubtext.text);
             DialogManager.Instance.GetDialog<LevelUIDialog>().CloseDialog();
         }
     }

@@ -1,0 +1,82 @@
+
+01.png
+size: 2217,2717
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CangPin_PANEL_02
+  rotate: true
+  xy: 2, 2
+  size: 1262, 1945
+  orig: 1310, 2062
+  offset: 0, 22
+  index: -1
+CangPin_PANEL_03
+  rotate: true
+  xy: 2, 1266
+  size: 1145, 1879
+  orig: 1145, 1879
+  offset: 0, 0
+  index: -1
+GuanTuJian
+  rotate: true
+  xy: 662, 2522
+  size: 193, 201
+  orig: 196, 212
+  offset: 3, 11
+  index: -1
+PiKou
+  rotate: false
+  xy: 1857, 2413
+  size: 358, 302
+  orig: 360, 302
+  offset: 1, 0
+  index: -1
+PinZhi_BTN_01_a
+  rotate: true
+  xy: 865, 2519
+  size: 196, 326
+  orig: 197, 331
+  offset: 1, 0
+  index: -1
+PinZhi_BTN_02_b
+  rotate: true
+  xy: 332, 2530
+  size: 185, 328
+  orig: 197, 332
+  offset: 4, 0
+  index: -1
+PinZhi_BTN_03_b
+  rotate: true
+  xy: 1193, 2516
+  size: 199, 336
+  orig: 200, 341
+  offset: 1, 0
+  index: -1
+PinZhi_BTN_04_b
+  rotate: true
+  xy: 2, 2531
+  size: 184, 328
+  orig: 207, 334
+  offset: 6, 0
+  index: -1
+PinZhi_BTN_05_b
+  rotate: true
+  xy: 1531, 2500
+  size: 215, 324
+  orig: 215, 330
+  offset: 0, 0
+  index: -1
+
+012.png
+size: 1465,2006
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+01
+  rotate: false
+  xy: 2, 2
+  size: 1461, 2002
+  orig: 1461, 2002
+  offset: 0, 0
+  index: -1

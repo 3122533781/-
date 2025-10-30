@@ -14,7 +14,7 @@ public class DebugConsoleControl : MonoSingleton<DebugConsoleControl>
     private void Awake()
     {
 #if UNITY_EDITOR
-        enabled = false;
+       // enabled = false;
 #endif
     }
 

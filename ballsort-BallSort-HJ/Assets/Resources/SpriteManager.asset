@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeIcon: {fileID: 21300000, guid: b3bdcf88b9f4bff4b848472ff3e08d76, type: 3}
   headIcon:
+  - {fileID: 0}
   - {fileID: 21300000, guid: 1813ad531511d1d4987f055a83a0f957, type: 3}
   - {fileID: 21300000, guid: 2f4bc83c7ead4a0438593be378a0b210, type: 3}
   - {fileID: 21300000, guid: 0fb101f5a8b2d9e4bac23ffc8a60fb8f, type: 3}
@@ -33,14 +34,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: daebc845a1943aa4baa02bab368e058b, type: 3}
   - {fileID: 21300000, guid: ef9e44ce3600fa5488eb0542724bba93, type: 3}
   - {fileID: 21300000, guid: 9cba56d9de6438149810774ae493e4ad, type: 3}
-  - {fileID: 21300000, guid: 4a36fad486d3dbd4daa5a47b6c46d55e, type: 3}
-  - {fileID: 21300000, guid: 9a7382a7d9ea373428d507be94df6f2f, type: 3}
   grayBallIcon: {fileID: 21300000, guid: 2be9db1581597ce48a1bab2fb5cb145f, type: 3}
-  skinData: {fileID: 11400000, guid: f442b0d8d41974342ad4e8cb3d26705f, type: 2}
   toolIcon:
   - {fileID: 21300000, guid: 81128940362c88e4fb2aa66bd72192c5, type: 3}
   - {fileID: 21300000, guid: 80a634fc614a68d4da4e7027cd0f8e58, type: 3}
   - {fileID: 21300000, guid: 3180f6d16a1a09a4ca08a682165789f9, type: 3}
+  bgIcon:
+  - {fileID: 21300000, guid: ed7bbfb3b19c67c479b61e8cff6b77c9, type: 3}
+  - {fileID: 21300000, guid: f49e7dad58c53f246a3a39435935d981, type: 3}
+  - {fileID: 21300000, guid: 1a10fd2ffbd1a0e4f8c5fef54b22e003, type: 3}
+  - {fileID: 21300000, guid: faa79ec66d7db384da53d6fa2d047233, type: 3}
   pipeHeadIcon:
   - {fileID: 21300000, guid: 0e23f8e391402884d8f5686fdeb9e3b4, type: 3}
   - {fileID: 21300000, guid: ea3ae309c05aba346bdb545d2a8b81a7, type: 3}
@@ -78,3 +81,4 @@ MonoBehaviour:
   - goodType: 13
     subType: 0
     sprite: {fileID: 21300000, guid: d3d4ded46adf0b045b201c1141b6487f, type: 3}
+  skeleton: []

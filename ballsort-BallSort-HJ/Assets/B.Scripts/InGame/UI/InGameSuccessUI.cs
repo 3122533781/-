@@ -14,6 +14,7 @@ namespace _02.Scripts.InGame.UI
     public class InGameSuccessUI : ElementUI<global::InGame>
     {
         [SerializeField] private Button nextLevelButton;
+        [SerializeField] private Button ADnextLevelButton;
         [SerializeField] private Text LvelValue;
         [SerializeField] private InGameBoxReward boxReward;
         [SerializeField] private SkeletonGraphic skeletonGraphic;
@@ -28,29 +29,73 @@ namespace _02.Scripts.InGame.UI
         {
             _coinData = Context.CellMapModel.LevelData.GetRandomCoin();
             nextLevelButton.onClick.AddListener(NextLevelButton);
+            ADnextLevelButton.onClick.AddListener(ADNextLevelButton);
             LvelValue.text =$"距离开启新玩法还剩{CalculateLevel()}局";
             if (CalculateLevel() == 0)
                 LvelValue.gameObject.SetActive(false);
             boxReward.Init(_coinData);
-            skeletonGraphic.AnimationState.SetAnimation(0, "shengli_loops",true);
+           // skeletonGraphic.AnimationState.SetAnimation(0, "shengli_loops",true);
             AudioClipHelper.Instance.PlaySound(AudioClipEnum.Win);
+          
         }
 
         private void OnDisable()
         {
             nextLevelButton.onClick.RemoveListener(NextLevelButton);
-
+            ADnextLevelButton.onClick.RemoveListener(ADNextLevelButton);
         }
 
-        private void NextLevelButton()
+        private void ADNextLevelButton()
+        {
+            Debug.Log("广告出现");
+            SuccessTo();
+            ADMudule.ShowRewardedAd("WatchAd_GetRevocationTool", (isSuccess) =>
+            {
+                if (isSuccess)
+                {
+                    Game.Instance.CurrencyModel.AddGoodCount(GoodType.Coin, 0, 20);
+                    Deactivate();
+                    SuccessTo();
+                }
+            });
+
+
+          
+
+
+        }
+  private void NextLevelButton()
         {
             Deactivate();
+            SuccessTo();
+            Game.Instance.CurrencyModel.AddGoodCount(GoodType.Coin, 0, 10);
+        }
+
+        private void SuccessTo()
+        {
+            if (Game.Instance.LevelModel.PassLevelNumber.Value == Game.Instance.LevelModel.PassLevelTemp)
+            {
+                Game.Instance.LevelModel.PassLevelNumber.Value += 1;
+                Game.Instance.LevelModel.PassLevelTemp += 1;
+            }
+            else
+            {
+                Debug.Log("关卡数小于");
+            }
+
             Game.Instance.LevelModel.EnterLevelID += 1;
             Game.Instance.LevelModel.MaxUnlockLevel.Value += 1;
+            _context.GetView<InGamePlayingUI>()._barBegin = 0f;
+            _context.GetModel<InGameModel>().EndFinishNumber = 0;
+
+
             SoyProfile.Set(SoyProfileConst.NormalLevel, Game.Instance.LevelModel.EnterLevelID);
             Game.Instance.RestartGame("RestartCurrentLevel", Game.Instance.LevelModel.EnterCopies1ID,
                     CopiesType.SpecialLevel, forceShowAd: true);
         }
+
+
+
 
         private int  CalculateLevel()
         {
@@ -69,28 +114,6 @@ namespace _02.Scripts.InGame.UI
             // 如果 input 大于等于最后一个值，返回 0 或其他默认值
             return 0;
         }
-        private void EnterNextLevel()
-        {
-            if (Game.Instance.LevelModel.CopiesType == CopiesType.Thread)
-            {
-                if (Game.Instance.LevelModel.EnterLevelID == Game.Instance.LevelModel.MaxUnlockLevel.Value)
-                {
-                    Game.Instance.RestartGame("NextLevel", Game.Instance.LevelModel.EnterLevelID,
-                        forceShowAd: !Game.Instance.Model.IsWangZhuan());
-                    if (DialogManager.Instance.GetDialog<LevelUIDialog>() != null)
-                        DialogManager.Instance.GetDialog<LevelUIDialog>().PassLastLevel();
-                }
-                else
-                {
-                    Game.Instance.RestartGame("NextLevel", Game.Instance.LevelModel.EnterLevelID + 1,
-                        forceShowAd: !Game.Instance.Model.IsWangZhuan());
-                }
-            }
-            else if (Game.Instance.LevelModel.CopiesType == CopiesType.SpecialLevel)
-            {
-                Game.Instance.RestartGame("NextLevel", Game.Instance.LevelModel.EnterLevelID,
-                    forceShowAd: !Game.Instance.Model.IsWangZhuan());
-            }
-        }
+       
     }
 }

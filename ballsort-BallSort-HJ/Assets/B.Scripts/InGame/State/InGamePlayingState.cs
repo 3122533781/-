@@ -14,6 +14,8 @@ public class InGamePlayingState : SKState<InGame>
         _context.GetController<InGameTimeController>().Activate();
         _context.GetController<InGameTimeController>().seconds = 180;
         _context.GetView<InGamePlayingUI>().SetBarToZero();
+        _context.GetView<InGamePlayingUI>().ShowGUide(Game.Instance.LevelModel.PassLevelNumber.Value);
+        
     }
 
     public override void end()

@@ -27,7 +27,7 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
         Views.Add(GetComponentInChildren<InGameWinReward>(true));
 
         Views.Add(GetComponentInChildren<InGameBoxDialog>(true));
- 
+
         Controllers.Add(GetComponent<InGameTimeController>());
         Controllers.Add(GetComponentInChildren<InGameMapController>());
         Controllers.Add(GetComponentInChildren<InGameMatchController>());
@@ -56,8 +56,6 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
         Restart();
 
         CheckGuide();
-
-        // AudioClipHelper.Instance.PlaySound(AudioClipEnum.Seagull);
     }
 
     private void Start()
@@ -82,19 +80,10 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
         InitData();
         GetView<InGamePlayingUI>().RefreshUI();
         Game.Instance.GameStatic.PlusOpenGameTime();
-        // JobUtils.Delay(0.5f, StartGame);
     }
 
-    /// <summary>
-    /// 10?????????????β???
-    /// ???????????е?
-    /// ????????е?
-    /// </summary>
-    /// <param name="pos"></param>
-    /// <param name="forceShow"></param>
     public void CheckInterpolationAd(string pos, bool forceShow = false)
     {
-        //App.Instance.LevelModel.MaxUnlockLevel.Value >= ConstantConfig.Instance.GetInterpolationAd() ||????????
         if (forceShow)
         {
             ADMudule.ShowInterstitialAds(pos, _ => { Restart(); });
@@ -104,13 +93,26 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
             Restart();
         }
     }
+    public void ResetLevel()
+    {
+        Game.Instance.LevelModel.EnterLevelID += 1;
+        Game.Instance.LevelModel.MaxUnlockLevel.Value += 1;
+        // Game.Instance.LevelModel.EnterLevelSecond = true;
+        Game.Instance.LevelModel.TheSmallLevelID += 1;
 
+        if (Game.Instance.LevelModel.TheSmallLevelNumbers == Game.Instance.LevelModel.TheSmallLevelID+1)
+            Game.Instance.LevelModel.EnterLevelSecond = true;
+        Debug.Log("小关和大关分别为" + Game.Instance.LevelModel.TheSmallLevelID + " " + Game.Instance.LevelModel.TheSmallLevelNumbers);
+
+       
+        SoyProfile.Set(SoyProfileConst.NormalLevel, Game.Instance.LevelModel.EnterLevelID);
+        Restart();
+    }
     public void StartGame()
     {
         Debug.Log("StartGame");
         StateModel.CurrentState = InGameState.Playing;
         SetPlaying();
-        //JobUtils.Delay(0.2f, () => { GetController<InGameGuideController>().StratGuid(); });
     }
 
     public void Continue()
@@ -142,6 +144,7 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
         SetPlaying();
     }
 
+
     public bool IsWin()
     {
         return StateModel.CurrentState == InGameState.Win;
@@ -170,64 +173,56 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
             Win();
         }
     }
-
-    /// <summary>
-    /// 修改后：完成度 =（已完成的球种类数 / 总球种类数）× 100%
-    /// 已完成的球种类：至少有一个管子“装满且同色”的球类型
-    /// 总球种类：当前关卡中所有独特的球类型
-    /// </summary>
-    public float GetCompletionRate()
+    public int GetBallsType()
     {
-        // 1. 防护：管子列表为空或无效时，返回0%
-        if (CellMapModel == null || CellMapModel.LevelPipeList == null || CellMapModel.LevelPipeList.Count <= 0)
-        {
-            return 0f;
-        }
-
-        // 2. 统计“总球种类数”（去重）和“已完成的球种类数”
-        HashSet<BallType> allBallTypes = new HashSet<BallType>(); // 所有独特的球类型
-        HashSet<BallType> completedBallTypes = new HashSet<BallType>(); // 已完成的球类型（有管子装满同色）
-
+        HashSet<BallType> allBallTypes = new HashSet<BallType>();
+        Debug.Log("此时" + CellMapModel.LevelPipeList.Count);
         foreach (var pipe in CellMapModel.LevelPipeList)
         {
-            if (pipe == null) continue; // 跳过空管子
+            if (pipe == null) continue;
 
-            // 2.1 收集当前管子中的所有球类型，统计“总球种类”
             foreach (var ball in pipe.BallLevelEdits)
             {
                 if (ball != null)
                 {
                     BallType currentType = ball.GetBallData().type;
-                    allBallTypes.Add(currentType); // HashSet自动去重
+                    allBallTypes.Add(currentType);
                 }
             }
-
-            // 2.2 若管子“装满且同色”（完成状态），收集该球类型到“已完成种类”
-            if (pipe.PipeFullOrEmpty() && pipe.BallLevelEdits.Count > 0)
-            {
-                BallType completedType = pipe.BallLevelEdits.Peek().GetBallData().type;
-                completedBallTypes.Add(completedType);
-            }
         }
+        return allBallTypes.Count;
 
-        // 3. 防护：总球种类为0时（无球关卡），返回0%（避免除以0）
-        int totalBallTypeCount = allBallTypes.Count;
+
+    }
+    public float GetCompletionRate(int BallsType)
+    {
+
+
+        int totalBallTypeCount = Game.Instance.LevelModel.TypeNumber;
         if (totalBallTypeCount <= 0)
         {
+            Debug.Log("总球种类为0，完成率为0%"+ CellMapModel.LevelPipeList.Count);
             return 0f;
         }
-
-        // 4. 计算完成度（四舍五入保留1位小数）
-        float completionRate = (float)completedBallTypes.Count / totalBallTypeCount * 100f;
-        return Mathf.Round(completionRate * 10f) / 10f;
+        int NowLevelNumberCount = 1;
+        int NowCompletedCount = CellMapModel.EndFinishNumber;
+        Debug.Log("大小为" + NowCompletedCount + " " + Game.Instance.LevelModel.PassLevelNumber.Value + "  " + CellMapModel.TheSmallLevelNumber);
+        Debug.Log("分母为" + totalBallTypeCount);
+        float completionRate = (float)NowLevelNumberCount / totalBallTypeCount * 100f;
+        return Mathf.Round(completionRate * 10f / CellMapModel.TheSmallLevelNumber) / 10f;
     }
 
     public void CheckIsOver()
     {
         var levelData = CellMapModel.LevelPipeList;
         var isOver = levelData.Find(x => !x.PipeFullOrEmpty()) == null;
-        Debug.Log("当前进度为" + GetCompletionRate() + "%"); // 补充百分号，显示更直观
-        if (isOver)
+       // Debug.Log("当前进度为" + GetCompletionRate() + "%");
+        if (isOver && !Game.Instance.LevelModel.EnterLevelSecond)
+        {
+            Debug.Log("游戏流程结束");
+            ResetLevel();
+        }
+        else if (isOver && Game.Instance.LevelModel.EnterLevelSecond)
         {
             Win();
         }

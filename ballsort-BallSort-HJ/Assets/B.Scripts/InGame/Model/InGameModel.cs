@@ -9,13 +9,17 @@ using UnityEngine; // 必须加，否则无法访问 Unity API
 public class InGameModel : ElementModel
 {
     public LevelData LevelData;
-
+    public int SmallLevelNumber = 0;
     public List<InGamePipeUI> LevelPipeList;
+    public List<InGamePipeUI> LevelPipeListTemp;
     public List<PipeData> InactivePipeDataList = new List<PipeData>();
     public List<PipeData> FreezePipeDataList = new List<PipeData>();
 
     public int temp = 0;
-
+    public int TheSmallLevelNumber = 0;
+   
+    //  public int TheFinishLevelNumber = 0;
+    public int EndFinishNumber = 0;
     // 未激活管子索引（原有逻辑保留）
     private int _currentInactiveIndex = 0;
 
@@ -23,6 +27,38 @@ public class InGameModel : ElementModel
     {
         LevelPipeList = new List<InGamePipeUI>();
     }
+
+    public void CalculateType()
+    {
+        HashSet<BallType> allBallTypes = new HashSet<BallType>(); // 所有独特的球类型
+        HashSet<BallType> completedBallTypes = new HashSet<BallType>(); // 已完成的球类型（有管子装满同色）
+
+        foreach (var pipe in LevelPipeList)
+        {
+            if (pipe == null) continue; // 跳过空管子
+
+            // 2.1 收集当前管子中的所有球类型，统计“总球种类”
+            foreach (var ball in pipe.BallLevelEdits)
+            {
+                if (ball != null)
+                {
+                    BallType currentType = ball.GetBallData().type;
+                    allBallTypes.Add(currentType); // HashSet自动去重
+                }
+            }
+
+            // 2.2 若管子“装满且同色”（完成状态），收集该球类型到“已完成种类”
+            if (pipe.PipeFullOrEmpty() && pipe.BallLevelEdits.Count > 0)
+            {
+                BallType completedType = pipe.BallLevelEdits.Peek().GetBallData().type;
+                completedBallTypes.Add(completedType);
+            }
+        }
+
+        Debug.Log("所有球种类：" + string.Join(", ", allBallTypes));
+    }
+
+
 
     /// <summary>
     /// 顺序获取未激活管子数据（原有逻辑保留）

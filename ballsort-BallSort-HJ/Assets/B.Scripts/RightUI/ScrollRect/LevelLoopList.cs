@@ -42,14 +42,14 @@ public class LevelLoopList : MonoBehaviour
         //rect = transform.Find("Scroll View").GetComponent<RectTransform>();
         //datas = levelUIDialog
 
-        for (int i = 0; i < LevelConfig.Instance.All.Count; i++)
+        for (int i = 0; i <50; i++)
         {
             datas[i] = new TestData((i + 1).ToString(), "Item" + i);
         }
 
         /* MyLoopList<TestData, TestView>*/
         myLoopList = new MyLoopList<TestData, TestView>();
-        myLoopList.Init(datas, 80f, 70f, new Vector2(15, 35), 168, 168, 5, datas.Length, go, rect, this);
+        myLoopList.Init(datas, 80f, 70f, new Vector2(40, 35), 168, 168, 5, datas.Length, go, rect, this);
 
     }
 

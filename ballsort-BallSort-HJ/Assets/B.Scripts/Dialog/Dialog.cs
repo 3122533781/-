@@ -142,8 +142,9 @@ namespace ProjectSpace.Lei31Utils.Scripts.Utils2.Dialog
             var sort = order == -1 ? 1000 + DialogManager.ListActiveDialog.Count : order;
             int sortingOrder = sort;
             Order = sort;
+            SetCamera(UICamera.Instance.Camera);
             GetComponentInChildren<Canvas>().sortingOrder = sortingOrder;
-            GetComponentInChildren<Canvas>().sortingLayerName = "UI";
+            gameObject.GetComponentInChildren<Canvas>().sortingLayerName = "UI";
             LDebug.Log("Dialog", "Show dialog  canvas sorting order " + sortingOrder);
             gameObject.SetActive(true);
             if (animator != null)
@@ -151,7 +152,7 @@ namespace ProjectSpace.Lei31Utils.Scripts.Utils2.Dialog
                 AnimatorHelper.SetTrigger(animator, "Show");
             }
 
-            SetCamera(UICamera.Instance.Camera);
+        
 
             AudioClipHelper.Instance.PlayShowDialogClip();
             OnOpen?.Invoke();

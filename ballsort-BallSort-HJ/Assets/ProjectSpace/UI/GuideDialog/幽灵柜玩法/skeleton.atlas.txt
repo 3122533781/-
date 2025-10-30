@@ -1,0 +1,871 @@
+
+skeleton.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui000
+  rotate: false
+  xy: 2, 817
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui001
+  rotate: false
+  xy: 2, 817
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui024
+  rotate: false
+  xy: 760, 817
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui025
+  rotate: false
+  xy: 2, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui026
+  rotate: false
+  xy: 760, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui049
+  rotate: false
+  xy: 2, 817
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui050
+  rotate: false
+  xy: 760, 817
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui051
+  rotate: false
+  xy: 2, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui099
+  rotate: false
+  xy: 760, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui100
+  rotate: false
+  xy: 760, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui101
+  rotate: false
+  xy: 760, 116
+  size: 756, 699
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui002
+  rotate: false
+  xy: 2, 814
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui023
+  rotate: false
+  xy: 759, 814
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui027
+  rotate: false
+  xy: 2, 112
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui048
+  rotate: false
+  xy: 759, 112
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui003
+  rotate: false
+  xy: 759, 112
+  size: 754, 701
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui052
+  rotate: false
+  xy: 2, 815
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui076
+  rotate: false
+  xy: 759, 815
+  size: 756, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui098
+  rotate: false
+  xy: 2, 113
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui102
+  rotate: false
+  xy: 2, 113
+  size: 755, 700
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton5.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui022
+  rotate: false
+  xy: 2, 812
+  size: 754, 701
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui028
+  rotate: false
+  xy: 758, 812
+  size: 754, 701
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui047
+  rotate: false
+  xy: 2, 109
+  size: 754, 701
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui077
+  rotate: false
+  xy: 758, 109
+  size: 755, 701
+  orig: 1320, 2868
+  offset: 347, 1083
+  index: -1
+
+skeleton6.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui004
+  rotate: false
+  xy: 758, 809
+  size: 753, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui005
+  rotate: false
+  xy: 2, 106
+  size: 752, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui020
+  rotate: false
+  xy: 756, 105
+  size: 752, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui097
+  rotate: false
+  xy: 2, 810
+  size: 754, 701
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton7.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui021
+  rotate: false
+  xy: 2, 808
+  size: 753, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui029
+  rotate: false
+  xy: 757, 808
+  size: 753, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui030
+  rotate: false
+  xy: 2, 104
+  size: 752, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui045
+  rotate: false
+  xy: 756, 104
+  size: 752, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton8.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui006
+  rotate: false
+  xy: 757, 102
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui007
+  rotate: false
+  xy: 757, 102
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui046
+  rotate: false
+  xy: 2, 807
+  size: 753, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui095
+  rotate: false
+  xy: 757, 807
+  size: 752, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui096
+  rotate: false
+  xy: 2, 103
+  size: 753, 702
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton9.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui018
+  rotate: false
+  xy: 2, 803
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui019
+  rotate: false
+  xy: 755, 803
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui031
+  rotate: false
+  xy: 2, 98
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui032
+  rotate: false
+  xy: 755, 98
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton10.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui043
+  rotate: false
+  xy: 2, 806
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui044
+  rotate: false
+  xy: 755, 806
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui078
+  rotate: false
+  xy: 2, 101
+  size: 754, 703
+  orig: 1320, 2868
+  offset: 347, 1082
+  index: -1
+YouLingGui093
+  rotate: false
+  xy: 758, 101
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui094
+  rotate: false
+  xy: 758, 101
+  size: 751, 703
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton11.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui008
+  rotate: false
+  xy: 2, 798
+  size: 749, 704
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui017
+  rotate: false
+  xy: 753, 798
+  size: 749, 704
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui033
+  rotate: false
+  xy: 2, 92
+  size: 749, 704
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui042
+  rotate: false
+  xy: 753, 92
+  size: 749, 704
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton12.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui009
+  rotate: false
+  xy: 753, 796
+  size: 748, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui010
+  rotate: false
+  xy: 2, 90
+  size: 747, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui015
+  rotate: false
+  xy: 751, 89
+  size: 747, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui092
+  rotate: false
+  xy: 2, 797
+  size: 749, 704
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton13.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui016
+  rotate: false
+  xy: 2, 795
+  size: 748, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui034
+  rotate: false
+  xy: 752, 795
+  size: 748, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui035
+  rotate: false
+  xy: 2, 88
+  size: 747, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui040
+  rotate: false
+  xy: 751, 88
+  size: 747, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton14.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui011
+  rotate: false
+  xy: 752, 86
+  size: 745, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui041
+  rotate: false
+  xy: 2, 794
+  size: 748, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui090
+  rotate: false
+  xy: 752, 794
+  size: 747, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui091
+  rotate: false
+  xy: 2, 87
+  size: 748, 705
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton15.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui012
+  rotate: false
+  xy: 2, 788
+  size: 744, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui013
+  rotate: false
+  xy: 748, 788
+  size: 744, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui014
+  rotate: false
+  xy: 2, 80
+  size: 745, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui036
+  rotate: false
+  xy: 749, 80
+  size: 745, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton16.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui037
+  rotate: false
+  xy: 2, 798
+  size: 744, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui038
+  rotate: false
+  xy: 748, 798
+  size: 744, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui039
+  rotate: false
+  xy: 2, 90
+  size: 745, 706
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui055
+  rotate: false
+  xy: 749, 88
+  size: 755, 708
+  orig: 1320, 2868
+  offset: 347, 1078
+  index: -1
+
+skeleton17.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui053
+  rotate: false
+  xy: 2, 805
+  size: 754, 709
+  orig: 1320, 2868
+  offset: 347, 1076
+  index: -1
+YouLingGui056
+  rotate: false
+  xy: 760, 92
+  size: 751, 711
+  orig: 1320, 2868
+  offset: 347, 1076
+  index: -1
+YouLingGui074
+  rotate: false
+  xy: 758, 805
+  size: 756, 709
+  orig: 1320, 2868
+  offset: 347, 1077
+  index: -1
+YouLingGui075
+  rotate: false
+  xy: 2, 94
+  size: 756, 709
+  orig: 1320, 2868
+  offset: 347, 1077
+  index: -1
+
+skeleton18.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui054
+  rotate: false
+  xy: 751, 121
+  size: 799, 714
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui057
+  rotate: false
+  xy: 2, 839
+  size: 751, 711
+  orig: 1320, 2868
+  offset: 347, 1076
+  index: -1
+YouLingGui060
+  rotate: false
+  xy: 2, 123
+  size: 747, 714
+  orig: 1320, 2868
+  offset: 347, 1075
+  index: -1
+YouLingGui061
+  rotate: false
+  xy: 755, 837
+  size: 745, 713
+  orig: 1320, 2868
+  offset: 347, 1077
+  index: -1
+
+skeleton19.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui065
+  rotate: false
+  xy: 2, 793
+  size: 747, 714
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui068
+  rotate: false
+  xy: 751, 793
+  size: 751, 714
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui069
+  rotate: false
+  xy: 2, 77
+  size: 751, 714
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+YouLingGui070
+  rotate: false
+  xy: 755, 77
+  size: 752, 714
+  orig: 1320, 2868
+  offset: 347, 1084
+  index: -1
+
+skeleton20.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui058
+  rotate: false
+  xy: 2, 70
+  size: 749, 716
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui059
+  rotate: false
+  xy: 753, 68
+  size: 748, 717
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui079
+  rotate: false
+  xy: 2, 788
+  size: 753, 714
+  orig: 1320, 2868
+  offset: 347, 1073
+  index: -1
+YouLingGui089
+  rotate: false
+  xy: 757, 787
+  size: 745, 715
+  orig: 1320, 2868
+  offset: 347, 1075
+  index: -1
+
+skeleton21.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui062
+  rotate: false
+  xy: 2, 784
+  size: 744, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui063
+  rotate: false
+  xy: 748, 784
+  size: 744, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui064
+  rotate: false
+  xy: 2, 64
+  size: 745, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui071
+  rotate: false
+  xy: 749, 64
+  size: 753, 718
+  orig: 1320, 2868
+  offset: 347, 1080
+  index: -1
+
+skeleton22.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui066
+  rotate: false
+  xy: 748, 57
+  size: 748, 719
+  orig: 1320, 2868
+  offset: 347, 1079
+  index: -1
+YouLingGui086
+  rotate: false
+  xy: 2, 778
+  size: 745, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui087
+  rotate: false
+  xy: 749, 778
+  size: 744, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui088
+  rotate: false
+  xy: 2, 58
+  size: 744, 718
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+
+skeleton23.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui067
+  rotate: false
+  xy: 2, 57
+  size: 749, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui072
+  rotate: false
+  xy: 753, 57
+  size: 754, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui080
+  rotate: false
+  xy: 2, 785
+  size: 752, 722
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui081
+  rotate: false
+  xy: 756, 785
+  size: 751, 722
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+
+skeleton24.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui073
+  rotate: false
+  xy: 2, 782
+  size: 755, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui082
+  rotate: false
+  xy: 2, 54
+  size: 751, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui083
+  rotate: false
+  xy: 759, 782
+  size: 749, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+YouLingGui084
+  rotate: false
+  xy: 755, 54
+  size: 748, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1
+
+skeleton25.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLingGui085
+  rotate: false
+  xy: 2, 23
+  size: 747, 726
+  orig: 1320, 2868
+  offset: 347, 1072
+  index: -1

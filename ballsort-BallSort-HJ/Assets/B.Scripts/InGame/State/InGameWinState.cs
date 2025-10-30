@@ -11,8 +11,9 @@ namespace _02.Scripts.InGame.State
             HandleStatic();
 
             Game.Instance.LevelModel.PassCurrentLevel();
-            _context.GetView<InGameSuccessUI>().Activate();
-
+            Game.Instance.LevelModel.EnterLevelSecond = false;
+            Game.Instance.LevelModel.TheSmallLevelID = 0;
+            _context.GetView<InGameSuccessUI>().Activate();  
             HandleComponent();
         }
 

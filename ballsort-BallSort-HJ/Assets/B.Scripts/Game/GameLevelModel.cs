@@ -15,10 +15,15 @@ public class GameLevelModel
     public int NowLevelID;
     public int EnterLevelID { get; set; }
     public int EnterCopies1ID;
-
+    public bool EnterLevelSecond;
+    public int PassLevelTemp;
+    public int TheSmallLevelID;
+    public int TypeNumber = 0;
+    public int TheSmallLevelNumbers;
     public PersistenceData<int> MaxUnlockLevel;
     public PersistenceData<int> MaxUnlockCopies1;
     public PersistenceData<int> StoreGold;
+    public PersistenceData<int> PassLevelNumber;
 
     public CopiesType CopiesType { get; set; }
 
@@ -63,6 +68,9 @@ public class GameLevelModel
     {
         if (CopiesType == CopiesType.Thread) EnterLevelID = value;
         else if (CopiesType == CopiesType.SpecialLevel) EnterCopies1ID = value;
+
+        
+        Debug.Log("进入的关卡ID为" + EnterLevelID);
     }
 
     public void PassCurrentLevel(int pass = 1)
@@ -82,7 +90,7 @@ public class GameLevelModel
             int nextLevel = EnterCopies1ID + pass;
 
             MaxUnlockCopies1.Value = nextLevel;
-            EnterLevelID = MaxUnlockLevel.Value;
+            EnterLevelID = PassLevelNumber.Value;
             SoyProfile.DelaySet(SoyProfileConst.SpecialLevel, MaxUnlockCopies1.Value);
         }
     }
@@ -124,6 +132,7 @@ public class GameLevelModel
         TodayHasPlayedLevel = new PersistenceData<int>($"AppModel_tol_{dayTimeStamp}", 0);
         HaveReviveUseAD = false;
         MaxUnlockLevel = new PersistenceData<int>("AppLevelModel_MaxUnlockLevel", 1);
+        PassLevelNumber = new PersistenceData<int>("AppLevelModel_PassLevelNumber", 1);
         MaxUnlockCopies1 = new PersistenceData<int>("AppLevelModel_MaxUnlockCopies1", 1);
         GuideGroup = new PersistenceData<int>("AppLevelModel_GuideGroup", 0);
         PlotGuideGroup = new PersistenceData<int>("AppLevelModel_PlotGuideGroup", 0);

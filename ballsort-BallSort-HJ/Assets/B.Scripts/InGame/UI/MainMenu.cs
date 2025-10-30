@@ -52,7 +52,10 @@ public class MainMenu : MonoBehaviour
     //    _btnSkipLevel.GetComponent<RectTransform>().localScale = Vector3.zero;
     //    _btnSetting.GetComponent<RectTransform>().localScale = Vector3.zero;
     //}
-
+    private void Start()
+    {
+        SpriteManager.Instance.InitSkin();
+    }
     private void OnEnable()
     {
 
@@ -65,6 +68,7 @@ public class MainMenu : MonoBehaviour
         ShareBtn.onClick.AddListener(ShareDialog);
         btnCollection.onClick.AddListener(OpenCollection);
         btnTask.onClick.AddListener(OpenTask);
+        _btnLevel.onClick.AddListener(ClickLevelBtn);
         //_isSettingPanelShow = false;
         //_settingPanelRect.SetAnchoredPositionY(_hideSettingPanelY);
         Refresh();
@@ -89,6 +93,7 @@ public class MainMenu : MonoBehaviour
         //    _btnExit.onClick.RemoveListener(ClickExit);
         //    _btnSetting.onClick.RemoveListener(ClickSetting);
         //    _btnRestart.onClick.RemoveListener(ClickRestart);
+        _btnLevel.onClick.RemoveListener(ClickLevelBtn);
         UIEvents.OnDressUpDialogOpened -= OnDressUpDialogOpened;
         UIEvents.OnDressUpDialogClosed -= OnDressUpDialogClosed;
     }
@@ -176,7 +181,10 @@ public class MainMenu : MonoBehaviour
     {
        
     }
-
+    public void GetCoin()
+    {
+        _textCoin.text =$"{Game.Instance.CurrencyModel.CoinNum}";
+    }
     private void InitQuests()
     {
         QuestConfigs configs = null;
@@ -273,10 +281,18 @@ public class MainMenu : MonoBehaviour
     {
         return date.ToString("yyyy-MM-dd");
     }
+    public void ClickLevelBtn()
+    {
+        DialogManager.Instance.GetDialog<LevelUIDialog>().ShowDialog(); 
+        AudioClipHelper.Instance.PlayButtonTap();
+        VibrationManager.Instance.SelectedBlockImpact();
+    }
     private void Refresh()
     {
-       
-        
+        GetCoin();
+        Game.Instance.LevelModel.PassLevelTemp = Game.Instance.LevelModel.PassLevelNumber.Value;
+        Game.Instance.LevelModel.EnterLevelSecond = false;
+        Game.Instance.LevelModel.TheSmallLevelID = 0;
         //_textGetCoinCount.text = $"+{GameConfig.Instance.AdRewardCoin}";
         //_textHintCoin.text = GameConfig.Instance.HintConsumeCoin.ToString();
     }
@@ -295,7 +311,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button _btnGetCoin;
     [SerializeField] private Button _btnUseHint;
     [SerializeField] private Button _btnGetPower;
+    [SerializeField] private Button _btnLevel;
     [SerializeField] private Text _textLevel;
+    [SerializeField] private Text _textCoin;
     [SerializeField] private List<GameObject> gameStages = new List<GameObject>();
     [SerializeField] private GameObject _playbtn;
     [SerializeField] private GameObject _balls;

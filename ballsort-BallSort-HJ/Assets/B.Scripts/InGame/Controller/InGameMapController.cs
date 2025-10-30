@@ -4,11 +4,12 @@ using _02.Scripts.Util;
 using Fangtang;
 using ProjectSpace.Lei31Utils.Scripts.Framework.App;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
-
+using _02.Scripts.InGame.UI;
 namespace _02.Scripts.InGame.Controller
 {
     public class InGameMapController : ElementBehavior<global::InGame>
@@ -31,30 +32,26 @@ namespace _02.Scripts.InGame.Controller
 
         private void SetLevelData()
         {
-            SetLevelDataByConfig(LevelConfig.Instance, Game.Instance.LevelModel.EnterLevelID);
+            SetLevelDataByConfig(LevelConfig.Instance);
             Context.GetModel<InGameModel>().LevelData.SetRandomCoin();
             CleanAllPipe();
             InitAllPipe();
+            Game.Instance.LevelModel.TypeNumber = Context.GetBallsType();
+            Debug.Log($"[InGameMapController] 当前关卡球种类数：{Game.Instance.LevelModel.TypeNumber}");
+            Context.GetView<InGamePlayingUI>().SetBarNumberTo(Game.Instance.LevelModel.TheSmallLevelNumbers);
+            //  Context.GetView<InGamePlayingUI>().SetBarToZero();
         }
 
-        private void SetLevelDataByConfig(LevelConfig config, int enterLevel)
+        private void SetLevelDataByConfig(LevelConfig config)
         {
-            if (config == null)
-            {
-                Debug.LogError("[SetLevelDataByConfig] LevelConfig.Instance 为 null！");
-                return;
-            }
-            var isHave = config.TryGetConfigByID(enterLevel, out var levelData);
-            if (isHave)
-            {
-                Context.GetModel<InGameModel>().LevelData = levelData;
-                Debug.Log($"[SetLevelDataByConfig] 成功获取关卡{enterLevel}，管子数量：{levelData.pipeDataList.Count}");
-            }
-            else
-            {
-                Debug.LogError($"[SetLevelDataByConfig] 未找到关卡{enterLevel}，进入随机 fallback");
-                SetLevelWhenNotF(config);
-            }
+            var filteredLevels = FilterLevelsByTargetTag(config);
+
+            var firstLevel = filteredLevels[Game.Instance.LevelModel.TheSmallLevelID];
+            Game.Instance.LevelModel.EnterLevelID = firstLevel.levelId;
+            Context.GetModel<InGameModel>().LevelData = firstLevel;
+            Game.Instance.LevelModel.TheSmallLevelNumbers= filteredLevels.Count;
+            Debug.Log("小关卡数量为"+ Game.Instance.LevelModel.TheSmallLevelNumbers);
+            Debug.Log($"[SetLevelDataByConfig] 直接加载筛选列表中的第一个关卡，levelTag={Game.Instance.LevelModel.PassLevelTemp}、ID={firstLevel.levelId}");
         }
 
         private void SetLevelWhenNotF(LevelConfig config)
@@ -67,12 +64,15 @@ namespace _02.Scripts.InGame.Controller
 
         public void StartGame()
         {
-            Debug.Log("触发");
             SetLevelType();
             SetLevelData();
         }
 
         #region PipeSpawn&Destory
+        // 【新增1：添加第4个spawnRectTransform的引用，需在Inspector面板赋值】
+        [Header("新增：第4行管子的生成容器")]
+        public Transform spawnRectTransform4;
+
         private void InitAllPipe()
         {
             var model = Context.GetModel<InGameModel>();
@@ -80,12 +80,21 @@ namespace _02.Scripts.InGame.Controller
             var pos1Layout = GameStage.Instance.spawnRectTransform;
             var pos2Layout = GameStage.Instance.spawnRectTransform2;
             var pos3Layout = GameStage.Instance.spawnRectTransform3;
+            // 【新增2：获取第4个spawn的RectTransform】
+            var pos4Layout = GameStage.Instance.spawnRectTransform4;
+
             var pos1 = pos1Layout.GetComponent<RectTransform>();
             var pos2 = pos2Layout.GetComponent<RectTransform>();
             var pos3 = pos3Layout.GetComponent<RectTransform>();
+            // 【新增3：初始化第4个spawn的RectTransform】
+            var pos4 = pos4Layout.GetComponent<RectTransform>();
+
             var index = 1;
             var totalPipeCount = model.LevelData.pipeDataList.Count;
-            const int LINE_MAX_COUNT = 5;
+            const int LINE_MAX_COUNT = 4;
+            // 【新增4：定义第4行的索引范围（每行4个，第4行对应13-16）】
+            const int LINE4_MIN_INDEX = LINE_MAX_COUNT * 3 + 1; // 13
+            const int LINE4_MAX_INDEX = LINE_MAX_COUNT * 4;     // 16
 
             model.InactivePipeDataList.Clear();
             model.FreezePipeDataList.Clear();
@@ -94,6 +103,7 @@ namespace _02.Scripts.InGame.Controller
                 if (pipeData.isactive == IsActive.Istrue)
                 {
                     RectTransform spawnPos = pos1;
+                    // 【原有逻辑保留：第1-3行的位置分配】
                     if (index > LINE_MAX_COUNT && index <= LINE_MAX_COUNT * 2)
                     {
                         spawnPos = pos2;
@@ -101,6 +111,11 @@ namespace _02.Scripts.InGame.Controller
                     else if (index > LINE_MAX_COUNT * 2 && index <= LINE_MAX_COUNT * 3)
                     {
                         spawnPos = pos3;
+                    }
+                    // 【新增5：第4行的位置分配（13-16）】
+                    else if (index >= LINE4_MIN_INDEX && index <= LINE4_MAX_INDEX)
+                    {
+                        spawnPos = pos4;
                     }
 
                     var spawnObj = Instantiate(prefab, spawnPos);
@@ -124,6 +139,8 @@ namespace _02.Scripts.InGame.Controller
                     model.FreezePipeDataList.Add(pipeData);
                 }
             }
+
+            // 【原有逻辑保留：补齐第1-3行管子】
             int currentFirstLineCount = model.LevelPipeList.Count(pipe => pipe.transform.parent == pos1);
             if (currentFirstLineCount < LINE_MAX_COUNT)
             {
@@ -199,8 +216,71 @@ namespace _02.Scripts.InGame.Controller
                 }
             }
 
+            // 【新增6：补齐第4行管子（逻辑与前3行一致）】
+            int currentFourthLineCount = model.LevelPipeList.Count(pipe => pipe.transform.parent == pos4);
+            if (currentFourthLineCount < LINE_MAX_COUNT)
+            {
+                int needAdd = LINE_MAX_COUNT - currentFourthLineCount;
+                for (int i = 0; i < needAdd; i++)
+                {
+                    var newPipeData = new PipeData(PipeCapacity.Capacity4)
+                    {
+                        exclusiveType = Typeexclusive.None,
+                        isactive = IsActive.Istrue,
+                        isneedad = IsNeedAD.NoNeedAd
+                    };
+
+                    var spawnObj = Instantiate(prefab, pos4);
+                    Context.Views.Add(spawnObj);
+                    spawnObj.InitPipe(newPipeData);
+                    spawnObj.name = $"Pipe_Fill_Fourth_{index}";
+                    spawnObj.ChangeClickObj();
+                    model.LevelPipeList.Add(spawnObj);
+                    model.temp = model.LevelPipeList.Count;
+                    index++;
+                    Debug.Log($"补齐第四行管子：{spawnObj.name}");
+                }
+                model.LevelPipeListTemp = model.LevelPipeList;
+            }
+
             LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)GameStage.Instance.spawnPanel.transform);
+            // 【新增7：补齐第4行后也需重建布局】
+            LayoutRebuilder.ForceRebuildLayoutImmediate(pos4);
         }
+
+
+        /// <summary>
+        /// 按目标levelTag筛选关卡列表
+        /// </summary>
+        /// <param name="config">关卡配置文件</param>
+        /// <returns>筛选后的关卡列表（空列表表示无匹配）</returns>
+        private List<LevelData> FilterLevelsByTargetTag(LevelConfig config)
+        {
+            if (config == null || config.All == null || config.All.Count == 0)
+            {
+                Debug.LogError("[FilterLevelsByTargetTag] 关卡配置为空，无法筛选！");
+                return new List<LevelData>();
+            }
+
+            var filteredLevels = config.All
+                .Where(levelData => levelData != null && levelData.levelTag == Game.Instance.LevelModel.PassLevelTemp)
+                .ToList();
+
+            Context.GetModel<InGameModel>().TheSmallLevelNumber = filteredLevels.Count;
+
+            if (filteredLevels.Count == 0)
+            {
+                Debug.LogWarning($"[FilterLevelsByTargetTag] 未找到levelTag={2}的关卡，请检查关卡配置！");
+            }
+            else
+            {
+                Debug.Log($"[FilterLevelsByTargetTag] 成功筛选出{filteredLevels.Count}个levelTag={Game.Instance.LevelModel.PassLevelNumber.Value}的关卡");
+            }
+
+            return filteredLevels;
+        }
+
+
 
         public void ActivateInactivePipe(int inactiveIndex, Action callBack = null)
         {
@@ -216,15 +296,25 @@ namespace _02.Scripts.InGame.Controller
             var pos1Layout = GameStage.Instance.spawnRectTransform;
             var pos2Layout = GameStage.Instance.spawnRectTransform2;
             var pos3Layout = GameStage.Instance.spawnRectTransform3;
+            // 【新增8：激活管子时也需引用第4个spawn】
+            var pos4Layout = GameStage.Instance.spawnRectTransform4;
+
             var pos1 = pos1Layout.GetComponent<RectTransform>();
             var pos2 = pos2Layout.GetComponent<RectTransform>();
             var pos3 = pos3Layout.GetComponent<RectTransform>();
+            // 【新增9：初始化第4个spawn的RectTransform】
+            var pos4 = pos4Layout.GetComponent<RectTransform>();
+
             var totalActiveCount = model.LevelPipeList.Count;
-            const int LINE_MAX_COUNT = 5;
+            const int LINE_MAX_COUNT = 4;
+            // 【新增10：第4行索引范围】
+            const int LINE4_MIN_INDEX = LINE_MAX_COUNT * 3 + 1;
+            const int LINE4_MAX_INDEX = LINE_MAX_COUNT * 4;
 
             var pipeData = model.InactivePipeDataList[inactiveIndex];
             RectTransform spawnPos = pos1;
             int nextActiveIndex = totalActiveCount + 1;
+            // 【原有逻辑保留：第1-3行位置分配】
             if (nextActiveIndex > LINE_MAX_COUNT && nextActiveIndex <= LINE_MAX_COUNT * 2)
             {
                 spawnPos = pos2;
@@ -232,6 +322,11 @@ namespace _02.Scripts.InGame.Controller
             else if (nextActiveIndex > LINE_MAX_COUNT * 2 && nextActiveIndex <= LINE_MAX_COUNT * 3)
             {
                 spawnPos = pos3;
+            }
+            // 【新增11：第4行位置分配】
+            else if (nextActiveIndex >= LINE4_MIN_INDEX && nextActiveIndex <= LINE4_MAX_INDEX)
+            {
+                spawnPos = pos4;
             }
 
             var spawnObj = Instantiate(prefab, spawnPos);
@@ -243,6 +338,8 @@ namespace _02.Scripts.InGame.Controller
             model.temp = model.LevelPipeList.Count;
 
             LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)GameStage.Instance.spawnPanel.transform);
+            // 【新增12：激活第4行管子后重建布局】
+            LayoutRebuilder.ForceRebuildLayoutImmediate(pos4);
             Debug.Log($"Pipe activated successfully, current active count: {model.LevelPipeList.Count}");
             callBack?.Invoke();
         }
@@ -301,10 +398,9 @@ namespace _02.Scripts.InGame.Controller
                 }
             }
 
-
-
             model.LevelPipeList.Clear();
             model.InactivePipeDataList.Clear();
+            model.ResetInactiveIndex();
             model.temp = 0;
             Context.GetController<InGameMatchController>().CleanAllData();
         }
@@ -322,9 +418,14 @@ namespace _02.Scripts.InGame.Controller
             var pos1Layout = GameStage.Instance.spawnRectTransform;
             var pos2Layout = GameStage.Instance.spawnRectTransform2;
             var pos3Layout = GameStage.Instance.spawnRectTransform3;
+            // 【新增13：尺寸适配时包含第4个spawn】
+            var pos4Layout = GameStage.Instance.spawnRectTransform4;
+
             var spawn1Rect = pos1Layout.GetComponent<RectTransform>();
             var spawn2Rect = pos2Layout.GetComponent<RectTransform>();
             var spawn3Rect = pos3Layout.GetComponent<RectTransform>();
+            // 【新增14：初始化第4个spawn的RectTransform】
+            var spawn4Rect = pos4Layout.GetComponent<RectTransform>();
 
             var pipeCapacity = model.LevelPipeList.Count > 0
                 ? model.LevelPipeList[0]._pipeData.pipeCapacity
@@ -336,11 +437,14 @@ namespace _02.Scripts.InGame.Controller
             InGameManager.Instance.root.localScale = Vector3.one;
 
             var pipeTotalHeight = InGameManager.Instance.pipeSizeConfig.GetTotalHigh(pipeCapacity);
+            // 【原有逻辑保留：第1-3行高度设置】
             spawn1Rect.SetSizeDeltaY(pipeTotalHeight);
-            spawn2Rect.SetSizeDeltaY(totalPipeCount > 5 ? pipeTotalHeight : 0);
-            spawn3Rect.SetSizeDeltaY(totalPipeCount > 10 ? pipeTotalHeight : 0);
+            spawn2Rect.SetSizeDeltaY(totalPipeCount > 4 ? pipeTotalHeight : 0);
+            spawn3Rect.SetSizeDeltaY(totalPipeCount > 8 ? pipeTotalHeight : 0);
+            // 【新增15：第4行高度设置（总管子数>12时显示）】
+            spawn4Rect.SetSizeDeltaY(totalPipeCount > 12 ? pipeTotalHeight : 0);
 
-            if (totalPipeCount >= 5)
+            if (totalPipeCount >= 4)
             {
                 InGameManager.Instance.root.localScale *=
                     pipeCapacity == PipeCapacity.Capacity5 ? 0.9f : InGameManager.Instance.scale;
@@ -348,6 +452,8 @@ namespace _02.Scripts.InGame.Controller
             }
 
             LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)GameStage.Instance.spawnPanel.transform);
+            // 【新增16：第4行尺寸适配后重建布局】
+            LayoutRebuilder.ForceRebuildLayoutImmediate(spawn4Rect);
         }
 
         private void ResetSpace()
@@ -356,9 +462,13 @@ namespace _02.Scripts.InGame.Controller
             var pos1Layout = GameStage.Instance.spawnRectTransform;
             var pos2Layout = GameStage.Instance.spawnRectTransform2;
             var pos3Layout = GameStage.Instance.spawnRectTransform3;
+
+            // 【新增17：间距调整时包含第4个spawn】
+            var pos4Layout = GameStage.Instance.spawnRectTransform4;
+
             var spacing = pos1Layout.spacing;
             var totalPipeCount = model.LevelData.pipeDataList.Count;
-            const int LINE_MAX_COUNT = 5;
+            const int LINE_MAX_COUNT = 4;
 
             var pipeWidth = InGameManager.Instance.pipeSizeConfig.GetWidth();
             var currentTotalWidth = pipeWidth * LINE_MAX_COUNT + spacing * (LINE_MAX_COUNT - 1);
@@ -369,17 +479,23 @@ namespace _02.Scripts.InGame.Controller
             {
                 var overflowWidth = currentTotalWidth - screenAvailableWidth;
                 var spacingReduce = overflowWidth / LINE_MAX_COUNT;
+                // 【原有逻辑保留：第1-3行间距调整】
                 pos1Layout.spacing = spacing - spacingReduce;
                 pos2Layout.spacing = spacing - spacingReduce;
                 pos3Layout.spacing = spacing - spacingReduce;
+                // 【新增18：第4行间距同步调整】
+                pos4Layout.spacing = spacing - spacingReduce;
             }
             else if (screenAvailableWidth - currentTotalWidth >= 10)
             {
                 var missingWidth = screenAvailableWidth - currentTotalWidth;
                 var spacingIncrease = missingWidth / LINE_MAX_COUNT;
+                // 【原有逻辑保留：第1-3行间距调整】
                 pos1Layout.spacing = spacing + spacingIncrease;
                 pos2Layout.spacing = spacing + spacingIncrease;
                 pos3Layout.spacing = spacing + spacingIncrease;
+                // 【新增19：第4行间距同步调整】
+                pos4Layout.spacing = spacing + spacingIncrease;
             }
         }
         #endregion sizeController

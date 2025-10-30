@@ -3,18 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Spine.Unity;
 public class CollectionDialog : Dialog
 {
     public Transform collectionParent;
+    public Transform collectionParent2;
     public GameObject collectionPrefab;
     [SerializeField] private RectTransform trans;
-    public Animator moreAnimator;
+    [SerializeField] private List<GameObject> Objs;
+    //  public Animator moreAnimator;
     public ScrollRect scrollRect;
     private bool isExtended = false;
     [SerializeField] private List<Button> buttons;
     private List<CollectionGoodsData> collectionGoods = new List<CollectionGoodsData>();
     private Dictionary<CollectionGoodsData, GameObject> dataToUI = new Dictionary<CollectionGoodsData, GameObject>();
+    private Dictionary<CollectionGoodsData, GameObject> dataToUI2 = new Dictionary<CollectionGoodsData, GameObject>();
+    public AutoFlip autoFlip;
+    [SerializeField] private SkeletonAnimation OpenAnim;
+    private int tempBtn=0;
+
 
     public void Show()
     {
@@ -23,14 +30,14 @@ public class CollectionDialog : Dialog
 
     private void OnEnable()
     {
-        // Re-initialize to generate new UI every time the dialog is opened
+        OpenAnim.AnimationState.SetAnimation(0, "animation", false);
         InitCollections();
         StartCoroutine(InitCollectionsAfterFrame());
     }
 
     private void OnDisable()
     {
-        moreAnimator.enabled = false;
+        //moreAnimator.enabled = false;
         // Keep original function: Disable scroll rect when dialog is closed
         scrollRect.enabled = false;
 
@@ -38,8 +45,15 @@ public class CollectionDialog : Dialog
         ClearAllCollectionUI();
         collectionGoods.Clear();
         dataToUI.Clear();
+        dataToUI2.Clear();
     }
-
+    private void ShowBook()
+    {
+        foreach (var item in Objs)
+        {
+            item.SetActive(true);
+        }
+    }
     private void Start()
     {
         // Keep original function: Register button click events (only once)
@@ -59,6 +73,7 @@ public class CollectionDialog : Dialog
         ClearAllCollectionUI();
         collectionGoods.Clear();
         dataToUI.Clear();
+        dataToUI2.Clear();
 
         // Keep original function: Get all collection configs and filter owned ones
         var collections = CollectionConfig.Instance.All;
@@ -76,21 +91,37 @@ public class CollectionDialog : Dialog
             CollectionPrefab.Initialize(item);
             dataToUI[item] = obj;
         }
+        foreach (var item in collectionGoods)
+        {
+            var obj = Instantiate(collectionPrefab, collectionParent2);
+            var CollectionPrefab = obj.GetComponent<CollectionItem>();
+            CollectionPrefab.Initialize(item);
+            dataToUI2[item] = obj;
+        }
     }
 
     // New: Helper method to clear all generated collection UI instances
     private void ClearAllCollectionUI()
     {
-        if (collectionParent == null) return;
-
-        // Traverse children in reverse to avoid index confusion when deleting
-        for (int i = collectionParent.childCount - 1; i >= 0; i--)
+        // 清理 collectionParent 下的UI
+        if (collectionParent != null)
         {
-            Transform child = collectionParent.GetChild(i);
-            // Skip prefab template to avoid accidental deletion
-            if (child.gameObject != collectionPrefab)
+            for (int i = collectionParent.childCount - 1; i >= 0; i--)
             {
-                Destroy(child.gameObject);
+                Transform child = collectionParent.GetChild(i);
+                if (child.gameObject != collectionPrefab) // 跳过预制体模板
+                    Destroy(child.gameObject);
+            }
+        }
+
+        // 新增：清理 collectionParent2 下的UI（关键！）
+        if (collectionParent2 != null)
+        {
+            for (int i = collectionParent2.childCount - 1; i >= 0; i--)
+            {
+                Transform child = collectionParent2.GetChild(i);
+                if (child.gameObject != collectionPrefab) // 跳过预制体模板
+                    Destroy(child.gameObject);
             }
         }
     }
@@ -98,21 +129,21 @@ public class CollectionDialog : Dialog
     // Keep original function: Animation logic for "More" button
     public void OnMoreButtonsClicked()
     {
-        if (moreAnimator.enabled == false)
-        {
-            moreAnimator.enabled = true;
-        }
+        //if (moreAnimator.enabled == false)
+        //{
+        //    moreAnimator.enabled = true;
+        //}
 
-        moreAnimator.Rebind();
-        if (isExtended == false)
-        {
-            moreAnimator.Play("MorePanel");
-        }
-        else
-        {
-            moreAnimator.StartPlayback();
-        }
-        isExtended = !isExtended;
+        //moreAnimator.Rebind();
+        //if (isExtended == false)
+        //{
+        //    moreAnimator.Play("MorePanel");
+        //}
+        //else
+        //{
+        //    moreAnimator.StartPlayback();
+        //}
+        //isExtended = !isExtended;
     }
 
     // Keep original function: Enable scroll rect after UI is ready
@@ -123,75 +154,133 @@ public class CollectionDialog : Dialog
     }
 
     // Keep original function: Button click logic for collection filtering
-    private void BtnChoose(int temp)
-    {
-        // 1. Control button selected state (keep original logic)
-        for (int i = 0; i < buttons.Count; i++)
-        {
-            if (buttons[i].TryGetComponent<Image>(out Image btnImage))
-            {
-                btnImage.enabled = (i == temp);
-            }
-            else
-            {
-                Debug.LogWarning($"Button {i} has no Image component, skipping");
-            }
-        }
 
-        // 2. Collection filtering logic based on button index
+
+    private void BtnChoose2(int temp)
+    {
         switch (temp)
         {
-            case 0: // Show all collections
-                foreach (var item in dataToUI.Values)
+
+
+            case 0: // Filter: Quality _N
+                foreach (var item in dataToUI2)
+                {
+                    if (item.Key.quality == Quality._N)
+                        item.Value.SetActive(true);
+                    else
+                        item.Value.SetActive(false);
+                }
+                break;
+
+            case 1: // Filter: Quality _R
+                foreach (var item in dataToUI2)
+                {
+                    if (item.Key.quality == Quality._R)
+                        item.Value.SetActive(true);
+                    else
+                        item.Value.SetActive(false);
+                }
+                break;
+
+            case 2: // Filter: Quality _SR
+                foreach (var item in dataToUI2)
+                {
+                    if (item.Key.quality == Quality._SR)
+                        item.Value.SetActive(true);
+                    else
+                        item.Value.SetActive(false);
+                }
+                break;
+
+            case 3: // Filter: Quality _SSR
+                foreach (var item in dataToUI2)
+                {
+                    if (item.Key.quality == Quality._SSR)
+                        item.Value.SetActive(true);
+                    else
+                        item.Value.SetActive(false);
+                }
+                break;
+
+            case 4: // Filter: Quality _UR
+                foreach (var item in dataToUI2)
+                {
+                    if (item.Key.quality == Quality._UR)
+                        item.Value.SetActive(true);
+                    else
+                        item.Value.SetActive(false);
+                }
+                break;
+
+            default: // Fallback: Show all if index is unknown
+                foreach (var item in dataToUI2.Values)
                 {
                     item.SetActive(true);
                 }
+                Debug.LogWarning($"Unknown button index: {temp}, showing all collections by default");
                 break;
+        }
+    }
+    private void BtnChoose(int temp)
+    {
+        autoFlip.FlipRightPage(() =>
+        {
+            Debug.Log("翻页动画完成");
+            BtnChoose2(tempBtn); // 翻页动画完成后执行
+        });
+        switch (temp)
+        {
+           
 
-            case 1: // Filter: Kitchenware
+            case 0: // Filter: Quality _N
+                tempBtn = temp;
                 foreach (var item in dataToUI)
                 {
-                    if (item.Key.kind == Kings.Kitchenware)
+                    if (item.Key.quality == Quality._N)
                         item.Value.SetActive(true);
                     else
                         item.Value.SetActive(false);
                 }
                 break;
 
-            case 2: // Filter: Condiments
+            case 1: // Filter: Quality _R
+                tempBtn = temp;
                 foreach (var item in dataToUI)
                 {
-                    if (item.Key.kind == Kings.Condiments)
+                    if (item.Key.quality == Quality._R)
                         item.Value.SetActive(true);
                     else
                         item.Value.SetActive(false);
                 }
                 break;
 
-            case 3: // Filter: Ingredients
+            case 2: // Filter: Quality _SR
+                tempBtn = temp;
                 foreach (var item in dataToUI)
                 {
-                    if (item.Key.kind == Kings.Ingredients)
+                    if (item.Key.quality == Quality._SR)
                         item.Value.SetActive(true);
                     else
                         item.Value.SetActive(false);
                 }
                 break;
 
-            case 4: // Filter: Dishes
+            case 3: // Filter: Quality _SSR
+                tempBtn = temp;
                 foreach (var item in dataToUI)
                 {
-                    if (item.Key.kind == Kings.Dishes)
+                    if (item.Key.quality == Quality._SSR)
                         item.Value.SetActive(true);
                     else
                         item.Value.SetActive(false);
                 }
                 break;
 
-            case 5: // Filter: Beverages
+            case 4: // Filter: Quality _UR
+                tempBtn = temp;
                 foreach (var item in dataToUI)
                 {
-                    if (item.Key.kind == Kings.Beverages)
+                    if (item.Key.quality == Quality._UR)
                         item.Value.SetActive(true);
                     else
                         item.Value.SetActive(false);

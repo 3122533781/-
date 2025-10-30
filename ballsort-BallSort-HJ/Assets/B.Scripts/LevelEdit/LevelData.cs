@@ -16,7 +16,7 @@ namespace _02.Scripts.LevelEdit
         public List<PipeData> pipeDataList;
         public bool blindBox;
         private RewardData _rewardData;
-
+        public int levelTag;//
         public int GetPipeCount()
         {
             return (int)pipeNumber;

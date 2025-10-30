@@ -1,0 +1,27 @@
+
+YouLing.png
+size: 336,178
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YouLing_01
+  rotate: false
+  xy: 149, 2
+  size: 148, 78
+  orig: 148, 78
+  offset: 0, 0
+  index: -1
+YouLing_02
+  rotate: true
+  xy: 2, 7
+  size: 169, 145
+  orig: 169, 145
+  offset: 0, 0
+  index: -1
+YouLing_03
+  rotate: false
+  xy: 149, 82
+  size: 185, 94
+  orig: 185, 94
+  offset: 0, 0
+  index: -1

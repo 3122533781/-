@@ -2,6 +2,8 @@
 using System.Linq;
 using _02.Scripts.InGame.Controller;
 using ProjectSpace.Lei31Utils.Scripts.Framework.App;
+using System.Diagnostics;
+using UnityEngine;
 
 public class InGameStandbyState : SKState<InGame>
 {
@@ -10,6 +12,8 @@ public class InGameStandbyState : SKState<InGame>
         StaticModule.GameFlow_EnterGame();
         HandleStatic();
         HandleComponent();
+        UnityEngine.Debug.Log("游戏准备中");
+     
         // _context.GetController<InGameMapController>().SetLevelData();
         //_context.GetController<InGameBoardController>().CheckMap();
         //_context.GetView<InGameLoseGameUI>().ResetWatchAD();

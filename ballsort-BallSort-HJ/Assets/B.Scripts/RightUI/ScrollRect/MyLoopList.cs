@@ -198,7 +198,7 @@ public class MyLoopList<DataType, ItemType> where ItemType : ICustomGridItem<Dat
     public void SetButtonState()
     {
 
-        int passLevel = Game.Instance.LevelModel.MaxUnlockLevel.Value;
+        int passLevel = Game.Instance.LevelModel.PassLevelNumber.Value;
         for (int i = 0; i < levelLoopList.levelSelectUIs.Count; i++)
         {
             LevelSelectUI temp = levelLoopList.levelSelectUIs[i];

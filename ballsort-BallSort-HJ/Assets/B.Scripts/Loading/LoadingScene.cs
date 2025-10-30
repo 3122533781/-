@@ -1,6 +1,7 @@
 ﻿using System;
 using Lei31.Localizetion;
 using Prime31;
+using ProjectSpace.BubbleMatch.Scripts.Util;
 using ProjectSpace.Lei31Utils.Scripts.Common;
 using ProjectSpace.Lei31Utils.Scripts.Framework.App;
 using ProjectSpace.Lei31Utils.Scripts.Utils;
@@ -17,6 +18,7 @@ public class LoadingScene : MonoBehaviour, IObjectInspectable
         isLoginCompleted = false;
         _bar.Reset(0);
         CheckThirdLogin();
+        BgImage.sprite = SpriteManager.Instance.GetBgIcon();
     }
 
     private void CheckThirdLogin()
@@ -156,9 +158,6 @@ public class LoadingScene : MonoBehaviour, IObjectInspectable
 
         _workerStation.StartWork();
 
-        //Debug.LogError($"服务器国家数据{Game.Instance.GetSystem<RedeemSystem>().Model.country}");
-
-
     }
 
     #endregion redeem
@@ -167,7 +166,7 @@ public class LoadingScene : MonoBehaviour, IObjectInspectable
     [SerializeField] private float _waitDuration = 1f;
     [SerializeField] private string _nextSceneName = "Home";
     [SerializeField] private ProgressBar _bar = null;
-
+    [SerializeField] private Image BgImage;
     private float _timer;
     private bool isLoginCompleted;
 }

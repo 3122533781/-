@@ -1,0 +1,187 @@
+
+skeleton.png
+size: 2048,1852
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoDuGui_02_0
+  rotate: true
+  xy: 1049, 2
+  size: 310, 557
+  orig: 512, 768
+  offset: 101, 106
+  index: -1
+GuoDuGui_02_10
+  rotate: false
+  xy: 2, 643
+  size: 361, 602
+  orig: 512, 768
+  offset: 75, 85
+  index: -1
+GuoDuGui_02_11
+  rotate: false
+  xy: 362, 46
+  size: 342, 595
+  orig: 512, 768
+  offset: 96, 88
+  index: -1
+GuoDuGui_02_13
+  rotate: false
+  xy: 706, 48
+  size: 341, 595
+  orig: 512, 768
+  offset: 74, 88
+  index: -1
+GuoDuGui_02_14
+  rotate: false
+  xy: 2, 1247
+  size: 361, 603
+  orig: 512, 768
+  offset: 76, 85
+  index: -1
+GuoDuGui_02_15
+  rotate: true
+  xy: 1079, 909
+  size: 342, 596
+  orig: 512, 768
+  offset: 96, 88
+  index: -1
+GuoDuGui_02_16
+  rotate: false
+  xy: 722, 675
+  size: 325, 570
+  orig: 512, 768
+  offset: 99, 100
+  index: -1
+GuoDuGui_02_17
+  rotate: false
+  xy: 1394, 320
+  size: 326, 587
+  orig: 512, 768
+  offset: 77, 92
+  index: -1
+GuoDuGui_02_18
+  rotate: false
+  xy: 725, 1249
+  size: 352, 601
+  orig: 512, 768
+  offset: 73, 86
+  index: -1
+GuoDuGui_02_19
+  rotate: false
+  xy: 2, 38
+  size: 358, 603
+  orig: 512, 768
+  offset: 79, 85
+  index: -1
+GuoDuGui_02_20
+  rotate: false
+  xy: 1079, 1253
+  size: 346, 597
+  orig: 512, 768
+  offset: 93, 87
+  index: -1
+GuoDuGui_02_21
+  rotate: false
+  xy: 1722, 665
+  size: 324, 586
+  orig: 512, 768
+  offset: 111, 92
+  index: -1
+GuoDuGui_02_3
+  rotate: false
+  xy: 1722, 79
+  size: 323, 584
+  orig: 512, 768
+  offset: 77, 93
+  index: -1
+GuoDuGui_02_4
+  rotate: false
+  xy: 1427, 1253
+  size: 345, 597
+  orig: 512, 768
+  offset: 73, 87
+  index: -1
+GuoDuGui_02_5
+  rotate: false
+  xy: 365, 1247
+  size: 358, 603
+  orig: 512, 768
+  offset: 75, 85
+  index: -1
+GuoDuGui_02_6
+  rotate: false
+  xy: 365, 645
+  size: 355, 600
+  orig: 512, 768
+  offset: 84, 87
+  index: -1
+GuoDuGui_02_9
+  rotate: false
+  xy: 1049, 314
+  size: 343, 593
+  orig: 512, 768
+  offset: 74, 90
+  index: -1
+
+skeleton2.png
+size: 1157,1284
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoDuGui_02_1
+  rotate: true
+  xy: 566, 9
+  size: 313, 561
+  orig: 512, 768
+  offset: 96, 104
+  index: -1
+GuoDuGui_02_12
+  rotate: true
+  xy: 589, 953
+  size: 329, 566
+  orig: 512, 768
+  offset: 92, 101
+  index: -1
+GuoDuGui_02_2
+  rotate: true
+  xy: 569, 324
+  size: 312, 571
+  orig: 512, 768
+  offset: 87, 99
+  index: -1
+GuoDuGui_02_22
+  rotate: true
+  xy: 569, 638
+  size: 313, 571
+  orig: 512, 768
+  offset: 113, 99
+  index: -1
+GuoDuGui_02_23
+  rotate: true
+  xy: 2, 315
+  size: 313, 562
+  orig: 512, 768
+  offset: 103, 103
+  index: -1
+GuoDuGui_02_24
+  rotate: true
+  xy: 2, 2
+  size: 311, 557
+  orig: 512, 768
+  offset: 101, 106
+  index: -1
+GuoDuGui_02_7
+  rotate: true
+  xy: 2, 955
+  size: 327, 585
+  orig: 512, 768
+  offset: 107, 94
+  index: -1
+GuoDuGui_02_8
+  rotate: true
+  xy: 2, 630
+  size: 323, 565
+  orig: 512, 768
+  offset: 90, 102
+  index: -1

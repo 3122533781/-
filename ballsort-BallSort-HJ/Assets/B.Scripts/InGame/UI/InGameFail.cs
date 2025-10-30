@@ -15,6 +15,7 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private Button nextLevelButton;
        // [SerializeField] private Text coinText;
         [SerializeField] private Text LvelValue;
+        [SerializeField] private ProgressBar _bar = null;
         //[SerializeField] private InGameBoxReward boxReward;
         private RewardData _coinData;
         private RewardData _skinData;
@@ -34,7 +35,7 @@ namespace _02.Scripts.InGame.UI
             if (CalculateLevel() == 0)
                 LvelValue.gameObject.SetActive(false);
             //boxReward.Init(_coinData);
-            skeletonGraphic.AnimationState.SetAnimation(0, "shibai_loops2", true);
+         //   skeletonGraphic.AnimationState.SetAnimation(0, "shibai_loops2", true);
            // boxReward.watchAdButton.SetActiveVirtual(Game.Instance.LevelModel.GetRate(_coinData.count) >= 100);
             //AudioClipHelper.Instance.PlaySound(AudioClipEnum.Win);
         }
@@ -83,7 +84,13 @@ namespace _02.Scripts.InGame.UI
             Game.Instance.RestartGame("RestartCurrentLevel", Game.Instance.LevelModel.EnterCopies1ID,
                     CopiesType.SpecialLevel, forceShowAd: true);
         }
+        public void SetBar()
+        {
+            float temp = 10 - CalculateLevel();
+            _bar.UpdateProgressSmooth(temp / 10f);
 
+            //   ProgressTxt.text = $"½ø¶È{temp}%";
+        }
         private int  CalculateLevel()
         {
             int max = Game.Instance.LevelModel.MaxUnlockLevel.Value;

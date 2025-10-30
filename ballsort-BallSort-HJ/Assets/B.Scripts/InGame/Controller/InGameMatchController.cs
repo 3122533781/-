@@ -16,11 +16,14 @@ namespace _02.Scripts.InGame.Controller
     {
         [SerializeField] public RectTransform empty;
         [SerializeField, Range(0.1f, 2f)] private float dropSpeed = 0.5f;
+      
 
         private InGameBallUI _popBallUI;
         private List<InGameBallUI> _popBallUIs = new List<InGameBallUI>();
-        private InGamePipeUI _popPipeUI; // 原管道（弹出球的管道）
+        private InGamePipeUI _popPipeUI;
         private InGamePipeUI _pushPipeUI;
+
+
 
         private Stack<StepData> _playerStep = new Stack<StepData>();
 
@@ -52,19 +55,28 @@ namespace _02.Scripts.InGame.Controller
             if (!clickPipeUI.CanClick)
             {
                 if (!isRevocation)
+                {
                     FloatingWindow.Instance.Show("该管道不能使用");
+                    CancelSelectionAndPushBack();
+                }
                 return;
             }
             if (clickPipeUI.isAddPipe)
             {
                 if (!isRevocation)
+                {
                     FloatingWindow.Instance.Show("请先解锁");
+                    CancelSelectionAndPushBack();
+                }
                 return;
             }
             if (clickPipeUI.isFreezePipe)
             {
                 if (!isRevocation)
+                {
                     FloatingWindow.Instance.Show("请先完成该餐具的清洗");
+                    CancelSelectionAndPushBack();
+                }
                 return;
             }
 
@@ -73,6 +85,7 @@ namespace _02.Scripts.InGame.Controller
                 if (_popBallUIs[0].GetBallData().type != clickPipeUI.BallLevelEdits.Peek().GetBallData().type && !clickPipeUI.isJustUse)
                 {
                     FloatingWindow.Instance.Show("请放入同种类型的厨具");
+                    CancelSelectionAndPushBack();
                     return;
                 }
             }
@@ -104,10 +117,15 @@ namespace _02.Scripts.InGame.Controller
                         _pushPipeUI = clickPipeUI;
                     }
                 }
+                else
+                {
+                    FloatingWindow.Instance.Show("目标与放入原料不一致");
+                    CancelSelectionAndPushBack();
+                }
             }
             else
             {
-                _popPipeUI = clickPipeUI; // 记录原管道（弹出球的管道）
+                _popPipeUI = clickPipeUI;
                 PopBall(_popPipeUI);
             }
         }
@@ -149,37 +167,30 @@ namespace _02.Scripts.InGame.Controller
             return _popBallUI;
         }
 
-        // 【核心修复：推球完成后，剩余球主动放回原管道】
+
         private void PushBall(InGamePipeUI popPipeUI, InGamePipeUI targetPipeUI, List<InGameBallUI> ballsToPush, List<InGameBallUI> remainingBalls)
         {
             popPipeUI.isJustUse = false;
             PushBallAndFly(popPipeUI, targetPipeUI, ballsToPush, remainingBalls);
 
-            // 1. 若有剩余球，主动放回原管道（数据+UI同步）
             if (remainingBalls.Count > 0 && popPipeUI != null)
             {
                 foreach (var ball in remainingBalls)
                 {
                     if (ball != null)
                     {
-                        // 数据层：将剩余球重新加入原管道的球列表
                         popPipeUI.PushBall(ball);
-                        // UI层：将剩余球的父节点设为原管道的布局节点
                         ball.transform.SetParent(popPipeUI.ballVerticalLayout.transform, false);
-                        // 关闭剩余球的高亮效果，恢复正常状态
                         ball.CloseSG();
                     }
                 }
-                // 重建原管道布局，避免UI错乱
                 if (popPipeUI.ballVerticalLayout != null)
                 {
                     LayoutRebuilder.ForceRebuildLayoutImmediate(popPipeUI.ballVerticalLayout.GetComponent<RectTransform>());
                 }
-                // 更新原管道空管显示（若有相关逻辑）
                 popPipeUI.ControllerEmptyList();
             }
 
-            // 2. 清空待放球列表，避免剩余球残留
             _popBallUIs.Clear();
             _popBallUI = null;
             SetPopIsAnime(false);
@@ -263,24 +274,27 @@ namespace _02.Scripts.InGame.Controller
 
                     if (currentIndex == ballsToPush.Count - 1)
                     {
+                        AddPlayStep(popPipeUI, targetPipeUI, ballsToPush);
                         targetPipeUI.TriggerFullEff();
+                  
+                        //sss
+
 
                         if (CalculateIsUnFreeze(targetPipeUI, currentBall) == 4)
                         {
                             Context.CellMapModel.UnFreezePipe(currentBall.GetBallData().type);
                         }
-
+                     
                         Context.CheckIsOver();
-                        Context.GetView<InGamePlayingUI>().SetBar();
-                        AddPlayStep(popPipeUI, targetPipeUI, ballsToPush);
+                     
+
                         _isCoercion = false;
                         _isStartTwoAnime = false;
                         SetPushIsAnime(false);
                         if (popPipeUI != null)
                         {
-                            popPipeUI.CheckTop(); // 球已从源管子进入目标管子，源管子更新栈顶状态
+                            popPipeUI.CheckTop();
                         }
-                        // 原管道空管填充逻辑不变（仅当原管道无球时触发）
                         if (popPipeUI != null && popPipeUI.BallLevelEdits.Count == 0)
                         {
                             if (Context != null && Context.CellMapModel != null)
@@ -361,8 +375,10 @@ namespace _02.Scripts.InGame.Controller
                     pipe.RemoveAllBallsOfType(targetColor);
                 }
             }
-
+            //  Context.GetCompletionRate();
+            Context.GetView<InGamePlayingUI>().SetBar();
             Context.CheckIsOver();
+          
             FloatingWindow.Instance.Show($"已消除所有「{targetColor}」颜色的球！");
 
             action?.Invoke();
@@ -426,7 +442,14 @@ namespace _02.Scripts.InGame.Controller
         #endregion Anime
 
         #region ToolLogic
-
+  
+        public void ClearAllRevocationData()
+        {
+            // 清空撤回步骤栈
+            _playerStep.Clear();
+            EventDispatcher.instance.DispatchEvent(AppEventType.PlayerStepCountChange);
+            Debug.Log("已清除所有撤回数据");
+        }
         private bool BallIsFlyToPipe()
         {
             if (_popBallUI)
@@ -534,6 +557,18 @@ namespace _02.Scripts.InGame.Controller
                 _playerStep.Push(step);
                 EventDispatcher.instance.DispatchEvent(AppEventType.PlayerStepCountChange);
             }
+        }
+
+        private void CancelSelectionAndPushBack()
+        {
+            if (_popBallUIs != null && _popBallUIs.Count > 0 && _popPipeUI != null)
+            {
+                PushBall(_popPipeUI, _popPipeUI, _popBallUIs, new List<InGameBallUI>());
+            }
+            _popPipeUI = null;
+            _popBallUIs.Clear();
+            _popBallUI = null;
+            SetPopIsAnime(false);
         }
 
         #endregion ToolLogic
