@@ -16,6 +16,7 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private Button nextLevelButton;
         [SerializeField] private Button ADnextLevelButton;
         [SerializeField] private Text LvelValue;
+        [SerializeField] private Image CollectionImage;
         [SerializeField] private InGameBoxReward boxReward;
         [SerializeField] private SkeletonGraphic skeletonGraphic;
         private RewardData _coinData;
@@ -31,6 +32,7 @@ namespace _02.Scripts.InGame.UI
             nextLevelButton.onClick.AddListener(NextLevelButton);
             ADnextLevelButton.onClick.AddListener(ADNextLevelButton);
             LvelValue.text =$"距离开启新玩法还剩{CalculateLevel()}局";
+            GetCollect();
             if (CalculateLevel() == 0)
                 LvelValue.gameObject.SetActive(false);
             boxReward.Init(_coinData);
@@ -58,17 +60,19 @@ namespace _02.Scripts.InGame.UI
                     SuccessTo();
                 }
             });
-
-
-          
-
-
         }
+
+        private void GetCollect()
+        {
+            CollectionImage.sprite = Resources.Load<Sprite>($"Kinds/{CollectionManager.Instance.Unlock2()}");
+        }
+        
   private void NextLevelButton()
         {
             Deactivate();
             SuccessTo();
             Game.Instance.CurrencyModel.AddGoodCount(GoodType.Coin, 0, 10);
+          
         }
 
         private void SuccessTo()
@@ -86,6 +90,7 @@ namespace _02.Scripts.InGame.UI
             Game.Instance.LevelModel.EnterLevelID += 1;
             Game.Instance.LevelModel.MaxUnlockLevel.Value += 1;
             _context.GetView<InGamePlayingUI>()._barBegin = 0f;
+            _context.GetView<InGamePlayingUI>().SetBarToZero();
             _context.GetModel<InGameModel>().EndFinishNumber = 0;
 
 

@@ -86,7 +86,7 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
     {
         if (forceShow)
         {
-            ADMudule.ShowInterstitialAds(pos, _ => { Restart(); });
+            Restart();
         }
         else
         {
@@ -106,7 +106,14 @@ public class InGame : GenericSceneElement<InGame, InGameState>, Prime31.IObjectI
 
        
         SoyProfile.Set(SoyProfileConst.NormalLevel, Game.Instance.LevelModel.EnterLevelID);
-        Restart();
+        GetView<InGamePlayingUI>().PlayBeginAnimation(
+           () =>
+           {
+               Restart();
+               // 这里写动画结束后需要做的事情（如打开界面、切换场景等）
+           });
+     
+      
     }
     public void StartGame()
     {

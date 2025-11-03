@@ -395,6 +395,91 @@ public class Book : MonoBehaviour {
         if (OnFlip != null)
             OnFlip.Invoke();
     }
+
+    /// <summary>
+    /// 将书本完全恢复到初始状态（停止动画、重置状态、还原UI）
+    /// </summary>
+    public void RestoreToOriginalState()
+    {
+        // 1. 停止所有正在运行的翻页动画协程（避免动画残留）
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+            currentCoroutine = null;
+        }
+
+        // 2. 重置核心翻页状态变量（消除“粘手”根源）
+        pageDragging = false;          // 关闭翻页跟随开关
+        interactable = true;           // 恢复可交互状态（防止锁死）
+        mode = FlipMode.RightToLeft;   // 还原默认翻页模式
+        f = Vector3.zero;              // 清空鼠标跟随点
+        c = Vector3.zero;              // 清空书页角点（避免残留位置）
+
+        // 3. 重新计算初始关键点位（应对面板大小变化，与Start()逻辑一致）
+        CalcCurlCriticalPoints();
+
+        // 4. 还原所有UI元素的父对象（回到初始层级结构）
+        // 翻页时被移动的UI需全部放回BookPanel（RectTransform类型，直接使用）
+        Left.transform.SetParent(BookPanel, true);
+        Right.transform.SetParent(BookPanel, true);
+        LeftNext.transform.SetParent(BookPanel, true);
+        RightNext.transform.SetParent(BookPanel, true);
+        ClippingPlane.transform.SetParent(BookPanel, true);
+        NextPageClip.transform.SetParent(BookPanel, true);
+        Shadow.transform.SetParent(BookPanel, true);
+        ShadowLTR.transform.SetParent(BookPanel, true);
+        // 关键修复：还原Shadow的rectTransform父对象（翻页时会改为Left/Right，易遗漏）
+        Shadow.rectTransform.SetParent(BookPanel, true);
+        ShadowLTR.rectTransform.SetParent(BookPanel, true);
+
+        // 5. 还原UI元素的初始属性（pivot/位置/角度，严格匹配Start()）
+        float pageWidth = BookPanel.rect.width / 2.0f;
+        float pageHeight = BookPanel.rect.height;
+        float hyp = Mathf.Sqrt(pageWidth * pageWidth + pageHeight * pageHeight);
+        float shadowPageHeight = pageWidth / 2 + hyp;
+
+        // 还原Pivot（与Start()中初始设置一致）
+        ClippingPlane.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+        NextPageClip.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+        Left.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+        Right.rectTransform.pivot = new Vector2(0.5f, 0.5f);
+        Shadow.rectTransform.pivot = new Vector2(1, (pageWidth / 2) / shadowPageHeight);
+        ShadowLTR.rectTransform.pivot = new Vector2(0, (pageWidth / 2) / shadowPageHeight);
+
+        // 还原位置和角度（无偏移、无旋转）
+        Left.transform.localPosition = Vector3.zero;
+        Right.transform.localPosition = Vector3.zero;
+        LeftNext.transform.localPosition = Vector3.zero;
+        RightNext.transform.localPosition = Vector3.zero;
+        ClippingPlane.transform.localPosition = Vector3.zero;
+        NextPageClip.transform.localPosition = Vector3.zero;
+        Shadow.transform.localPosition = Vector3.zero;
+        ShadowLTR.transform.localPosition = Vector3.zero;
+
+        Left.transform.localEulerAngles = Vector3.zero;
+        Right.transform.localEulerAngles = Vector3.zero;
+        LeftNext.transform.localEulerAngles = Vector3.zero;
+        RightNext.transform.localEulerAngles = Vector3.zero;
+        ClippingPlane.transform.localEulerAngles = Vector3.zero;
+        NextPageClip.transform.localEulerAngles = Vector3.zero;
+        Shadow.transform.localEulerAngles = Vector3.zero;
+        ShadowLTR.transform.localEulerAngles = Vector3.zero;
+
+        // 6. 还原UI显示状态（仅保留基础书页，隐藏翻页临时元素）
+        Left.gameObject.SetActive(false);
+        Right.gameObject.SetActive(false);
+        Shadow.gameObject.SetActive(false);
+        ShadowLTR.gameObject.SetActive(false);
+        LeftNext.gameObject.SetActive(true);  // 基础左页（初始显示）
+        RightNext.gameObject.SetActive(true); // 基础右页（初始显示）
+
+        // 7. 刷新书页精灵（确保显示当前页的正确内容，与初始逻辑一致）
+        UpdateSprites();
+
+        Debug.Log("[Book] 已恢复到原始状态！");
+    }
+
+
     public void TweenBack()
     {
         if (mode == FlipMode.RightToLeft)

@@ -18,6 +18,75 @@ public class CollectionManager : Singleton<CollectionManager>
         }
     }
 
+
+
+
+
+
+    public int GetProbabilityRandomIndex()
+    {
+        var cards = CollectionConfig.Instance.All;
+      
+        float randomPercent = UnityEngine.Random.Range(0f, 100f);
+        int startIndex = 0;
+        int endIndex = 0;
+
+        // 2. 根据随机数判断所属概率区间，确定索引范围
+        if (randomPercent < 50)
+        {
+            // 50% 概率：索引范围 [0, 20)
+            startIndex = 0;
+            endIndex = 20;
+        }
+        else if (randomPercent < 80) // 50+30=80
+        {
+            // 30% 概率：索引范围 [20, 34)
+            startIndex = 20;
+            endIndex = 30;
+        }
+        else if (randomPercent < 95) // 80+15=95
+        {
+            // 15% 概率：索引范围 [34, 45)
+            startIndex = 30;
+            endIndex = 36;
+        }
+        else if (randomPercent < 99) // 95+4=99
+        {
+            // 4% 概率：索引范围 [45, 49)
+            startIndex = 36;
+            endIndex = 39;
+        }
+        else // 99~100
+        {
+            // 1% 概率：索引范围 [49, 50)
+            startIndex = 39;
+            endIndex = 40;
+        }
+
+        // 3. 调用已有方法，在当前区间内获取随机索引（确保不越界）
+        return GetRandomIndexInRange(startIndex, endIndex, cards.Count());
+    }
+
+
+
+    public  string Unlock2()
+    {
+        var cards = CollectionConfig.Instance.All;
+        int targetIndex = GetProbabilityRandomIndex();
+        Debug.Log("随机概率索引为" + targetIndex);
+        if (targetIndex >= 0)
+        {
+            cards[targetIndex].IsHave.Value = true;
+        }
+        return cards[targetIndex].name;
+    }
+
+
+
+
+
+
+
     public string Unlock(GoodSubType2 collection)
     {
         var cards = CollectionConfig.Instance.All;

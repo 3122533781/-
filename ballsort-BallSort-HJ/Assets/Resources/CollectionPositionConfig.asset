@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc061ae6f409e346b91470edb38b0c4, type: 3}
+  m_Name: CollectionPositionConfig
+  m_EditorClassIdentifier: 
+  All:
+  - id: 1
+    x: 72
+    y: -210
+  - id: 2
+    x: 72
+    y: -270
+  - id: 3
+    x: 72
+    y: -270
+  - id: 4
+    x: 92
+    y: -320
+  - id: 5
+    x: 22
+    y: -300
+  - id: 6
+    x: 70
+    y: -280
+  - id: 7
+    x: 55
+    y: -260
+  - id: 8
+    x: 90
+    y: -360
+  - id: 9
+    x: 60
+    y: -120
+  - id: 10
+    x: 60
+    y: -220
+  - id: 11
+    x: 40
+    y: -220
+  - id: 12
+    x: 60
+    y: -175
+  - id: 13
+    x: 30
+    y: -195
+  - id: 14
+    x: 60
+    y: -195
+  - id: 15
+    x: 70
+    y: -245
+  - id: 16
+    x: 70
+    y: -245
+  - id: 17
+    x: 70
+    y: -295
+  - id: 18
+    x: 70
+    y: -295
+  - id: 19
+    x: 70
+    y: -240
+  - id: 20
+    x: 70
+    y: -240
+  - id: 21
+    x: 60
+    y: -220
+  - id: 22
+    x: 70
+    y: -280
+  - id: 23
+    x: 70
+    y: -280
+  - id: 24
+    x: 70
+    y: -280
+  - id: 25
+    x: 60
+    y: -250
+  - id: 26
+    x: 60
+    y: -250
+  - id: 27
+    x: 60
+    y: -250
+  - id: 28
+    x: 60
+    y: -290
+  - id: 29
+    x: 84
+    y: -240
+  - id: 30
+    x: 64
+    y: -260
+  - id: 31
+    x: 64
+    y: -190
+  - id: 32
+    x: 69
+    y: -290
+  - id: 33
+    x: 69
+    y: -290
+  - id: 34
+    x: 69
+    y: -220
+  - id: 35
+    x: 69
+    y: -220
+  - id: 36
+    x: 69
+    y: -220
+  - id: 37
+    x: 59
+    y: -180
+  - id: 38
+    x: 69
+    y: -240
+  - id: 39
+    x: 54
+    y: -190
+  - id: 40
+    x: 64
+    y: -265

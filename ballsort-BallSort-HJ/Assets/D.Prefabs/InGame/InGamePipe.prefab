@@ -114,7 +114,6 @@ RectTransform:
   - {fileID: 8530683328313399888}
   - {fileID: 5591846140329297088}
   - {fileID: 6743844759610206019}
-  - {fileID: 3594568761432211272}
   - {fileID: 2839755669797652212}
   - {fileID: 5289285729500563991}
   - {fileID: 2940901926607363563}
@@ -158,13 +157,14 @@ MonoBehaviour:
   bodySizeFitter: {fileID: 0}
   pipeController: {fileID: 218042190090680170}
   ballPrefab: {fileID: 7461113975087870539, guid: dfa97312789820b459759790df813f60, type: 3}
+  ballMoveTx: {fileID: 3221246599590765387, guid: 044416f7712bd104d93f8cc5d615ff93, type: 3}
   pipeButton: {fileID: 5020774140279463801}
   popToPos: {fileID: 6743844759610206019}
   emptyPanel: {fileID: 5591846140329297088}
   pipeControllerPanel: {fileID: 2599032480875428261}
   fullPipeEff: {fileID: 0}
-  skeletonGraphic: {fileID: 7634456991969621702}
-  skeletonGraphic2: {fileID: 3314953619975973655}
+  skeletonGraphic: {fileID: 6328897139872333454}
+  skeletonGraphic2: {fileID: 1416087770225046545}
   FreezeskeletonGraphic: {fileID: 6545012739872455895}
   SpinegameObject: {fileID: 6600298322016725559}
   Typeimage: {fileID: 5222813049068643811}
@@ -174,6 +174,8 @@ MonoBehaviour:
   BottomskeletonGraphic: {fileID: 208959003615169075}
   NumberTxt: {fileID: 1343366266315371149}
   FenJieXian: {fileID: 3630047822527969787, guid: 4b8529c90d2ee2740831e4b34370a6ff, type: 3}
+  canvas:
+  - {fileID: 9135099780696269036}
   isAddPipe: 0
   isFreezePipe: 0
   _pipeData:
@@ -384,7 +386,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -525,7 +527,7 @@ RectTransform:
   m_Children:
   - {fileID: 6402209804470718319}
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -652,17 +654,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3837592694156886018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 5
+  m_Father: {fileID: 8274331325376262044}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 773}
+  m_AnchoredPosition: {x: 0, y: 820}
   m_SizeDelta: {x: 405, y: 784}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6515113662647538948
@@ -735,7 +737,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1074,9 +1076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736097394215257026}
   - component: {fileID: 7643079648504589607}
-  - component: {fileID: 7536451147238350854}
-  - component: {fileID: 9022644976933838195}
-  - component: {fileID: 3314953619975973655}
+  - component: {fileID: 1416087770225046545}
   m_Layer: 5
   m_Name: Spine2
   m_TagString: Untagged
@@ -1097,7 +1097,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1112,57 +1112,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6391894795387712205}
   m_CullTransparentMesh: 1
---- !u!33 &7536451147238350854
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6391894795387712205}
-  m_Mesh: {fileID: 0}
---- !u!23 &9022644976933838195
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6391894795387712205}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7b9b8a8e8d414394dbaecf55f116de20, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1332238459
-  m_SortingLayer: 2
-  m_SortingOrder: 100
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3314953619975973655
+--- !u!114 &1416087770225046545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1171,34 +1121,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 6391894795387712205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
   skeletonDataAsset: {fileID: 11400000, guid: 69e7dea2d435f6c468d3c89219977466, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  _animationName: animation
-  loop: 0
+  startingAnimation: 
+  startingLoop: 0
   timeScale: 1
+  freeze: 0
+  updateWhenInvisible: 3
+  unscaledTime: 0
+  allowMultipleCanvasRenderers: 0
+  canvasRenderers: []
+  separatorSlotNames: []
+  enableSeparatorSlots: 0
+  separatorParts: []
+  updateSeparatorPartLocation: 1
+  meshGenerator:
+    settings:
+      useClipping: 1
+      zSpacing: 0
+      pmaVertexColors: 1
+      tintBlack: 0
+      canvasGroupTintBlack: 0
+      calculateTangents: 0
+      addNormals: 0
+      immutableTriangles: 0
 --- !u!1 &6600298322016725559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,9 +1168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2940901926607363563}
   - component: {fileID: 7095386368701863524}
-  - component: {fileID: 2382985155521493079}
-  - component: {fileID: 7937392902174570882}
-  - component: {fileID: 7634456991969621702}
+  - component: {fileID: 6328897139872333454}
   m_Layer: 5
   m_Name: Spine
   m_TagString: Untagged
@@ -1228,11 +1185,11 @@ RectTransform:
   m_GameObject: {fileID: 6600298322016725559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1247,57 +1204,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6600298322016725559}
   m_CullTransparentMesh: 1
---- !u!33 &2382985155521493079
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600298322016725559}
-  m_Mesh: {fileID: 0}
---- !u!23 &7937392902174570882
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600298322016725559}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 392fc285cb5855844ac88a5d1931b725, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1332238459
-  m_SortingLayer: 2
-  m_SortingOrder: 100
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7634456991969621702
+--- !u!114 &6328897139872333454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1306,34 +1213,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 6600298322016725559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 3df06688c927c5045a49de8785c012ae, type: 2}
+  m_Material: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  skeletonDataAsset: {fileID: 11400000, guid: 69e7dea2d435f6c468d3c89219977466, type: 2}
   initialSkinName: 
   initialFlipX: 0
   initialFlipY: 0
-  updateWhenInvisible: 3
-  separatorSlotNames: []
-  zSpacing: 0
-  useClipping: 1
-  immutableTriangles: 0
-  pmaVertexColors: 1
-  clearStateOnDisable: 0
-  tintBlack: 0
-  singleSubmesh: 0
-  fixDrawOrder: 0
-  addNormals: 0
-  calculateTangents: 0
-  maskInteraction: 0
-  maskMaterials:
-    materialsMaskDisabled: []
-    materialsInsideMask: []
-    materialsOutsideMask: []
-  disableRenderingOnOverride: 1
-  _animationName: animation
-  loop: 0
+  startingAnimation: HuiBang
+  startingLoop: 0
   timeScale: 1
+  freeze: 0
+  updateWhenInvisible: 3
+  unscaledTime: 0
+  allowMultipleCanvasRenderers: 0
+  canvasRenderers: []
+  separatorSlotNames: []
+  enableSeparatorSlots: 0
+  separatorParts: []
+  updateSeparatorPartLocation: 1
+  meshGenerator:
+    settings:
+      useClipping: 1
+      zSpacing: 0
+      pmaVertexColors: 1
+      tintBlack: 0
+      canvasGroupTintBlack: 0
+      calculateTangents: 0
+      addNormals: 0
+      immutableTriangles: 0
 --- !u!1 &6634249630800091343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,9 +1304,9 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: 40
   m_ChildAlignment: 7
-  m_Spacing: 0
+  m_Spacing: 40
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1522,7 +1438,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2109861297749886793}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

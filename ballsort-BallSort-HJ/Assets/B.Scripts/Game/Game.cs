@@ -37,7 +37,8 @@ public class Game : Singleton<Game>
     public void BackHome(Action backHomeAction = null)
     {
         Game.Instance.GetSystem<ADStrategySystem>().PlusBackHomeTime();
-        if (GetSystem<ADStrategySystem>().NeedBackHomeShowIntersistal())
+      //  if (GetSystem<ADStrategySystem>().NeedBackHomeShowIntersistal())
+      if(false)
         {
             ADMudule.ShowInterstitialAds("BackHome",
                 (isSuccess) => { GetSystem<ADStrategySystem>().ResetBackHomeTime(); });

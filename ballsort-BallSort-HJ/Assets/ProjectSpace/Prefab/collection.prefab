@@ -92,6 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 6664000297060600862}
+  itemButton: {fileID: 7394021645272482115}
+  _itemRect: {fileID: 7784940228259482689}
 --- !u!114 &7394021645272482115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,19 +137,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7776620998357204156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4561894299640756279}
-        m_TargetAssemblyTypeName: CollectionItem, Assembly-CSharp
-        m_MethodName: ShowItem
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2316023607615932411
 GameObject:
   m_ObjectHideFlags: 0

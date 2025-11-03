@@ -39,6 +39,7 @@ namespace _02.Scripts.InGame.Controller
             Game.Instance.LevelModel.TypeNumber = Context.GetBallsType();
             Debug.Log($"[InGameMapController] 当前关卡球种类数：{Game.Instance.LevelModel.TypeNumber}");
             Context.GetView<InGamePlayingUI>().SetBarNumberTo(Game.Instance.LevelModel.TheSmallLevelNumbers);
+           
             //  Context.GetView<InGamePlayingUI>().SetBarToZero();
         }
 

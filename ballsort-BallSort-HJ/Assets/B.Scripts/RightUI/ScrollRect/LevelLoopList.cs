@@ -15,20 +15,18 @@ public class LevelLoopList : MonoBehaviour
     MyLoopList<TestData, TestView> myLoopList;
     // Start is called before the first frame update
 
-    public float GetVerticalValue(int levelValue)
-    {
-        if (levelValue / 5 > 0)
-        {
-            float tempValue = 1 - (levelValue / 5 * (5.0f / LevelConfig.Instance.All.Count) - (30 / 5 * (5.0f / LevelConfig.Instance.All.Count)));
-            //parentRect.verticalNormalizedPosition = Mathf.Clamp(tempValue, 0, 1);
-            return Mathf.Clamp(tempValue, 0, 1);
-        }
-        else
-        {
-            //parentRect.verticalNormalizedPosition = 1;
-            return 1;
-        }
-    }
+public float GetVerticalValue(int levelValue)
+{
+    float totalRow = Mathf.Ceil((float)LevelConfig.Instance.All.Count / 5); // 总行数（5列/行）
+    float currentRow = Mathf.Ceil((float)levelValue / 5); // 当前关卡所在行数（浮点除法）
+    
+    if (currentRow > totalRow) currentRow = totalRow;
+    if (currentRow < 1) currentRow = 1;
+    
+    // 计算垂直归一化位置（1为最顶部，0为最底部）
+    float tempValue = 1 - (currentRow - 1) / (totalRow - 1); 
+    return Mathf.Clamp(tempValue, 0, 1);
+}
 
     public void Refresh()
     {

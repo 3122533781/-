@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &59861344
+--- !u!21 &27526136
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 0
+    - _OutlineWidth: 5
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -159,11 +159,93 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.9960785, g: 0.73333335, b: 0.28235295, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!21 &87401298
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &100627827
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 3
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.34117648, g: 0.13333334, b: 0.07058824, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &112348285
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -250,88 +332,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &141304129
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.34117648, g: 0.13333334, b: 0.07058824, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &249846526
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.5254902, g: 0.3803922, b: 0.28235295, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &271023218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1571763817101803333, guid: 26236c9df0c4ff546a83ad5d742b0912, type: 3}
@@ -349,6 +349,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721561b7f5117ff46959843142ebc510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &275420924
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 3
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.86666673, g: 0.86666673, b: 0.8196079, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &284076367
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +435,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284076367}
   m_CullTransparentMesh: 1
+--- !u!21 &317844856
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &362380958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,88 +658,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7739878979159517927, guid: 240a275ff55cb0b4c952333a1c90f5cd, type: 3}
   m_PrefabInstance: {fileID: 362380958}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &374331495
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 0
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &377933920
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 5
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.9960785, g: 0.73333335, b: 0.28235295, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!21 &435459784
 Material:
   serializedVersion: 8
@@ -1009,47 +1009,6 @@ Canvas:
   m_SortingLayerID: -1332238459
   m_SortingOrder: 10091
   m_TargetDisplay: 0
---- !u!21 &481243019
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4.3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.77647066, g: 0.5254902, b: 0.4901961, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &503395227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1144,47 @@ MonoBehaviour:
   empty: {fileID: 284076368}
   dropSpeed: 0.2
   _isDropAnime: 0
+--- !u!21 &538758187
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 3
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.5254902, g: 0.3803922, b: 0.28235295, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &565038941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1261,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565038941}
   m_CullTransparentMesh: 1
---- !u!21 &570795910
+--- !u!21 &581325557
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1302,7 +1302,7 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &581325557
+--- !u!21 &608468558
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1329,7 +1329,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 2
+    - _OutlineWidth: 3
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -1339,7 +1339,7 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
@@ -1385,7 +1385,7 @@ PrefabInstance:
     - target: {fileID: 1482691369818372262, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 803825474}
+      objectReference: {fileID: 1724328718}
     - target: {fileID: 1933970650647132470, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_SortingOrder
       value: 1000
@@ -1409,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 2283386435716477487, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1519674016}
+      objectReference: {fileID: 317844856}
     - target: {fileID: 3603620766491320282, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1453,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: 6143187791195506617, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1660434362}
+      objectReference: {fileID: 2131859832}
     - target: {fileID: 7386489438414271791, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Material
       value: 
@@ -1545,7 +1545,7 @@ PrefabInstance:
     - target: {fileID: 8792240086738274004, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 377933920}
+      objectReference: {fileID: 27526136}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
 --- !u!224 &611193359 stripped
@@ -1553,47 +1553,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7739878979159517927, guid: 98c98c980ed0e464faf3827e70c507dc, type: 3}
   m_PrefabInstance: {fileID: 611193358}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &674751922
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &676347603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,6 +1654,47 @@ Canvas:
   m_SortingLayerID: 1023543041
   m_SortingOrder: 1000
   m_TargetDisplay: 0
+--- !u!21 &697333309
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &707517396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1801,7 +1801,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2423941875207054337, guid: c389331629c54f74fa5501a718e2f2b7, type: 3}
   m_PrefabInstance: {fileID: 707517396}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &741184363
+--- !u!21 &729945398
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1842,7 +1842,7 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &744998879
+--- !u!21 &741184363
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1869,7 +1869,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 2
+    - _OutlineWidth: 4
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -1933,6 +1933,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &768149974
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 0
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &786777858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,90 +2074,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 7
   m_SortingLayerID: -1332238459
-  m_SortingOrder: 89
+  m_SortingOrder: 94
   m_TargetDisplay: 0
---- !u!21 &803825474
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &820844443
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 2
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &840271178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,88 +2189,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bgmClip: {fileID: 8300000, guid: b322f0730d0f4dd49ac3ccb2bfd59017, type: 3}
---- !u!21 &887924851
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.34117648, g: 0.13333334, b: 0.07058824, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &901517230
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 0
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &911173278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,7 +2513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9011203fee8971f49a062bb6798f0d32, type: 3}
---- !u!21 &1073530660
+--- !u!21 &987835218
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2663,7 +2540,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 3
+    - _OutlineWidth: 4.3
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -2673,11 +2550,11 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.77647066, g: 0.5254902, b: 0.4901961, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1083558264
+--- !u!21 &1079106898
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2714,7 +2591,7 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.12941177, g: 0.2509804, b: 0.5058824, a: 0}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
@@ -2820,6 +2697,88 @@ Canvas:
   m_SortingLayerID: -1332238459
   m_SortingOrder: -1
   m_TargetDisplay: 0
+--- !u!21 &1093031081
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 3
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1097260614
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 3
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.34117648, g: 0.13333334, b: 0.07058824, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1109011321
 Material:
   serializedVersion: 8
@@ -3672,6 +3631,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1739602394}
     - target: {fileID: 8606314155196607587, guid: 9842fde7e393cca4fa457b51cf008408, type: 3}
+      propertyPath: BeginAnim
+      value: 
+      objectReference: {fileID: 1733545484}
+    - target: {fileID: 8606314155196607587, guid: 9842fde7e393cca4fa457b51cf008408, type: 3}
       propertyPath: _barNumber
       value: 
       objectReference: {fileID: 2005903316}
@@ -4107,7 +4070,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!21 &1229442429
+--- !u!21 &1216010024
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4134,7 +4097,48 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 4
+    - _OutlineWidth: 0
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1247414194
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -4224,47 +4228,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270705760}
   m_CullTransparentMesh: 1
---- !u!21 &1278567607
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 2
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1001 &1294890146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4280,10 +4243,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1396477870228979266, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1482691369818372262, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1347623278}
+      objectReference: {fileID: 1674966424}
+    - target: {fileID: 1933970650647132470, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933970650647132470, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933970650647132470, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2227273398417626622, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -4294,20 +4273,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2227273398417626622, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 225.25
+      value: -275.25
       objectReference: {fileID: 0}
     - target: {fileID: 2227273398417626622, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -102.5
+      value: -72
       objectReference: {fileID: 0}
     - target: {fileID: 2283386435716477487, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1229442429}
+      objectReference: {fileID: 1930599882}
+    - target: {fileID: 5628747551292396865, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628747551292396865, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 809b21dc93e3459479f8ddc939028876, type: 2}
     - target: {fileID: 6143187791195506617, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2012363845}
+      objectReference: {fileID: 1702331508}
+    - target: {fileID: 7415946222180575767, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7739878979159517927, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4392,14 +4383,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4090633953783547100, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+    - {fileID: 1933970650647132470, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+    - {fileID: 5628747551292396865, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
 --- !u!224 &1294890147 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7739878979159517927, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
   m_PrefabInstance: {fileID: 1294890146}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1347623278
+--- !u!1 &1294890148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 520611848685409277, guid: c76ed2d1dd9481440b4c7839eec0547f, type: 3}
+  m_PrefabInstance: {fileID: 1294890146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1294890149
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294890148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 809b21dc93e3459479f8ddc939028876, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!21 &1354348600
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4426,48 +4446,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1373248018
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 6
+    - _OutlineWidth: 0
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -4481,7 +4460,7 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1422741861
+--- !u!21 &1414712807
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4639,47 +4618,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446098287}
   m_CullTransparentMesh: 1
---- !u!21 &1461238876
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 2
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!21 &1500113069
 Material:
   serializedVersion: 8
@@ -4838,7 +4776,7 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1519674016
+--- !u!21 &1547918541
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -4865,89 +4803,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1538001376
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1545595375
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4
+    - _OutlineWidth: 2
     - _ShadowOutlineWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -5091,7 +4947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1711e7762b085664db9a08f05b9c2e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1373248018}
+  m_Material: {fileID: 1919866499}
   m_Color: {r: 0.7372549, g: 0.32941177, b: 0.37254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5125,6 +4981,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569866138}
   m_CullTransparentMesh: 1
+--- !u!21 &1579121440
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1608575001
 Material:
   serializedVersion: 8
@@ -5234,88 +5131,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1647773849
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 5
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.9960785, g: 0.73333335, b: 0.28235295, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1660434362
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 0
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!21 &1672773097
 Material:
   serializedVersion: 8
@@ -5357,11 +5172,93 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &1674966424
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!224 &1689273125 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8349150655332808015, guid: 9842fde7e393cca4fa457b51cf008408, type: 3}
   m_PrefabInstance: {fileID: 1191616369}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1702331508
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 0
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &1711532801 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1339687148736057425, guid: 26236c9df0c4ff546a83ad5d742b0912, type: 3}
@@ -5373,6 +5270,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1724328718
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1730348783
 Material:
   serializedVersion: 8
@@ -5414,6 +5352,98 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!1 &1733545482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733545483}
+  - component: {fileID: 1733545485}
+  - component: {fileID: 1733545484}
+  m_Layer: 5
+  m_Name: BeginSpine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1733545483
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733545482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1191616370}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 38.54004}
+  m_SizeDelta: {x: 0, y: -724.44}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1733545484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733545482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: b66cf7a186d13054989b33a5c90044e4, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  skeletonDataAsset: {fileID: 11400000, guid: 23426a18fb43ff8448019ae1ca49dedd, type: 2}
+  initialSkinName: 
+  initialFlipX: 0
+  initialFlipY: 0
+  startingAnimation: animation
+  startingLoop: 0
+  timeScale: 1
+  freeze: 0
+  updateWhenInvisible: 3
+  unscaledTime: 0
+  allowMultipleCanvasRenderers: 0
+  canvasRenderers: []
+  separatorSlotNames: []
+  enableSeparatorSlots: 0
+  separatorParts: []
+  updateSeparatorPartLocation: 1
+  meshGenerator:
+    settings:
+      useClipping: 1
+      zSpacing: 0
+      pmaVertexColors: 1
+      tintBlack: 0
+      canvasGroupTintBlack: 0
+      calculateTangents: 0
+      addNormals: 0
+      immutableTriangles: 0
+--- !u!222 &1733545485
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733545482}
+  m_CullTransparentMesh: 1
 --- !u!1 &1739602394
 GameObject:
   m_ObjectHideFlags: 0
@@ -5622,129 +5652,6 @@ MonoBehaviour:
   maxStar: 10
   root: {fileID: 1248024619118227305}
   bg: {fileID: 1446098289}
---- !u!21 &1769023606
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 2
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1785226424
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1863692565
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 0
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!21 &1867273766
 Material:
   serializedVersion: 8
@@ -5783,6 +5690,88 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0.34117648, g: 0.13333334, b: 0.07058824, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1874254898
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 5
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.9960785, g: 0.73333335, b: 0.28235295, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1875007998
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
@@ -5827,70 +5816,7 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1961778183
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 2
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!1 &2005903315 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3398504680500247425, guid: 9842fde7e393cca4fa457b51cf008408, type: 3}
-  m_PrefabInstance: {fileID: 1191616369}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2005903316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005903315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9de6daeb284412c44b0a4f919051128c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarRect: {fileID: 1689273125}
-  defaultMarkerCount: 4
-  defaultMarkerYPos: 10
-  markerPrefab: {fileID: 5198106541302016648, guid: 9329ba5ef6d290441acd1cfdf1c4b524, type: 3}
-  markerParent: {fileID: 1689273125}
---- !u!21 &2012363845
+--- !u!21 &1911260848
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -5931,6 +5857,233 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &1919866499
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 6
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1920170862
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0.12941177, g: 0.2509804, b: 0.5058824, a: 0}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1930599882
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1967316320
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 2
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1977449811
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!1 &2005903315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3398504680500247425, guid: 9842fde7e393cca4fa457b51cf008408, type: 3}
+  m_PrefabInstance: {fileID: 1191616369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2005903316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005903315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de6daeb284412c44b0a4f919051128c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarRect: {fileID: 1689273125}
+  defaultMarkerCount: 4
+  defaultMarkerYPos: 10
+  markerPrefab: {fileID: 5198106541302016648, guid: 9329ba5ef6d290441acd1cfdf1c4b524, type: 3}
+  markerParent: {fileID: 1689273125}
 --- !u!21 &2027364506
 Material:
   serializedVersion: 8
@@ -6059,88 +6212,6 @@ Material:
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &2064163787
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 4
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &2069425291
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: TextEffect/Text2DOutline
-  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _OutlineWidth: 3
-    - _ShadowOutlineWidth: 0
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.86666673, g: 0.86666673, b: 0.8196079, a: 1}
-    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &2077185067
 GameObject:
   m_ObjectHideFlags: 0
@@ -6192,6 +6263,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &2102033049
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 4
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &2131859832
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TextEffect/Text2DOutline
+  m_Shader: {fileID: 4800000, guid: c51a8e184dc795b45b67012afb0408e3, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _OutlineWidth: 0
+    - _ShadowOutlineWidth: 0
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1248024619118227304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6531,7 +6684,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2589356161122261073, guid: 26236c9df0c4ff546a83ad5d742b0912, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 26236c9df0c4ff546a83ad5d742b0912, type: 3}
 --- !u!224 &1248024619118227305 stripped
 RectTransform:

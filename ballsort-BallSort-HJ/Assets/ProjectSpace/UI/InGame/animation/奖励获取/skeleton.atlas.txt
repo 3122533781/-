@@ -1,428 +1,368 @@
 
 skeleton.png
-size: 2712,2299
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 JiangLiHuoQu_00000
   rotate: false
-  xy: 2, 2169
-  size: 142, 128
-  orig: 1320, 2868
-  offset: 589, 1373
+  xy: 2, 1904
+  size: 70, 60
+  orig: 660, 1434
+  offset: 295, 687
   index: -1
 JiangLiHuoQu_00001
   rotate: false
-  xy: 146, 1982
-  size: 330, 315
-  orig: 1320, 2868
-  offset: 491, 1280
+  xy: 74, 1813
+  size: 163, 151
+  orig: 660, 1434
+  offset: 247, 641
   index: -1
 JiangLiHuoQu_00002
   rotate: false
-  xy: 478, 1780
-  size: 519, 517
-  orig: 1320, 2868
-  offset: 389, 1185
+  xy: 239, 1712
+  size: 260, 252
+  orig: 660, 1434
+  offset: 194, 594
   index: -1
 JiangLiHuoQu_00003
   rotate: false
-  xy: 999, 1591
-  size: 721, 706
-  orig: 1320, 2868
-  offset: 287, 1096
+  xy: 501, 1611
+  size: 361, 353
+  orig: 660, 1434
+  offset: 143, 548
   index: -1
 JiangLiHuoQu_00004
   rotate: false
-  xy: 1722, 1324
-  size: 988, 973
-  orig: 1320, 2868
-  offset: 140, 973
+  xy: 864, 1478
+  size: 493, 486
+  orig: 660, 1434
+  offset: 70, 487
   index: -1
 JiangLiHuoQu_00005
   rotate: false
-  xy: 2, 411
-  size: 1212, 1178
-  orig: 1320, 2868
-  offset: 22, 880
+  xy: 1359, 1375
+  size: 605, 589
+  orig: 660, 1434
+  offset: 11, 440
   index: -1
 JiangLiHuoQu_00006
   rotate: true
-  xy: 1216, 2
-  size: 1320, 1480
-  orig: 1320, 2868
-  offset: 0, 751
+  xy: 2, 949
+  size: 660, 729
+  orig: 660, 1434
+  offset: 0, 378
   index: -1
-
-skeleton2.png
-size: 1934,2232
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
+JiangLiHuoQu_00040
+  rotate: true
+  xy: 969, 256
+  size: 559, 968
+  orig: 660, 1434
+  offset: 38, 78
+  index: -1
 JiangLiHuoQu_00042
   rotate: true
-  xy: 2, 2
-  size: 1114, 1930
-  orig: 1320, 2868
-  offset: 80, 156
+  xy: 2, 258
+  size: 557, 965
+  orig: 660, 1434
+  offset: 40, 78
   index: -1
 JiangLiHuoQu_00043
   rotate: true
-  xy: 2, 1118
-  size: 1112, 1913
-  orig: 1320, 2868
-  offset: 82, 156
+  xy: 733, 817
+  size: 556, 957
+  orig: 660, 1434
+  offset: 41, 78
   index: -1
 
-skeleton3.png
-size: 1941,2244
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00040
-  rotate: true
-  xy: 2, 1124
-  size: 1118, 1937
-  orig: 1320, 2868
-  offset: 76, 156
-  index: -1
-JiangLiHuoQu_00041
-  rotate: true
-  xy: 2, 2
-  size: 1120, 1936
-  orig: 1320, 2868
-  offset: 75, 156
-  index: -1
-
-skeleton4.png
-size: 2102,2417
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00037
-  rotate: true
-  xy: 2, 2
-  size: 1209, 2098
-  orig: 1320, 2868
-  offset: 72, 157
-  index: -1
-JiangLiHuoQu_00039
-  rotate: true
-  xy: 2, 1213
-  size: 1202, 2098
-  orig: 1320, 2868
-  offset: 70, 156
-  index: -1
-
-skeleton5.png
-size: 2102,2497
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00035
-  rotate: true
-  xy: 2, 2
-  size: 1282, 2096
-  orig: 1320, 2868
-  offset: 0, 158
-  index: -1
-JiangLiHuoQu_00038
-  rotate: true
-  xy: 2, 1286
-  size: 1209, 2098
-  orig: 1320, 2868
-  offset: 71, 156
-  index: -1
-
-skeleton6.png
-size: 2102,2571
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00034
-  rotate: true
-  xy: 2, 2
-  size: 1283, 2095
-  orig: 1320, 2868
-  offset: 0, 159
-  index: -1
-JiangLiHuoQu_00036
-  rotate: true
-  xy: 2, 1287
-  size: 1282, 2098
-  orig: 1320, 2868
-  offset: 0, 157
-  index: -1
-
-skeleton7.png
-size: 1899,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00007
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 1684
-  orig: 1320, 2868
-  offset: 0, 651
-  index: -1
-JiangLiHuoQu_00008
-  rotate: true
-  xy: 2, 2
-  size: 1320, 1895
-  orig: 1320, 2868
-  offset: 0, 558
-  index: -1
-
-skeleton8.png
-size: 2242,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00009
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2077
-  orig: 1320, 2868
-  offset: 0, 472
-  index: -1
-JiangLiHuoQu_00010
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2238
-  orig: 1320, 2868
-  offset: 0, 395
-  index: -1
-
-skeleton9.png
-size: 2413,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00011
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2376
-  orig: 1320, 2868
-  offset: 0, 329
-  index: -1
-JiangLiHuoQu_00012
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2409
-  orig: 1320, 2868
-  offset: 0, 272
-  index: -1
-
-skeleton10.png
-size: 2364,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00013
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2360
-  orig: 1320, 2868
-  offset: 0, 277
-  index: -1
-JiangLiHuoQu_00014
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2322
-  orig: 1320, 2868
-  offset: 0, 289
-  index: -1
-
-skeleton11.png
-size: 2273,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00015
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2269
-  orig: 1320, 2868
-  offset: 0, 308
-  index: -1
-JiangLiHuoQu_00016
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2204
-  orig: 1320, 2868
-  offset: 0, 333
-  index: -1
-
-skeleton12.png
-size: 2346,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00017
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2267
-  orig: 1320, 2868
-  offset: 0, 305
-  index: -1
-JiangLiHuoQu_00018
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2342
-  orig: 1320, 2868
-  offset: 0, 274
-  index: -1
-
-skeleton13.png
-size: 2518,2646
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00019
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2442
-  orig: 1320, 2868
-  offset: 0, 201
-  index: -1
-JiangLiHuoQu_00020
-  rotate: true
-  xy: 2, 2
-  size: 1320, 2514
-  orig: 1320, 2868
-  offset: 0, 157
-  index: -1
-
-skeleton14.png
-size: 2646,2577
+skeleton2.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 JiangLiHuoQu_00021
   rotate: false
-  xy: 2, 2
-  size: 1320, 2573
-  orig: 1320, 2868
-  offset: 0, 121
+  xy: 2, 664
+  size: 660, 1285
+  orig: 660, 1434
+  offset: 0, 61
+  index: -1
+JiangLiHuoQu_00022
+  rotate: true
+  xy: 664, 1289
+  size: 660, 1262
+  orig: 660, 1434
+  offset: 0, 61
   index: -1
 JiangLiHuoQu_00023
-  rotate: false
-  xy: 1324, 5
-  size: 1320, 2570
-  orig: 1320, 2868
-  offset: 0, 83
+  rotate: true
+  xy: 2, 2
+  size: 660, 1285
+  orig: 660, 1434
+  offset: 0, 42
+  index: -1
+JiangLiHuoQu_00038
+  rotate: true
+  xy: 664, 682
+  size: 605, 1049
+  orig: 660, 1434
+  offset: 35, 78
   index: -1
 
-skeleton15.png
-size: 2646,2528
+skeleton3.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JiangLiHuoQu_00022
+JiangLiHuoQu_00020
   rotate: false
-  xy: 2, 2
-  size: 1320, 2524
-  orig: 1320, 2868
-  offset: 0, 123
+  xy: 2, 664
+  size: 660, 1256
+  orig: 660, 1434
+  offset: 0, 79
+  index: -1
+JiangLiHuoQu_00026
+  rotate: true
+  xy: 664, 1260
+  size: 660, 1249
+  orig: 660, 1434
+  offset: 0, 67
   index: -1
 JiangLiHuoQu_00027
-  rotate: false
-  xy: 1324, 21
-  size: 1320, 2505
-  orig: 1320, 2868
-  offset: 0, 130
+  rotate: true
+  xy: 2, 2
+  size: 660, 1253
+  orig: 660, 1434
+  offset: 0, 65
+  index: -1
+JiangLiHuoQu_00041
+  rotate: true
+  xy: 664, 698
+  size: 560, 968
+  orig: 660, 1434
+  offset: 37, 78
   index: -1
 
-skeleton16.png
-size: 2477,2646
+skeleton4.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 JiangLiHuoQu_00024
-  rotate: true
-  xy: 2, 1324
-  size: 1320, 2456
-  orig: 1320, 2868
-  offset: 0, 167
+  rotate: false
+  xy: 1241, 684
+  size: 660, 1229
+  orig: 660, 1434
+  offset: 0, 83
   index: -1
 JiangLiHuoQu_00025
   rotate: true
   xy: 2, 2
-  size: 1320, 2473
-  orig: 1320, 2868
-  offset: 0, 147
-  index: -1
-
-skeleton17.png
-size: 2646,2502
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JiangLiHuoQu_00026
-  rotate: false
-  xy: 1324, 4
-  size: 1320, 2496
-  orig: 1320, 2868
-  offset: 0, 135
+  size: 660, 1237
+  orig: 660, 1434
+  offset: 0, 73
   index: -1
 JiangLiHuoQu_00028
   rotate: false
-  xy: 2, 2
-  size: 1320, 2498
-  orig: 1320, 2868
-  offset: 0, 134
+  xy: 2, 664
+  size: 660, 1249
+  orig: 660, 1434
+  offset: 0, 67
   index: -1
 
-skeleton18.png
-size: 2646,2459
+skeleton5.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JiangLiHuoQu_00029
+JiangLiHuoQu_00011
   rotate: false
-  xy: 2, 2
-  size: 1320, 2455
-  orig: 1320, 2868
-  offset: 0, 166
-  index: -1
-JiangLiHuoQu_00030
-  rotate: false
-  xy: 1324, 109
-  size: 1320, 2348
-  orig: 1320, 2868
+  xy: 1220, 35
+  size: 660, 1188
+  orig: 660, 1434
   offset: 0, 164
   index: -1
+JiangLiHuoQu_00012
+  rotate: true
+  xy: 664, 1225
+  size: 660, 1204
+  orig: 660, 1434
+  offset: 0, 136
+  index: -1
+JiangLiHuoQu_00019
+  rotate: false
+  xy: 2, 664
+  size: 660, 1221
+  orig: 660, 1434
+  offset: 0, 100
+  index: -1
+JiangLiHuoQu_00029
+  rotate: true
+  xy: 2, 2
+  size: 660, 1216
+  orig: 660, 1434
+  offset: 0, 83
+  index: -1
 
-skeleton19.png
-size: 2646,2322
+skeleton6.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+JiangLiHuoQu_00013
+  rotate: false
+  xy: 2, 664
+  size: 660, 1180
+  orig: 660, 1434
+  offset: 0, 139
+  index: -1
+JiangLiHuoQu_00014
+  rotate: false
+  xy: 1178, 21
+  size: 660, 1161
+  orig: 660, 1434
+  offset: 0, 145
+  index: -1
+JiangLiHuoQu_00018
+  rotate: true
+  xy: 664, 1184
+  size: 660, 1166
+  orig: 660, 1434
+  offset: 0, 137
+  index: -1
+JiangLiHuoQu_00030
+  rotate: true
+  xy: 2, 2
+  size: 660, 1174
+  orig: 660, 1434
+  offset: 0, 82
+  index: -1
+
+skeleton7.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JiangLiHuoQu_00010
+  rotate: false
+  xy: 1139, 36
+  size: 660, 1119
+  orig: 660, 1434
+  offset: 0, 198
+  index: -1
+JiangLiHuoQu_00015
+  rotate: true
+  xy: 2, 2
+  size: 660, 1135
+  orig: 660, 1434
+  offset: 0, 154
+  index: -1
+JiangLiHuoQu_00017
+  rotate: true
+  xy: 664, 1157
+  size: 660, 1126
+  orig: 660, 1434
+  offset: 0, 155
+  index: -1
 JiangLiHuoQu_00031
   rotate: false
+  xy: 2, 664
+  size: 660, 1153
+  orig: 660, 1434
+  offset: 0, 81
+  index: -1
+
+skeleton8.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JiangLiHuoQu_00016
+  rotate: true
   xy: 2, 2
-  size: 1320, 2318
-  orig: 1320, 2868
-  offset: 0, 163
+  size: 660, 1102
+  orig: 660, 1434
+  offset: 0, 167
   index: -1
 JiangLiHuoQu_00032
   rotate: false
-  xy: 1324, 94
-  size: 1320, 2226
-  orig: 1320, 2868
-  offset: 0, 161
+  xy: 2, 664
+  size: 660, 1114
+  orig: 660, 1434
+  offset: 0, 80
+  index: -1
+JiangLiHuoQu_00033
+  rotate: false
+  xy: 1106, 88
+  size: 660, 1047
+  orig: 660, 1434
+  offset: 0, 80
+  index: -1
+JiangLiHuoQu_00036
+  rotate: true
+  xy: 664, 1137
+  size: 641, 1050
+  orig: 660, 1434
+  offset: 0, 78
   index: -1
 
-skeleton20.png
-size: 1324,2098
+skeleton9.png
+size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JiangLiHuoQu_00033
+JiangLiHuoQu_00009
   rotate: false
-  xy: 2, 2
-  size: 1320, 2094
-  orig: 1320, 2868
-  offset: 0, 160
+  xy: 2, 680
+  size: 660, 1032
+  orig: 660, 1434
+  offset: 0, 236
+  index: -1
+JiangLiHuoQu_00034
+  rotate: true
+  xy: 2, 37
+  size: 641, 1048
+  orig: 660, 1434
+  offset: 0, 79
+  index: -1
+JiangLiHuoQu_00035
+  rotate: true
+  xy: 664, 1071
+  size: 641, 1048
+  orig: 660, 1434
+  offset: 0, 79
+  index: -1
+JiangLiHuoQu_00037
+  rotate: false
+  xy: 1052, 19
+  size: 604, 1050
+  orig: 660, 1434
+  offset: 36, 78
+  index: -1
+
+skeleton10.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JiangLiHuoQu_00007
+  rotate: false
+  xy: 1267, 1086
+  size: 660, 841
+  orig: 660, 1434
+  offset: 0, 326
+  index: -1
+JiangLiHuoQu_00008
+  rotate: false
+  xy: 605, 986
+  size: 660, 941
+  orig: 660, 1434
+  offset: 0, 279
+  index: -1
+JiangLiHuoQu_00039
+  rotate: false
+  xy: 2, 878
+  size: 601, 1049
+  orig: 660, 1434
+  offset: 35, 78
   index: -1

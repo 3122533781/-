@@ -284,6 +284,31 @@ namespace ProjectSpace.Lei31Utils.Scripts.Framework.App
 
         }
 
+        public void AddNewGoodCount2(GoodSubType2 type)
+        {
+
+            switch (type)
+            {
+                case GoodSubType2.AddPipe:
+                    addPipe.Value += 2;
+                    break;
+                case GoodSubType2.RevocationTool:
+                    revocationTool.Value += 2;
+                    break;
+                case GoodSubType2.Remove:
+                    removeTool.Value += 2;
+                    break;
+
+            }
+
+        }
+
+
+
+
+
+
+
         public string OpenCollectionPackage(GoodSubType2 type)
         {
             return CollectionManager.Instance.Unlock(type);

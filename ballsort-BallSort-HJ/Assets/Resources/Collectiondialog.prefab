@@ -2975,7 +2975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 30
     m_Right: 0
     m_Top: 45
     m_Bottom: 0
@@ -2983,7 +2983,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 441, y: 443}
-  m_Spacing: {x: 290, y: 70}
+  m_Spacing: {x: 220, y: 70}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &2217429941916243987
@@ -3764,6 +3764,7 @@ MonoBehaviour:
   - {fileID: 675827754057404330}
   - {fileID: 3683307249143085217}
   autoFlip: {fileID: 8114002439758025327}
+  book: {fileID: 6690240087588193251}
   OpenAnim: {fileID: 4635147194329967333}
 --- !u!1 &8178956448585805089
 GameObject:
@@ -4125,6 +4126,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 121950, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 180032, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: m_Name
       value: Book
@@ -4296,6 +4301,14 @@ PrefabInstance:
     - target: {fileID: 3825378835466640857, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100822470322882216, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: m_Spacing.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100822470322882216, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7616970468476614937, guid: fe9bfb5044c0cc646baba1ad7d354100, type: 3}
       propertyPath: m_RootOrder

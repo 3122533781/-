@@ -27,6 +27,7 @@ namespace _02.Scripts.InGame.UI
         private PipeSizeController pipeController;
 
         [SerializeField] public InGameBallUI ballPrefab;
+        [SerializeField] public RectTransform ballMoveTx;
         [SerializeField] private Button pipeButton;
 
         [SerializeField] public RectTransform popToPos;
@@ -34,8 +35,8 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] public RectTransform pipeControllerPanel;
 
         [SerializeField] private ParticleSystem fullPipeEff;
-        [SerializeField] private SkeletonAnimation skeletonGraphic;
-        [SerializeField] private SkeletonAnimation skeletonGraphic2;
+        [SerializeField] private SkeletonGraphic skeletonGraphic;
+        [SerializeField] private SkeletonGraphic skeletonGraphic2;
         [SerializeField] private SkeletonAnimation FreezeskeletonGraphic;
         [SerializeField] private GameObject SpinegameObject;
         [SerializeField] private Image Typeimage;
@@ -45,6 +46,7 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private SkeletonAnimation BottomskeletonGraphic;
         [SerializeField] private Text NumberTxt;
         [SerializeField] private RectTransform FenJieXian;
+        [SerializeField] private List<Canvas> canvas;
         public readonly Common.Stack<InGameBallUI> BallLevelEdits = new Common.Stack<InGameBallUI>();
         public bool isAddPipe;
         public bool isFreezePipe;
@@ -63,6 +65,7 @@ namespace _02.Scripts.InGame.UI
             SpriteManager.Instance.AddPipeData(this);
             EventDispatcher.instance.Regist(AppEventType.PlayerPipeSkinChange, RefreshSKin);
             InitVerticalLayoutSettings();
+            SetCanvasLayer();
         }
 
         private void OnDisable()
@@ -170,7 +173,13 @@ namespace _02.Scripts.InGame.UI
             CanClick = true;
             isJustUse = false;
         }
-
+        private void SetCanvasLayer()
+        {
+            foreach(var can in canvas)
+            {
+                can.sortingLayerName = "UI";
+            }
+        }
         public void InitPipe(PipeData initPipeData)
         {
             CanClick = true;
@@ -231,7 +240,7 @@ namespace _02.Scripts.InGame.UI
                 obj.name = $"Ball{data.type}_{i + 1}";
 
                 PushBall(obj);
-                GetAndInitPushToPos(ballPrefab, data);
+                GetAndInitPushToPosTx(ballMoveTx, data);
             }
 
             CheckTop();
@@ -248,8 +257,8 @@ namespace _02.Scripts.InGame.UI
         {
             if (!_isPlayedFreeze)
             {
-                FreezeImage.gameObject.SetActive(false);
-                FreezeskeletonGraphic.AnimationState.SetAnimation(0, "animation", false);
+                FreezeImage.transform.parent.gameObject.SetActive(false);
+                FreezeskeletonGraphic.AnimationState.SetAnimation(0, "Interactive", false);
                 _isPlayedFreeze = true;
                 isFreezePipe = false;
             }
@@ -484,7 +493,7 @@ namespace _02.Scripts.InGame.UI
                 //  fullPipeEff.Play();
                
                 SpinegameObject.SetActive(true);
-                skeletonGraphic.AnimationState.SetAnimation(0, "animation", false);
+                skeletonGraphic.AnimationState.SetAnimation(0, "HuiBang", false);
                 Context.GetModel<InGameModel>().EndFinishNumber += 1;
                 Context.GetView<InGamePlayingUI>().SetBar();
                 CanClick = false;
@@ -498,7 +507,7 @@ namespace _02.Scripts.InGame.UI
                     {
                         case BallType.ID1:
                             Debug.Log("ID1 对应的输出数据：比如「普通红球」或 100 分");
-                            EventManager.Emit("Completebowlplating", null);
+                        
                             break;
 
                         case BallType.ID2:
@@ -524,6 +533,7 @@ namespace _02.Scripts.InGame.UI
 
                         case BallType.ID7:
                             Debug.Log("ID7 对应的输出数据：比如「终极金球」或 1000 分");
+                            EventManager.Emit("Completebowlplating", null);
                             Debug.Log("ID7 奖励列表：[钻石*5, 金币*1000]");
                             break;
 
@@ -554,9 +564,13 @@ namespace _02.Scripts.InGame.UI
 
         void OnAnimationComplete(Spine.TrackEntry trackEntry)
         {
-            SpinegameObject.SetActive(false);
-            skeletonGraphic2.gameObject.SetActive(true);
-            skeletonGraphic2.AnimationState.SetAnimation(0, "animation", false);
+            Debug.Log("人");
+            skeletonGraphic.AnimationState.Complete -= OnAnimationComplete;
+            skeletonGraphic.AnimationState.SetAnimation(0, "ChuXian", false);
+          
+            // SpinegameObject.SetActive(false);
+            //  skeletonGraphic2.gameObject.SetActive(true);
+            // skeletonGraphic2.AnimationState.SetAnimation(0, "animation", false);
         }
 
         void OnAnimationComplete2(Spine.TrackEntry trackEntry)
@@ -585,6 +599,15 @@ namespace _02.Scripts.InGame.UI
             emptypre.InitBall2(data);
             return spawnEmpty;
         }
+        public RectTransform GetAndInitPushToPosTx(RectTransform prefab, BallData data)
+        {
+            var emptypre = Instantiate(prefab, emptyPanel.transform);
+            var spawnEmpty = emptypre.gameObject.GetComponent<RectTransform>();
+          //  emptypre.InitBall2(data);
+            return spawnEmpty;
+        }
+
+
 
         public RectTransform GetLastPushPos()
         {

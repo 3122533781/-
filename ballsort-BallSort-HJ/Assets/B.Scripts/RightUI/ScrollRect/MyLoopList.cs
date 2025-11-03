@@ -99,7 +99,7 @@ public class MyLoopList<DataType, ItemType> where ItemType : ICustomGridItem<Dat
         (ItemGo.transform as RectTransform).sizeDelta = new Vector2(GridWidth, GridHeight);
 
         //计算面板里能显示多少行  +2 防止穿帮
-        line = (int)(scrollViewHeight / (GridHeight + space.x)) + 2;
+        line = (int)(scrollViewHeight / (GridHeight + space.x)) +8;
 
         itemCountInView = line * lineCount; // view窗口里显示的item数量
         for (int i = 1; i < itemCountInView + 1; i++)

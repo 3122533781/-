@@ -15,8 +15,8 @@ MonoBehaviour:
   quests:
   - ID: 1006
     rewardType: 1
-    questType: 0
+    questType: 1
     status: 0
     rewardCount: 100
     targetCount: 1
-    description: "\u5B8C\u6210\u767D\u8272\u7897\u7684\u88C5\u76D8"
+    description: "\u5B8C\u6210\u4E00\u6B21\u725B\u5976\u6392\u5E8F"

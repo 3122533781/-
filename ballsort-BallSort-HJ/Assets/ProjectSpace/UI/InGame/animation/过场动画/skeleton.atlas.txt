@@ -1,0 +1,448 @@
+
+skeleton.png
+size: 2646,1842
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_0
+  rotate: false
+  xy: 2, 1430
+  size: 1320, 326
+  orig: 1320, 2868
+  offset: 0, 1271
+  index: -1
+GuoChangDongHua_1
+  rotate: false
+  xy: 1324, 1324
+  size: 1320, 432
+  orig: 1320, 2868
+  offset: 0, 1218
+  index: -1
+GuoChangDongHua_2
+  rotate: true
+  xy: 2, 2
+  size: 1320, 1578
+  orig: 1320, 2868
+  offset: 0, 645
+  index: -1
+GuoChangDongHua_42
+  rotate: true
+  xy: 1019, 1758
+  size: 82, 525
+  orig: 1320, 2868
+  offset: 1238, 808
+  index: -1
+GuoChangDongHua_43
+  rotate: true
+  xy: 1019, 1758
+  size: 82, 525
+  orig: 1320, 2868
+  offset: 1238, 808
+  index: -1
+GuoChangDongHua_44
+  rotate: true
+  xy: 2, 1791
+  size: 49, 518
+  orig: 1320, 2868
+  offset: 1271, 817
+  index: -1
+GuoChangDongHua_45
+  rotate: true
+  xy: 522, 1770
+  size: 70, 495
+  orig: 1320, 2868
+  offset: 1250, 766
+  index: -1
+
+skeleton2.png
+size: 1904,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_3
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 1824
+  orig: 1320, 2868
+  offset: 0, 522
+  index: -1
+GuoChangDongHua_4
+  rotate: true
+  xy: 2, 2
+  size: 1320, 1900
+  orig: 1320, 2868
+  offset: 0, 484
+  index: -1
+
+skeleton3.png
+size: 2084,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_5
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 1974
+  orig: 1320, 2868
+  offset: 0, 447
+  index: -1
+GuoChangDongHua_6
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2080
+  orig: 1320, 2868
+  offset: 0, 394
+  index: -1
+
+skeleton4.png
+size: 2199,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_7
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2146
+  orig: 1320, 2868
+  offset: 0, 361
+  index: -1
+GuoChangDongHua_8
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2195
+  orig: 1320, 2868
+  offset: 0, 344
+  index: -1
+
+skeleton5.png
+size: 2523,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_10
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2519
+  orig: 1320, 2868
+  offset: 0, 143
+  index: -1
+GuoChangDongHua_11
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2510
+  orig: 1320, 2868
+  offset: 0, 156
+  index: -1
+
+skeleton6.png
+size: 2650,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_12
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2638
+  orig: 1320, 2868
+  offset: 0, 115
+  index: -1
+GuoChangDongHua_13
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2646
+  orig: 1320, 2868
+  offset: 0, 111
+  index: -1
+
+skeleton7.png
+size: 2658,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_14
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2654
+  orig: 1320, 2868
+  offset: 0, 107
+  index: -1
+GuoChangDongHua_15
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2506
+  orig: 1320, 2868
+  offset: 0, 143
+  index: -1
+
+skeleton8.png
+size: 2572,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_16
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2522
+  orig: 1320, 2868
+  offset: 0, 150
+  index: -1
+GuoChangDongHua_17
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2568
+  orig: 1320, 2868
+  offset: 0, 116
+  index: -1
+
+skeleton9.png
+size: 2668,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_18
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2583
+  orig: 1320, 2868
+  offset: 0, 126
+  index: -1
+GuoChangDongHua_19
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2664
+  orig: 1320, 2868
+  offset: 0, 102
+  index: -1
+
+skeleton10.png
+size: 2616,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_20
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2592
+  orig: 1320, 2868
+  offset: 0, 138
+  index: -1
+GuoChangDongHua_21
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2612
+  orig: 1320, 2868
+  offset: 0, 128
+  index: -1
+
+skeleton11.png
+size: 2622,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_22
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2618
+  orig: 1320, 2868
+  offset: 0, 125
+  index: -1
+GuoChangDongHua_23
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2541
+  orig: 1320, 2868
+  offset: 0, 143
+  index: -1
+
+skeleton12.png
+size: 2519,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_24
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2509
+  orig: 1320, 2868
+  offset: 0, 175
+  index: -1
+GuoChangDongHua_25
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2515
+  orig: 1320, 2868
+  offset: 0, 168
+  index: -1
+
+skeleton13.png
+size: 2528,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_26
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2524
+  orig: 1320, 2868
+  offset: 0, 158
+  index: -1
+GuoChangDongHua_27
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2502
+  orig: 1320, 2868
+  offset: 0, 180
+  index: -1
+
+skeleton14.png
+size: 2592,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_28
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2498
+  orig: 1320, 2868
+  offset: 0, 185
+  index: -1
+GuoChangDongHua_29
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2588
+  orig: 1320, 2868
+  offset: 0, 140
+  index: -1
+
+skeleton15.png
+size: 2658,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_30
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2654
+  orig: 1320, 2868
+  offset: 0, 107
+  index: -1
+GuoChangDongHua_31
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2654
+  orig: 1320, 2868
+  offset: 0, 107
+  index: -1
+
+skeleton16.png
+size: 2684,2646
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_32
+  rotate: true
+  xy: 2, 1324
+  size: 1320, 2680
+  orig: 1320, 2868
+  offset: 0, 94
+  index: -1
+GuoChangDongHua_33
+  rotate: true
+  xy: 2, 2
+  size: 1320, 2658
+  orig: 1320, 2868
+  offset: 0, 105
+  index: -1
+
+skeleton17.png
+size: 2646,2702
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_35
+  rotate: false
+  xy: 2, 2
+  size: 1320, 2698
+  orig: 1320, 2868
+  offset: 0, 85
+  index: -1
+GuoChangDongHua_36
+  rotate: false
+  xy: 1324, 4
+  size: 1320, 2696
+  orig: 1320, 2868
+  offset: 0, 86
+  index: -1
+
+skeleton18.png
+size: 2646,2700
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_34
+  rotate: false
+  xy: 1324, 40
+  size: 1320, 2658
+  orig: 1320, 2868
+  offset: 0, 105
+  index: -1
+GuoChangDongHua_37
+  rotate: false
+  xy: 2, 2
+  size: 1320, 2696
+  orig: 1320, 2868
+  offset: 0, 86
+  index: -1
+
+skeleton19.png
+size: 2646,2598
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_38
+  rotate: false
+  xy: 2, 2
+  size: 1320, 2594
+  orig: 1320, 2868
+  offset: 0, 137
+  index: -1
+GuoChangDongHua_39
+  rotate: false
+  xy: 1324, 8
+  size: 1320, 2588
+  orig: 1320, 2868
+  offset: 0, 140
+  index: -1
+
+skeleton20.png
+size: 2646,2592
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_40
+  rotate: false
+  xy: 2, 2
+  size: 1320, 2588
+  orig: 1320, 2868
+  offset: 0, 140
+  index: -1
+GuoChangDongHua_41
+  rotate: false
+  xy: 1324, 62
+  size: 1320, 2528
+  orig: 1320, 2868
+  offset: 0, 170
+  index: -1
+
+skeleton21.png
+size: 1324,2392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuoChangDongHua_9
+  rotate: false
+  xy: 2, 2
+  size: 1320, 2388
+  orig: 1320, 2868
+  offset: 0, 221
+  index: -1

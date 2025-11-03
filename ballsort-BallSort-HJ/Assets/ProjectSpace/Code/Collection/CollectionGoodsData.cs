@@ -19,7 +19,7 @@ public class CollectionGoodsData : IConfig
 
     public void InitIsHave()
     {
-        IsHave = new PersistenceData<bool>(name, true);
+        IsHave = new PersistenceData<bool>(name, false);
     }
    
 

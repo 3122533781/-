@@ -13,7 +13,7 @@ public class InGamePlayingState : SKState<InGame>
         Debug.Log("开始游戏");
         _context.GetController<InGameTimeController>().Activate();
         _context.GetController<InGameTimeController>().seconds = 180;
-        _context.GetView<InGamePlayingUI>().SetBarToZero();
+       
         _context.GetView<InGamePlayingUI>().ShowGUide(Game.Instance.LevelModel.PassLevelNumber.Value);
         
     }

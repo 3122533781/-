@@ -40,12 +40,22 @@ public class GetRewardDialog : Dialog
     private void ReceiveFree()
     {
         Game.Instance.CurrencyModel.AddNewGoodCount(type);
-
         this.Deactivate();
+
     }
     private void ReceiveAD()
     {
-       
+        ADMudule.ShowRewardedAd("WatchAd_GetReWard", (isSuccess) =>
+        {
+            if (isSuccess)
+            {
+                Game.Instance.CurrencyModel.AddNewGoodCount2(type);
+                this.Deactivate();
+            }
+        });
+
+
+      
     }
     private void Collection()
     {

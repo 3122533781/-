@@ -102,6 +102,8 @@ public class LevelSelectUI : MonoBehaviour
             Game.Instance.RestartGame("LevelSelect", int.Parse(nubtext.text), forceShowAd: true);
             Game.Instance.LevelModel.PassLevelTemp = int.Parse(nubtext.text);
             DialogManager.Instance.GetDialog<LevelUIDialog>().CloseDialog();
+            TransitionManager.Instance.Transition(0.5f, () => { SceneManager.LoadScene("InGameScenario"); },
+                      0.5f);
         }
     }
 }

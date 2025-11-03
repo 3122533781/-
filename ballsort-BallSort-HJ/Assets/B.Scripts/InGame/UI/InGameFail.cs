@@ -12,6 +12,7 @@ namespace _02.Scripts.InGame.UI
 {
     public class InGameFail : ElementUI<global::InGame>
     {
+        [SerializeField] private Button GiveUpButton;
         [SerializeField] private Button nextLevelButton;
        // [SerializeField] private Text coinText;
         [SerializeField] private Text LvelValue;
@@ -30,7 +31,8 @@ namespace _02.Scripts.InGame.UI
         {
             _coinData = Context.CellMapModel.LevelData.GetRandomCoin();
             nextLevelButton.onClick.AddListener(NextLevelButton);
-           // coinText.text = $"X{_coinData.count}";
+            GiveUpButton.onClick.AddListener(GiveUp);
+            // coinText.text = $"X{_coinData.count}";
             LvelValue.text =$"距离开启新玩法还剩{CalculateLevel()}局";
             if (CalculateLevel() == 0)
                 LvelValue.gameObject.SetActive(false);
@@ -43,7 +45,16 @@ namespace _02.Scripts.InGame.UI
         private void OnDisable()
         {
             nextLevelButton.onClick.RemoveListener(NextLevelButton);
+            GiveUpButton.onClick.RemoveListener(GiveUp);
 
+        }
+
+
+        private void GiveUp()
+        {
+            Deactivate();
+            TransitionManager.Instance.Transition(0.5f, () => { SceneManager.LoadScene("InGame"); },
+          0.5f);
         }
 
         private void NextLevelButton()
@@ -78,8 +89,8 @@ namespace _02.Scripts.InGame.UI
             //            EnterNextLevel();
             //        }
             //    });
-            Game.Instance.LevelModel.EnterLevelID += 1;
-            Game.Instance.LevelModel.MaxUnlockLevel.Value += 1;
+            //Game.Instance.LevelModel.EnterLevelID += 1;
+            //Game.Instance.LevelModel.MaxUnlockLevel.Value += 1;
             SoyProfile.Set(SoyProfileConst.NormalLevel, Game.Instance.LevelModel.EnterLevelID);
             Game.Instance.RestartGame("RestartCurrentLevel", Game.Instance.LevelModel.EnterCopies1ID,
                     CopiesType.SpecialLevel, forceShowAd: true);

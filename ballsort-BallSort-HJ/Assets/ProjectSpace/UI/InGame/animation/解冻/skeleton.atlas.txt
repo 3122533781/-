@@ -6,17 +6,73 @@ filter: Linear,Linear
 repeat: none
 JieDong00
   rotate: true
-  xy: 2, 1097
-  size: 693, 1778
-  orig: 1080, 1920
-  offset: 195, 71
+  xy: 2, 1522
+  size: 347, 890
+  orig: 540, 960
+  offset: 97, 35
   index: -1
 JieDong01
   rotate: true
-  xy: 2, 398
-  size: 697, 1788
-  orig: 1080, 1920
-  offset: 193, 66
+  xy: 894, 1520
+  size: 349, 894
+  orig: 540, 960
+  offset: 96, 33
+  index: -1
+JieDong02
+  rotate: true
+  xy: 2, 1167
+  size: 351, 898
+  orig: 540, 960
+  offset: 95, 31
+  index: -1
+JieDong03
+  rotate: true
+  xy: 902, 1166
+  size: 352, 904
+  orig: 540, 960
+  offset: 95, 28
+  index: -1
+JieDong04
+  rotate: true
+  xy: 2, 810
+  size: 354, 908
+  orig: 540, 960
+  offset: 94, 26
+  index: -1
+JieDong05
+  rotate: true
+  xy: 912, 808
+  size: 356, 914
+  orig: 540, 960
+  offset: 93, 23
+  index: -1
+JieDong06
+  rotate: true
+  xy: 2, 448
+  size: 358, 919
+  orig: 540, 960
+  offset: 92, 21
+  index: -1
+JieDong07
+  rotate: true
+  xy: 923, 446
+  size: 360, 924
+  orig: 540, 960
+  offset: 91, 18
+  index: -1
+JieDong08
+  rotate: true
+  xy: 2, 82
+  size: 362, 930
+  orig: 540, 960
+  offset: 90, 15
+  index: -1
+JieDong09
+  rotate: true
+  xy: 934, 80
+  size: 364, 935
+  orig: 540, 960
+  offset: 89, 13
   index: -1
 
 skeleton2.png
@@ -24,19 +80,61 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JieDong02
-  rotate: true
-  xy: 2, 1109
-  size: 701, 1797
-  orig: 1080, 1920
-  offset: 191, 62
+JieDong24
+  rotate: false
+  xy: 1377, 964
+  size: 420, 960
+  orig: 540, 960
+  offset: 71, 0
   index: -1
-JieDong03
-  rotate: true
-  xy: 2, 402
-  size: 705, 1808
-  orig: 1080, 1920
-  offset: 189, 56
+JieDong25
+  rotate: false
+  xy: 1371, 2
+  size: 432, 960
+  orig: 540, 960
+  offset: 73, 0
+  index: -1
+JieDong26
+  rotate: false
+  xy: 923, 2
+  size: 446, 960
+  orig: 540, 960
+  offset: 74, 0
+  index: -1
+JieDong27
+  rotate: false
+  xy: 2, 2
+  size: 460, 960
+  orig: 540, 960
+  offset: 76, 0
+  index: -1
+JieDong28
+  rotate: false
+  xy: 2, 964
+  size: 461, 960
+  orig: 540, 960
+  offset: 79, 0
+  index: -1
+JieDong29
+  rotate: false
+  xy: 464, 2
+  size: 457, 960
+  orig: 540, 960
+  offset: 83, 0
+  index: -1
+JieDong30
+  rotate: false
+  xy: 465, 964
+  size: 455, 960
+  orig: 540, 960
+  offset: 85, 0
+  index: -1
+JieDong31
+  rotate: false
+  xy: 922, 964
+  size: 453, 960
+  orig: 540, 960
+  offset: 87, 0
   index: -1
 
 skeleton3.png
@@ -44,19 +142,54 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JieDong04
-  rotate: true
-  xy: 2, 1121
-  size: 709, 1817
-  orig: 1080, 1920
-  offset: 187, 52
+JieDong20
+  rotate: false
+  xy: 1349, 57
+  size: 390, 960
+  orig: 540, 960
+  offset: 76, 0
   index: -1
-JieDong05
+JieDong21
+  rotate: false
+  xy: 955, 57
+  size: 392, 960
+  orig: 540, 960
+  offset: 75, 0
+  index: -1
+JieDong22
   rotate: true
-  xy: 2, 406
-  size: 713, 1828
-  orig: 1080, 1920
-  offset: 185, 46
+  xy: 409, 1019
+  size: 394, 960
+  orig: 540, 960
+  offset: 74, 0
+  index: -1
+JieDong23
+  rotate: false
+  xy: 2, 905
+  size: 405, 960
+  orig: 540, 960
+  offset: 73, 0
+  index: -1
+JieDong32
+  rotate: true
+  xy: 2, 452
+  size: 451, 951
+  orig: 540, 960
+  offset: 89, 9
+  index: -1
+JieDong33
+  rotate: true
+  xy: 409, 1415
+  size: 450, 950
+  orig: 540, 960
+  offset: 90, 10
+  index: -1
+JieDong34
+  rotate: true
+  xy: 2, 2
+  size: 448, 949
+  orig: 540, 960
+  offset: 92, 11
   index: -1
 
 skeleton4.png
@@ -64,19 +197,54 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JieDong06
+JieDong11
   rotate: true
-  xy: 2, 1133
-  size: 717, 1838
-  orig: 1080, 1920
-  offset: 183, 41
+  xy: 2, 17
+  size: 368, 946
+  orig: 540, 960
+  offset: 87, 7
   index: -1
-JieDong07
+JieDong16
+  rotate: false
+  xy: 1335, 2
+  size: 380, 960
+  orig: 540, 960
+  offset: 81, 0
+  index: -1
+JieDong17
+  rotate: false
+  xy: 951, 2
+  size: 382, 960
+  orig: 540, 960
+  offset: 80, 0
+  index: -1
+JieDong18
   rotate: true
-  xy: 2, 410
-  size: 721, 1848
-  orig: 1080, 1920
-  offset: 181, 36
+  xy: 390, 964
+  size: 384, 960
+  orig: 540, 960
+  offset: 79, 0
+  index: -1
+JieDong19
+  rotate: false
+  xy: 2, 835
+  size: 386, 960
+  orig: 540, 960
+  offset: 78, 0
+  index: -1
+JieDong35
+  rotate: true
+  xy: 2, 387
+  size: 446, 947
+  orig: 540, 960
+  offset: 94, 13
+  index: -1
+JieDong36
+  rotate: true
+  xy: 390, 1350
+  size: 445, 943
+  orig: 540, 960
+  offset: 95, 17
   index: -1
 
 skeleton5.png
@@ -84,19 +252,54 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JieDong08
+JieDong10
   rotate: true
-  xy: 2, 1147
-  size: 725, 1859
-  orig: 1080, 1920
-  offset: 179, 31
+  xy: 2, 8
+  size: 366, 940
+  orig: 540, 960
+  offset: 88, 10
   index: -1
-JieDong09
+JieDong12
+  rotate: false
+  xy: 1321, 8
+  size: 370, 952
+  orig: 540, 960
+  offset: 86, 4
+  index: -1
+JieDong13
+  rotate: false
+  xy: 946, 2
+  size: 373, 958
+  orig: 540, 960
+  offset: 84, 1
+  index: -1
+JieDong14
   rotate: true
-  xy: 2, 416
-  size: 729, 1870
-  orig: 1080, 1920
-  offset: 177, 25
+  xy: 382, 962
+  size: 375, 960
+  orig: 540, 960
+  offset: 83, 0
+  index: -1
+JieDong15
+  rotate: false
+  xy: 2, 820
+  size: 378, 960
+  orig: 540, 960
+  offset: 82, 0
+  index: -1
+JieDong37
+  rotate: true
+  xy: 2, 376
+  size: 442, 942
+  orig: 540, 960
+  offset: 97, 18
+  index: -1
+JieDong38
+  rotate: true
+  xy: 382, 1339
+  size: 441, 939
+  orig: 540, 960
+  offset: 99, 21
   index: -1
 
 skeleton6.png
@@ -104,350 +307,45 @@ size: 2048,2048
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-JieDong10
-  rotate: true
-  xy: 2, 1161
-  size: 733, 1880
-  orig: 1080, 1920
-  offset: 175, 20
-  index: -1
-JieDong11
-  rotate: true
-  xy: 2, 422
-  size: 737, 1892
-  orig: 1080, 1920
-  offset: 173, 14
-  index: -1
-
-skeleton7.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong12
-  rotate: true
-  xy: 2, 1176
-  size: 741, 1902
-  orig: 1080, 1920
-  offset: 171, 9
-  index: -1
-JieDong13
-  rotate: true
-  xy: 2, 428
-  size: 746, 1915
-  orig: 1080, 1920
-  offset: 169, 2
-  index: -1
-
-skeleton8.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong14
-  rotate: true
-  xy: 2, 1172
-  size: 750, 1920
-  orig: 1080, 1920
-  offset: 167, 0
-  index: -1
-JieDong15
-  rotate: true
-  xy: 2, 415
-  size: 755, 1920
-  orig: 1080, 1920
-  offset: 164, 0
-  index: -1
-
-skeleton9.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong16
-  rotate: true
-  xy: 2, 1163
-  size: 759, 1920
-  orig: 1080, 1920
-  offset: 162, 0
-  index: -1
-JieDong17
-  rotate: true
-  xy: 2, 397
-  size: 764, 1920
-  orig: 1080, 1920
-  offset: 160, 0
-  index: -1
-
-skeleton10.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong18
-  rotate: true
-  xy: 2, 1154
-  size: 768, 1920
-  orig: 1080, 1920
-  offset: 158, 0
-  index: -1
-JieDong19
-  rotate: true
-  xy: 2, 379
-  size: 773, 1920
-  orig: 1080, 1920
-  offset: 155, 0
-  index: -1
-
-skeleton11.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong20
-  rotate: true
-  xy: 2, 1144
-  size: 778, 1920
-  orig: 1080, 1920
-  offset: 153, 0
-  index: -1
-JieDong21
-  rotate: true
-  xy: 2, 359
-  size: 783, 1920
-  orig: 1080, 1920
-  offset: 150, 0
-  index: -1
-
-skeleton12.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong22
-  rotate: true
-  xy: 2, 1135
-  size: 787, 1920
-  orig: 1080, 1920
-  offset: 148, 0
-  index: -1
-JieDong23
-  rotate: true
-  xy: 2, 323
-  size: 810, 1920
-  orig: 1080, 1920
-  offset: 146, 0
-  index: -1
-
-skeleton13.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong24
-  rotate: true
-  xy: 2, 258
-  size: 839, 1920
-  orig: 1080, 1920
-  offset: 143, 0
-  index: -1
-JieDong44
-  rotate: true
-  xy: 2, 1099
-  size: 823, 1730
-  orig: 1080, 1920
-  offset: 257, 189
-  index: -1
-
-skeleton14.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong42
-  rotate: true
-  xy: 2, 129
-  size: 860, 1840
-  orig: 1080, 1920
-  offset: 220, 80
-  index: -1
-JieDong43
-  rotate: true
-  xy: 2, 991
-  size: 851, 1820
-  orig: 1080, 1920
-  offset: 229, 100
-  index: -1
-
-skeleton15.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong25
-  rotate: true
-  xy: 2, 1058
-  size: 864, 1920
-  orig: 1080, 1920
-  offset: 146, 0
-  index: -1
-JieDong41
-  rotate: true
-  xy: 2, 187
-  size: 869, 1877
-  orig: 1080, 1920
-  offset: 211, 43
-  index: -1
-
-skeleton16.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
 JieDong39
-  rotate: true
-  xy: 2, 124
-  size: 878, 1877
-  orig: 1080, 1920
-  offset: 202, 43
-  index: -1
-JieDong40
-  rotate: true
-  xy: 2, 1004
-  size: 875, 1877
-  orig: 1080, 1920
-  offset: 205, 43
-  index: -1
-
-skeleton17.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong37
-  rotate: true
-  xy: 2, 116
-  size: 886, 1884
-  orig: 1080, 1920
-  offset: 194, 36
-  index: -1
-JieDong38
-  rotate: true
-  xy: 2, 1004
-  size: 882, 1879
-  orig: 1080, 1920
-  offset: 198, 41
-  index: -1
-
-skeleton18.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong26
-  rotate: true
-  xy: 2, 138
-  size: 892, 1920
-  orig: 1080, 1920
-  offset: 148, 0
-  index: -1
-JieDong36
-  rotate: true
-  xy: 2, 1032
-  size: 890, 1888
-  orig: 1080, 1920
-  offset: 190, 32
-  index: -1
-
-skeleton19.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong34
-  rotate: true
-  xy: 2, 110
-  size: 896, 1899
-  orig: 1080, 1920
-  offset: 184, 21
-  index: -1
-JieDong35
-  rotate: true
-  xy: 2, 1008
-  size: 893, 1896
-  orig: 1080, 1920
-  offset: 187, 24
-  index: -1
-
-skeleton20.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong32
-  rotate: true
-  xy: 2, 98
-  size: 903, 1901
-  orig: 1080, 1920
-  offset: 177, 19
-  index: -1
-JieDong33
-  rotate: true
-  xy: 2, 1003
-  size: 900, 1901
-  orig: 1080, 1920
-  offset: 180, 19
-  index: -1
-
-skeleton21.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong30
-  rotate: true
-  xy: 2, 104
-  size: 910, 1920
-  orig: 1080, 1920
-  offset: 170, 0
-  index: -1
-JieDong31
-  rotate: true
-  xy: 2, 1016
-  size: 906, 1920
-  orig: 1080, 1920
-  offset: 174, 0
-  index: -1
-
-skeleton22.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong27
-  rotate: true
-  xy: 2, 86
-  size: 920, 1920
-  orig: 1080, 1920
-  offset: 151, 0
-  index: -1
-JieDong29
-  rotate: true
-  xy: 2, 1008
-  size: 914, 1920
-  orig: 1080, 1920
-  offset: 166, 0
-  index: -1
-
-skeleton23.png
-size: 2048,2048
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-JieDong28
   rotate: false
   xy: 2, 2
-  size: 923, 1920
-  orig: 1080, 1920
-  offset: 157, 0
+  size: 436, 938
+  orig: 540, 960
+  offset: 101, 22
+  index: -1
+JieDong40
+  rotate: false
+  xy: 2, 942
+  size: 437, 938
+  orig: 540, 960
+  offset: 103, 22
+  index: -1
+JieDong41
+  rotate: false
+  xy: 440, 3
+  size: 434, 937
+  orig: 540, 960
+  offset: 106, 23
+  index: -1
+JieDong42
+  rotate: false
+  xy: 441, 962
+  size: 430, 918
+  orig: 540, 960
+  offset: 110, 42
+  index: -1
+JieDong43
+  rotate: false
+  xy: 873, 971
+  size: 424, 909
+  orig: 540, 960
+  offset: 116, 51
+  index: -1
+JieDong44
+  rotate: false
+  xy: 876, 118
+  size: 412, 851
+  orig: 540, 960
+  offset: 128, 96
   index: -1

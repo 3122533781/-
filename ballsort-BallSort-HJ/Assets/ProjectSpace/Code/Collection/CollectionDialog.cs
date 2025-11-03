@@ -19,6 +19,7 @@ public class CollectionDialog : Dialog
     private Dictionary<CollectionGoodsData, GameObject> dataToUI = new Dictionary<CollectionGoodsData, GameObject>();
     private Dictionary<CollectionGoodsData, GameObject> dataToUI2 = new Dictionary<CollectionGoodsData, GameObject>();
     public AutoFlip autoFlip;
+    public Book book;
     [SerializeField] private SkeletonAnimation OpenAnim;
     private int tempBtn=0;
 
@@ -46,6 +47,8 @@ public class CollectionDialog : Dialog
         collectionGoods.Clear();
         dataToUI.Clear();
         dataToUI2.Clear();
+        base.DestroyDialog();
+       
     }
     private void ShowBook()
     {
@@ -79,7 +82,7 @@ public class CollectionDialog : Dialog
         var collections = CollectionConfig.Instance.All;
         foreach (var item in collections)
         {
-            if (item.IsHave.Value)
+           // if (item.IsHave.Value)
                 collectionGoods.Add(item);
         }
 
@@ -88,14 +91,20 @@ public class CollectionDialog : Dialog
         {
             var obj = Instantiate(collectionPrefab, collectionParent);
             var CollectionPrefab = obj.GetComponent<CollectionItem>();
-            CollectionPrefab.Initialize(item);
+            if (item.IsHave.Value)
+                CollectionPrefab.Initialize(item);
+            else
+                CollectionPrefab.Initialize2(item);
             dataToUI[item] = obj;
         }
         foreach (var item in collectionGoods)
         {
             var obj = Instantiate(collectionPrefab, collectionParent2);
             var CollectionPrefab = obj.GetComponent<CollectionItem>();
-            CollectionPrefab.Initialize(item);
+            if (item.IsHave.Value)
+                CollectionPrefab.Initialize(item);
+            else
+                CollectionPrefab.Initialize2(item);
             dataToUI2[item] = obj;
         }
     }

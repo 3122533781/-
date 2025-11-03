@@ -7,7 +7,7 @@ namespace ProjectSpace.Lei31Utils.Scripts.Utils2.Dialog
     public class DialogManager : MonoSingleton<DialogManager>
     {
         public static List<Dialog> ListActiveDialog;
-        private Dictionary<string, Dialog> _pool;
+        public Dictionary<string, Dialog> _pool;
         public const string DialogResourcesPath = "Dialogs";
 
         private void Awake()

@@ -11,6 +11,7 @@ using UnityEngine.UI;
 using System;
 
 using _02.Scripts.Home.Active;
+using Spine.Unity;
 
 namespace _02.Scripts.InGame.UI
 {
@@ -38,6 +39,9 @@ namespace _02.Scripts.InGame.UI
         [SerializeField] private List<GameObject> redeemBtn;
         [SerializeField] private ProgressBar _bar = null;
         [SerializeField] private ProgressBarMarkerGenerator _barNumber;
+
+
+        [SerializeField] private SkeletonGraphic BeginAnim;
         public float _barBegin = 0f;
       
         private void OnEnable()
@@ -134,7 +138,19 @@ namespace _02.Scripts.InGame.UI
         {
             RefreshUI();
         }
+        public void PlayBeginAnimation(Action action)
+        {
+            BeginAnim.gameObject.SetActive(true);
+           
+            BeginAnim.AnimationState.SetAnimation(0, "animation", false);
+            var trackEntry = BeginAnim.AnimationState.SetAnimation(0, "animation", false);
+            // 动画播放完成后执行回调
+            trackEntry.Complete += (entry) =>
+            {
+                action?.Invoke(); // 空值判断，避免空引用错误
+            };
 
+        }
         private void ClickSetting()
         {
             DialogManager.Instance.GetDialog<OptionDialog>().ShowDialog();
@@ -271,7 +287,7 @@ namespace _02.Scripts.InGame.UI
 
         private void RemoveBall()
         {
-            if (true)
+            if (Game.Instance.CurrencyModel.CanUseTool(GoodType.Tool, GoodSubType.RemoveTool))
             {
                 Context.GetController<InGameMatchController>().ClearRandomColorTool(() =>
                 {

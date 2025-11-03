@@ -74,7 +74,7 @@ namespace _02.Scripts.InGame.Controller
             {
                 if (!isRevocation)
                 {
-                    FloatingWindow.Instance.Show("请先完成该餐具的清洗");
+                    FloatingWindow.Instance.Show("请先完成该物品的排序");
                     CancelSelectionAndPushBack();
                 }
                 return;
@@ -84,7 +84,7 @@ namespace _02.Scripts.InGame.Controller
             {
                 if (_popBallUIs[0].GetBallData().type != clickPipeUI.BallLevelEdits.Peek().GetBallData().type && !clickPipeUI.isJustUse)
                 {
-                    FloatingWindow.Instance.Show("请放入同种类型的厨具");
+                    FloatingWindow.Instance.Show("请放入同种类型的物品");
                     CancelSelectionAndPushBack();
                     return;
                 }
@@ -262,8 +262,8 @@ namespace _02.Scripts.InGame.Controller
                     continue;
                 }
 
-                var emptyRectTransform = targetPipeUI.GetAndInitPushToPos(currentBall, currentBall.GetBallData());
-                emptyRectTransform.gameObject.GetComponent<Image>().SetAlpha(0);
+             //   var emptyRectTransform = targetPipeUI.GetAndInitPushToPos(currentBall, currentBall.GetBallData());
+             //   emptyRectTransform.gameObject.GetComponent<Image>().SetAlpha(0);
                 targetPipeUI.PushBall(currentBall);
 
                 FlyToTopPos(targetPipeUI, currentBall, () =>

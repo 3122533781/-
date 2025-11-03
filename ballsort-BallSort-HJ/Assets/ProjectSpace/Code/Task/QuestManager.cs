@@ -43,8 +43,14 @@ public class QuestManager : MonoSingleton<QuestManager>, Prime31.IObjectInspecta
 
     private void CompletebowlplatingListener(Object param)
     {
-        AddQuestFinishCount(QuestType.Completebowlplating);
-        if(GetQuestStatus(QuestType.Completebowlplating))
+        if (GetQuestStatus(QuestType.Completeplateplating))
+        {
+            // 已完成，直接返回，不执行后续累加
+            return;
+        }
+
+        AddQuestFinishCount(QuestType.Completeplateplating);
+        if(GetQuestStatus(QuestType.Completeplateplating))
         DialogManager.Instance.GetDialog<GetRewardDialog>().Init(GoodSubType2.AddPipe);
     }
 

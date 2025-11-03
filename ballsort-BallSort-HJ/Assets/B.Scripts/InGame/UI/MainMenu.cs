@@ -1,24 +1,49 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using DG.Tweening;
 using ProjectSpace.BubbleMatch.Scripts.Util;
 using ProjectSpace.Lei31Utils.Scripts.Utils2.Dialog;
 using Spine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using ProjectSpace.Lei31Utils.Scripts.Framework.ElementKit;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private float collectFadeDuration = 0.5f;
+    [SerializeField] private Button _gotoBallSort;
+    [SerializeField] private Button skinEntryBtn;
+    [SerializeField] private Button btnSetting;
+    [SerializeField] private Button btncheckIn;
+    [SerializeField] private Button btnFriendRank;
+    [SerializeField] private Button ShareBtn;
+    [SerializeField] private Button btnCollection;
+    [SerializeField] private Button btnTask;
+    [SerializeField] private Button Playbtn;
+    [SerializeField] private Button _btnGetCoin;
+    [SerializeField] private Button _btnUseHint;
+    [SerializeField] private Button _btnGetPower;
+    [SerializeField] private Button _btnLevel;
+    [SerializeField] private Text _textLevel;
+    [SerializeField] private Text _textCoin;
+    [SerializeField] private List<GameObject> gameStages = new List<GameObject>();
+    [SerializeField] private GameObject _playbtn;
+    [SerializeField] private GameObject _balls;
+    [SerializeField] private GameObject _line;
+    [SerializeField] private GameObject _circle;
+    [SerializeField] private Image CollectImage;
+
+    private List<CollectionGoodsData> _ownedCollects = new List<CollectionGoodsData>();
+    private int _currentCollectIndex = 0;
+    private Coroutine _collectLoopCoroutine;
+    // 新增：记录当前显示的藏品ID（用于判断是否重复）
+    private int _currentDisplayedCollectId = -1;
+
     public void GotoBallSort()
     {
-        //if (Game.Instance.CurrencyModel.DiamondNum < 1)
-        //{
-        //    DialogManager.Instance.GetDialog<DiamondGetDialog>().ShowDialog();
-        //    return;
-        //}
-        //Game.Instance.CurrencyModel.ConsumeDiamond(1);
-        TransitionManager.Instance.Transition(0.5f, () => { SceneManager.LoadScene("InGameScenario"); },
-                     0.5f);
+        TransitionManager.Instance.Transition(0.5f, () => { SceneManager.LoadScene("InGameScenario"); }, 0.5f);
     }
 
     private void ClickSetting()
@@ -28,37 +53,31 @@ public class MainMenu : MonoBehaviour
 
     public void OpenSkinMainUI()
     {
-     
     }
 
-    //[SerializeField] public CanvasGroup TopGroup;
-
-    //public async Task PlayEnterAnim()
-    //{
-    //    float animTime = 0.3f;
-    //    TopGroup.DOFade(1f, animTime);
-    //    _btnGetCoin.GetComponent<RectTransform>().DOScale(1f, animTime);
-    //    _btnUseHint.GetComponent<RectTransform>().DOScale(1f, animTime);
-    //    _btnSkipLevel.GetComponent<RectTransform>().DOScale(1f, animTime);
-    //    _btnSetting.GetComponent<RectTransform>().DOScale(1f, animTime);
-    //    await TaskExtension.DelaySecond(animTime);
-    //}
-
-    //private void AnimReady()
-    //{
-    //    TopGroup.alpha = 0;
-    //    _btnGetCoin.GetComponent<RectTransform>().localScale = Vector3.zero;
-    //    _btnUseHint.GetComponent<RectTransform>().localScale = Vector3.zero;
-    //    _btnSkipLevel.GetComponent<RectTransform>().localScale = Vector3.zero;
-    //    _btnSetting.GetComponent<RectTransform>().localScale = Vector3.zero;
-    //}
     private void Start()
     {
         SpriteManager.Instance.InitSkin();
+        InitOwnedCollects();
+
+        if (_ownedCollects.Count > 0)
+        {
+            _collectLoopCoroutine = StartCoroutine(CollectLoopCoroutine());
+        }
+        else
+        {
+            // 无藏品时隐藏图片
+            CollectImage.gameObject.SetActive(false);
+        }
+
+        foreach (var collect in CollectionConfig.Instance.All)
+        {
+            // collect.IsHave.OnValueChange += OnCollectUnlocked;
+        }
     }
+
     private void OnEnable()
     {
-
         InitQuests();
         _gotoBallSort.onClick.AddListener(GotoBallSort);
         skinEntryBtn.onClick.AddListener(OpenSkinMainUI);
@@ -69,122 +88,132 @@ public class MainMenu : MonoBehaviour
         btnCollection.onClick.AddListener(OpenCollection);
         btnTask.onClick.AddListener(OpenTask);
         _btnLevel.onClick.AddListener(ClickLevelBtn);
-        //_isSettingPanelShow = false;
-        //_settingPanelRect.SetAnchoredPositionY(_hideSettingPanelY);
         Refresh();
-        //_btnSkipLevel.onClick.AddListener(ClickSkipLevel);
         _btnUseHint.onClick.AddListener(ClickHint);
         _btnGetCoin.onClick.AddListener(ClickGetCoin);
         _btnGetPower.onClick.AddListener(GetPower);
         Playbtn.onClick.AddListener(GotoBallSort);
-        //_btnExit.onClick.AddListener(ClickExit);
-        //_btnSetting.onClick.AddListener(ClickSetting);
-        //_btnRestart.onClick.AddListener(ClickRestart);
         UIEvents.OnDressUpDialogOpened += OnDressUpDialogOpened;
         UIEvents.OnDressUpDialogClosed += OnDressUpDialogClosed;
     }
 
     private void OnDisable()
     {
-        //    _btnSkipLevel.onClick.RemoveListener(ClickSkipLevel);
+        if (_collectLoopCoroutine != null)
+        {
+            StopCoroutine(_collectLoopCoroutine);
+            _collectLoopCoroutine = null;
+        }
+
         _btnUseHint.onClick.RemoveListener(ClickHint);
         _btnGetCoin.onClick.RemoveListener(ClickGetCoin);
         _btnGetPower.onClick.RemoveListener(GetPower);
-        //    _btnExit.onClick.RemoveListener(ClickExit);
-        //    _btnSetting.onClick.RemoveListener(ClickSetting);
-        //    _btnRestart.onClick.RemoveListener(ClickRestart);
         _btnLevel.onClick.RemoveListener(ClickLevelBtn);
         UIEvents.OnDressUpDialogOpened -= OnDressUpDialogOpened;
         UIEvents.OnDressUpDialogClosed -= OnDressUpDialogClosed;
     }
 
-    //private void ClickRestart()
-    //{
-    //    App.Instance.EnterGame();
-    //}
+    private void OnCollectUnlocked(bool temp, bool isNowOwned)
+    {
+        if (isNowOwned)
+        {
+            InitOwnedCollects();
+
+            if (_collectLoopCoroutine == null && _ownedCollects.Count > 0)
+            {
+                var inGame = SceneElementManager.Instance.Resolve<InGame>();
+                if (inGame != null)
+                    _collectLoopCoroutine = StartCoroutine(CollectLoopCoroutine());
+            }
+        }
+    }
+
+    private void InitOwnedCollects()
+    {
+        _ownedCollects.Clear();
+        _currentDisplayedCollectId = -1; // 重置当前显示ID
+
+        var allCollects = CollectionConfig.Instance.All;
+        if (allCollects != null && allCollects.Count() > 0)
+        {
+            foreach (var collect in allCollects)
+            {
+                if (collect.IsHave.Value)
+                {
+                    _ownedCollects.Add(collect);
+                }
+            }
+        }
+
+        _currentCollectIndex = 0;
+        Debug.Log($"已拥有藏品数量：{_ownedCollects.Count}");
+
+        // 处理显示状态：有藏品则显示，无则隐藏
+        if (_ownedCollects.Count > 0 && CollectImage != null)
+        {
+            CollectImage.gameObject.SetActive(true);
+            Color tempColor = CollectImage.color;
+            tempColor.a = 0f;
+            CollectImage.color = tempColor;
+            TurnCollections(_currentCollectIndex);
+        }
+        else if (CollectImage != null)
+        {
+            CollectImage.gameObject.SetActive(false);
+        }
+    }
+
     private void OnDressUpDialogOpened()
     {
-        // 皮肤UI打开时，隐藏_balls
         if (_balls != null)
         {
             _balls.SetActive(false);
             Debug.Log("_balls 已隐藏");
         }
     }
+
     private void ShareDialog()
     {
-       // WXSDKManager.Instance.ShowShare();
     }
+
     private void OnDressUpDialogClosed()
     {
-        
     }
 
     private void ClickHint()
     {
-       
-        //}
-        //else
-        //{
-        //    if (App.Instance.CurrencyModel.CoinNum >= GameConfig.Instance.HintConsumeCoin)
-        //    {
-        //        App.Instance.CurrencyModel.ConsumeCoin(GameConfig.Instance.HintConsumeCoin);
-        //        RewardClaimHandle.ConsumeCoin(GameConfig.Instance.HintConsumeCoin, "System", "Hint");
-        //        Context.LevelModel.SetHasHint();
-        //        _hintCoinPanel.SetActive(false);
-        //        Context.GetController<InGameHintControl>().ShowHint();
-        //    }
-        //    else
-        //    {
-        //        FloatingWindow.Instance.Show("You not have enough coin.");
-        //        DialogManager.Instance.GetDialog<CoinGetDialog>().Activate();
-        //    }
-        //}
     }
 
-    //private void ClickSetting()
-    //{
-    //    if (_isSettingPanelShow)
-    //    {
-    //        HideSettingPanel();
-    //    }
-    //    else
-    //    {
-    //        ShowSettingPanel();
-    //    }
-    //}
-
-    //private void ClickExit()
-    //{
-    //    App.Instance.BackHome();
-    //}
     private void OpenTask()
     {
         QuestConfigs configs = Resources.Load<QuestConfigs>("Configs/QuestConfig");
         var temp = configs.quests[0];
         DialogManager.Instance.GetDialog<TaskDialog>().InitDialog(temp);
     }
+
     private void OpenCheck()
     {
         DialogManager.Instance.GetDialog<CheckinDialog>().ShowDialog();
     }
+
     private void OpenCollection()
     {
         DialogManager.Instance.GetDialog<CollectionDialog>().Show();
     }
+
     private void OpenRanking()
     {
-       // WXSDKManager.Instance.ShowFriendRand();
     }
 
     public void GetPower()
     {
-       
     }
+
     public void GetCoin()
     {
-        _textCoin.text =$"{Game.Instance.CurrencyModel.CoinNum}";
+        _textCoin.text = $"{Game.Instance.CurrencyModel.CoinNum}";
     }
+
     private void InitQuests()
     {
         QuestConfigs configs = null;
@@ -205,7 +234,6 @@ public class MainMenu : MonoBehaviour
             {
                 ID = config.ID,
                 questType = config.questType,
-
                 rewardCount = config.rewardCount,
                 status = (exist != null) ? exist.status : QuestStatus.Pendding,
                 finishedCount = (exist != null) ? exist.finishedCount : 0,
@@ -227,16 +255,11 @@ public class MainMenu : MonoBehaviour
         GameDataManager.Instance.SetQuest(questList);
     }
 
-
-
-
     private void EnterGame()
     {
-   
-    
         foreach (var stage in gameStages)
         {
-            if (stage != null) // 额外检查物体是否存在
+            if (stage != null)
             {
                 stage.SetActive(true);
                 var sequence = DOTween.Sequence();
@@ -259,74 +282,105 @@ public class MainMenu : MonoBehaviour
         {
             if (isSuccess)
             {
-                //IStaticDelegate.SourceCurrency("Coin", GameConfig.Instance.AdRewardCoin, "AD",
-                //    ADPosConst.GetCoinInGame);
                 Game.Instance.CurrencyModel.RewardCoin(20);
             }
         });
     }
 
-    //private void ClickSkipLevel()
-    //{
-    //    ADMudule.ShowRewardedAd(ADPosConst.SkipLevel, (isSuccess) =>
-    //    {
-    //        if (isSuccess)
-    //        {
-    //            App.Instance.LevelModel.PassCurrentLevel();
-    //            App.Instance.EnterGame();
-    //        }
-    //    });
-    //}
     private string GetDateString(System.DateTime date)
     {
         return date.ToString("yyyy-MM-dd");
     }
+
     public void ClickLevelBtn()
     {
-        DialogManager.Instance.GetDialog<LevelUIDialog>().ShowDialog(); 
+        DialogManager.Instance.GetDialog<LevelUIDialog>().ShowDialog();
         AudioClipHelper.Instance.PlayButtonTap();
         VibrationManager.Instance.SelectedBlockImpact();
     }
+
+    private void TurnCollections(int index)
+    {
+        if (_ownedCollects == null || _ownedCollects.Count == 0 || index < 0 || index >= _ownedCollects.Count || CollectImage == null)
+        {
+            CollectImage.gameObject.SetActive(false);
+            Debug.LogWarning("无已拥有的藏品可显示或CollectImage未赋值！");
+            return;
+        }
+
+        // 获取目标藏品并判断是否与当前显示重复
+        CollectionGoodsData targetCollect = _ownedCollects[index];
+        if (targetCollect.id == _currentDisplayedCollectId)
+        {
+            // 藏品重复，不执行渐变，直接返回
+            return;
+        }
+
+        CollectImage.DOKill();
+        CollectImage.gameObject.SetActive(true);
+
+        // 藏品不同，执行渐变切换
+        CollectImage.DOFade(0f, collectFadeDuration).OnComplete(() =>
+        {
+            Sprite sprite = Resources.Load<Sprite>($"Kinds/{targetCollect.name}");
+            if (sprite != null)
+            {
+                CollectImage.sprite = sprite;
+                Debug.Log($"当前显示藏品：{targetCollect.name}（ID：{targetCollect.id}）");
+            }
+            else
+            {
+                Debug.LogError($"未找到藏品图片：Kinds/{targetCollect.name}");
+            }
+
+            if (targetCollect != null)
+            {
+                CollectionPositionData posData = CollectionPositionConfig.Instance.GetPositionData(targetCollect.id);
+                if (posData != null)
+                {
+                    CollectImage.rectTransform.anchoredPosition = new Vector2(posData.x, posData.y);
+                }
+                else
+                {
+                    CollectImage.rectTransform.anchoredPosition = Vector2.zero;
+                }
+            }
+
+            // 更新当前显示藏品ID
+            _currentDisplayedCollectId = targetCollect.id;
+            CollectImage.DOFade(1f, collectFadeDuration);
+        });
+    }
+
+    private IEnumerator CollectLoopCoroutine()
+    {
+        while (true)
+        {
+            // 循环中检查：若藏品列表为空，隐藏图片并停止协程
+            if (_ownedCollects.Count == 0)
+            {
+                CollectImage.gameObject.SetActive(false);
+                _currentDisplayedCollectId = -1;
+                yield break;
+            }
+
+            TurnCollections(_currentCollectIndex);
+
+            yield return new WaitForSeconds(5f);
+
+            _currentCollectIndex++;
+            if (_currentCollectIndex >= _ownedCollects.Count)
+            {
+                _currentCollectIndex = 0;
+            }
+        }
+    }
+
     private void Refresh()
     {
         GetCoin();
         Game.Instance.LevelModel.PassLevelTemp = Game.Instance.LevelModel.PassLevelNumber.Value;
         Game.Instance.LevelModel.EnterLevelSecond = false;
         Game.Instance.LevelModel.TheSmallLevelID = 0;
-        //_textGetCoinCount.text = $"+{GameConfig.Instance.AdRewardCoin}";
-        //_textHintCoin.text = GameConfig.Instance.HintConsumeCoin.ToString();
     }
-
- 
-    [SerializeField] private Button _gotoBallSort;
-
-    [SerializeField] private Button skinEntryBtn;
-    [SerializeField] private Button btnSetting;
-    [SerializeField] private Button btncheckIn;
-    [SerializeField] private Button btnFriendRank;
-    [SerializeField] private Button ShareBtn;
-    [SerializeField] private Button btnCollection;
-    [SerializeField] private Button btnTask;
-    [SerializeField] private Button Playbtn;
-    [SerializeField] private Button _btnGetCoin;
-    [SerializeField] private Button _btnUseHint;
-    [SerializeField] private Button _btnGetPower;
-    [SerializeField] private Button _btnLevel;
-    [SerializeField] private Text _textLevel;
-    [SerializeField] private Text _textCoin;
-    [SerializeField] private List<GameObject> gameStages = new List<GameObject>();
-    [SerializeField] private GameObject _playbtn;
-    [SerializeField] private GameObject _balls;
-    [SerializeField] private GameObject _line;
-    [SerializeField] private GameObject _circle;
-    //[SerializeField] private Button _btnExit;
-    //[SerializeField] private Button _btnSetting;
-    //[SerializeField] private Button _btnRestart;
-
-    //[SerializeField] private RectTransform _settingPanelRect;
-    //[SerializeField] private float _displaySettingPanelY;
-    //[SerializeField] private float _hideSettingPanelY;
-    //[SerializeField] private GameObject _hintCoinPanel;
-
-    //private bool _isSettingPanelShow;
 }

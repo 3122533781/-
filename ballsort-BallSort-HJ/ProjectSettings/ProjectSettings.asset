@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Geonis
-  productName: DAO
+  productName: Cake
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -250,14 +250,14 @@ PlayerSettings:
   templatePackageId: com.unity.template.3d@5.0.4
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   useCustomMainManifest: 1
-  useCustomLauncherManifest: 0
-  useCustomMainGradleTemplate: 0
+  useCustomLauncherManifest: 1
+  useCustomMainGradleTemplate: 1
   useCustomLauncherGradleManifest: 1
   useCustomBaseGradleTemplate: 1
-  useCustomGradlePropertiesTemplate: 0
+  useCustomGradlePropertiesTemplate: 1
   useCustomGradleSettingsTemplate: 0
-  useCustomProguardFile: 0
-  AndroidTargetArchitectures: 3
+  useCustomProguardFile: 1
+  AndroidTargetArchitectures: 15
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
